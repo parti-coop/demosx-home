@@ -1,0 +1,35 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for form elements.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers. */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome. */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers. */
+}
+
+/*
+   .1 - Buttons.
+   ========================================================================== */
+@import "buttons";
+
+/*
+   .2 - Fields.
+   ========================================================================== */
+@import "fields";
+
+/*
+   .3 - Contact.
+   ========================================================================== */
+@import "contact";

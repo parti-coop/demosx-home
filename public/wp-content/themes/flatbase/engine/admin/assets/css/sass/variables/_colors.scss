@@ -1,0 +1,88 @@
+// OLD
+$black:        #222; // tooltip background, some text colors.
+$grey-dark:    #444c56; //  Mostly backgrounds, some headings as well.
+$grey-medium:  #6f7476;
+$grey-light:   #ccc; // used for borders
+$grey-lighter: #eee; // used for borders & some colors
+$white:        #fff;
+$blue:         #0d72b2;
+$blue-light:   #0f92e5;
+$blue-lighter: #2aa0d5;
+$blue-sky:     #8ac9e8;
+$red-dark:     #C53727;
+$red-medium:   #DD4B39;
+$red-light:    #f26b5f;
+
+$yellow: #f6dca7;
+$brown:  #c09853;
+
+// NEW
+// Colors for Backgrounds
+$color__background-body:   #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr:     #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre:    #eee;
+$color__background-ins:    #fff9c0;
+
+// Colors for texts and links
+$color__text-screen: #333;
+$color__text-main: #6b747a;
+$color__text-heading: #444c56;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #48add8;
+$color__link-visited: #48add8;
+$color__link-hover: #555;
+$color__text-logo: #333;
+
+
+// Inputs, Borders and Miscellaneous.
+
+$color__border-main:         #e7e7e7;
+$color__border-main-light:   #eee;
+$color__border-button:       #d9d9d9;
+$color__border-button-hover: #d9d9d9;
+$color__border-button-focus: #d9d9d9;
+$color__border-input:        #d9d9d9;
+$color__border-abbr:         #ddd;
+$color__slider-input-selected: lighten(#5b6572, 10%);
+
+// header
+$color__background-masthead: #444c56;
+$color__background-header: lighten( $color__background-masthead, 10% );
+
+// subhead
+$color__background-subhead: $grey-lighter;
+$color__text-header:        #fff;
+$color__text-subhead:       #fff;
+
+// nav
+$color__text-header-nav:             #fff;
+$color__background-header-nav-hover: #444c56;
+
+// nav links
+$color__nav-link-active:  #222;
+$color__nav-link-default: #555;
+$color__nav-link-background: transparent;
+$color__nav-link-border: #fff;
+
+// footer
+$color__background-footer:          darken( $color__background-masthead, 15% );
+$color__background-footer-extended: darken( $color__background-masthead, 15% );
+$color__background-heart:           #f26b5f;
+$color__text-footer:                #666;
+$color__text-footer-extended:       #9b9c9e;
+$color__text-footer-nav:            #ccc;
+$color__text-footer-nav-hover:      #fff;
+$color__border-footer-top:          darken( $color__background-footer, 10% );
+$color__border-footer-bottom:       lighten( $color__background-footer, 10% );
+
+
+// Missing
+$color__border-select-hover: #d9d9d9;
+$color__background-default: white;
+$color__background-button-hover: white;
+$color__background-button-focus: white;
+$color__background-form-element: white;
+$color__shadow-form-element: white;

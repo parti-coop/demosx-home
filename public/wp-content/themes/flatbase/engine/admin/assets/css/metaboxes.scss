@@ -1,0 +1,519 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the metaboxes section
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+// Including mixins and variables.
+@import "sass/mixins/_mixins-master";
+@import "sass/variables/_variables";
+
+body.nice-framework {
+
+	#nicethemes-settings {
+		.inside {
+			margin-top: 12px;
+		}
+	}
+
+}
+
+.nice-metaboxes {
+
+	input {
+
+		&[type=text] {
+			margin: 0 0 10px 0;
+			color: #222;
+			min-width: 250px;
+		}
+
+		&.nice-color-picker {
+			margin: 0;
+			width: 65px;
+			padding: 3px;
+		}
+	}
+
+	select {
+		margin: 0 0 10px 0;
+		color: #222;
+		min-width: 250px;
+	}
+
+	label {
+		color: #555;
+		font-weight: bold;
+	}
+
+	.description {
+		display: block;
+		cursor: help;
+		color: #999;
+		@include transition(color 0.2s ease-in);
+
+		&:hover {
+			color: #555
+		}
+	}
+
+	.nice-row {
+		border-bottom: 1px solid #e3e3e3;
+		padding: 15px 5px;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.nice_textarea {
+		width: 80%;
+		height: 100px;
+		margin: 0 0 10px 0;
+		color: #222;
+		padding: 5px;
+	}
+
+	.nice-input-checkbox {
+		display: inline-block;
+		float: left;
+		margin-right: 8px;
+	}
+
+
+	.section {
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		.nice-custom-info {
+			font-size: 11px;
+			line-height: 1.5em;
+		}
+	}
+
+	.branch-3-7,
+	.branch-3-6 #nice-metabox tr.nice-custom-info {
+		background: #f8f8f8;
+	}
+
+	.border-bottom-none {
+		border-bottom: none;
+	}
+}
+
+/**
+ *  Workaround for jQuery-UI.
+ */
+#nice-metaboxes-tabs {
+	background: none;
+}
+
+
+/* -----------------------------------------------------------------------------
+   1 - Helpers
+   -------------------------------------------------------------------------- */
+.nav-horizontal {
+	a {
+		display: inline-block;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		position: relative;
+		float: left;
+	}
+}
+
+div.updated,
+div.error {
+	margin: 15px 0;
+}
+
+
+/* -----------------------------------------------------------------------------
+   2 - Tabs
+   -------------------------------------------------------------------------- */
+.nice-tabs {
+	background: none;
+	margin: 0 0 2em 0;
+	&.ui-widget-content{
+		border: none;
+		box-shadow: none;
+	}
+	.nice-nav li {
+		&.ui-state-default {
+			border-bottom: 1px solid #ddd;
+		}
+		&.ui-state-active,
+		&.ui-state-hover,
+		& {
+			border: none;
+		}
+		&.ui-state-active {
+		}
+	}
+	&.ui-tabs .ui-tabs-hide {
+		position: absolute;
+		left: -10000px;
+	}
+	.nice-nav {
+		list-style: none !important;
+		margin: 0 !important;
+		padding: 0;
+		background: none;
+		border: 0;
+		float: none;
+		li {
+			float: left;
+			position: relative;
+			margin: 0 4px -1px 0 !important;
+			z-index: 10;
+			list-style: none!important;
+			&.ui-state-active {
+				margin: 0 4px -1px 0 !important;
+			}
+
+			&:focus,
+			&:visited {
+				outline: none;
+			}
+
+			a {
+				border: 1px solid #ddd !important;
+				border-bottom: none !important;
+				display: block;
+				overflow: hidden;
+				padding: 12px 15px;
+				font-size: 14px;
+				background: $white;
+				margin: 0 !important;
+				text-decoration: none;
+				color: $grey-dark !important;
+				@include border-radius(2px 2px 0 0);
+				&:hover {
+					background: $white !important;
+					margin: 0 !important;
+				}
+
+				i {
+					margin-right: 5px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.nice-nav {
+		border-bottom: 1px solid $color__border-main;
+		height: 43px;
+		overflow: visible;
+		.ui-state-active a {
+			background: $white;
+		}
+		li:not(.ui-state-active) a {
+			background: lighten($grey-lighter, 5%);
+		}
+	}
+	.nice-tab {
+		background: $white;
+		padding: 20px 15px;
+		border: 1px solid $color__border-main;
+		margin-top: -1px;
+	}
+
+	.nice-tab-inner.ui-widget-content {
+		@include box-shadow(none);
+		color: inherit;
+	}
+}
+
+// Vertical navigation
+.nice-tabs-vertical {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	border: 1px solid #ddd;
+
+	.nice-metabox-nav {
+		padding: 0;
+		width: 20%;
+		display: table-cell;
+		background: #f5f5f5;
+		vertical-align: top;
+		border-right: 1px solid #ddd;
+
+		html[dir="rtl"] & {
+			border-right: none;
+			border-left: 1px solid #ddd;
+		}
+	}
+
+	.nice-metabox-panels {
+		display: table-cell;
+		padding: 0 1em 1em;
+		width: 80%;
+	}
+
+	.ui-tabs-nav li {
+		clear: left;
+		width: 100%;
+		margin: 0;
+		a {
+			display: block;
+		}
+	}
+
+	// let's replicate the nice nav
+	.nice-nav {
+		list-style: none !important;
+		margin: 0 !important;
+		padding: 0;
+		background: none;
+		border: 0;
+		overflow: visible;
+		li {
+			position: relative;
+			z-index: 10;
+			list-style: none !important;
+			margin: 0;
+
+			&:focus,
+			&:visited {
+				outline: none;
+			}
+
+			&:not(.ui-state-active) a {
+				background: #f5f5f5;
+			}
+
+			a {
+				border-bottom: 1px solid #eee !important;
+				display: block;
+				overflow: hidden;
+				padding: 12px 15px;
+				font-size: 14px;
+				background: $white;
+				margin: 0 !important;
+				text-decoration: none;
+				color: $grey-dark !important;
+				&:hover {
+					background: $white !important;
+					margin: 0 !important;
+				}
+
+				i {
+					margin-right: 5px;
+					font-size: 16px;
+
+					html[dir="rtl"] & {
+						margin-right: 0;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+
+		.ui-state-active a {
+			background: $white;
+			border-right: 1px solid $white;
+			margin-right: -1px;
+		}
+	}
+
+
+	.section {
+
+		border-top: 1px solid #e3e3e3;
+
+		&:first-child {
+			border: none;
+		}
+
+		.format-setting-wrap {
+			display: table;
+			width: 100%;
+
+			padding: 15px 5px;
+			text-align: left;
+			vertical-align: top;
+
+			&:first-child {
+				border-top: none;
+			}
+
+			.format-setting-label,
+			.format-setting-input,
+			.format-setting {
+				display: table-row;
+				vertical-align: top;
+				width: 100%;
+			}
+
+			.format-setting-input {
+				padding-bottom: 5px;
+				
+				html[dir="rtl"] & {
+					text-align: right;
+				}
+			}
+
+			.format-setting-label {
+				width: 100%;
+				display: block;
+				margin-bottom: 10px;
+
+				html[dir="rtl"] & {
+					text-align: right;
+				}
+				
+				label {
+					color: #555;
+					font-weight: bold;
+					padding-bottom: 15px;
+				}
+			}
+
+			.format-setting-description {
+				color: #aaa;
+				margin-top: 10px;
+				cursor: help;
+				
+				html[dir="rtl"] & {
+					text-align: right;
+				}
+			}
+
+		}
+
+		&.section-measurement {
+
+			.format-setting-wrap {
+
+				.format-setting-input {
+					input[type='text'] {
+						width: 265px;
+						min-width: 265px;
+						margin-right: 5px;
+					}
+
+					select {
+						width: 70px;
+						min-width: 70px
+					}
+
+				}
+			}
+		}
+
+		&.section-upload {
+
+			.format-setting-wrap {
+
+				.format-setting-input {
+
+					input[type='text'] {
+						width: 265px;
+						min-width: 265px;
+						margin-right: 5px;
+					}
+
+					input[type='button'] {
+						width: auto;
+						min-width: 70px;
+						margin-left: 0;
+					}
+
+				}
+			}
+		}
+	}
+
+}
+
+.nav-tab {
+	@include transition(all 0.3s ease);
+	i.dashicons {
+		margin-top: 3px;
+
+		body:not(.is-mp6) & {
+			display: none;
+		}
+	}
+	&.nav-tab-active {
+		color: $color__nav-link-active;
+		background: $color__nav-link-background;
+	}
+	&:not(.nav-tab-active) {
+		&:focus,
+		&:visited,
+		&:active {
+			color: $color__nav-link-default;
+		}
+	}
+}
+
+// settings
+
+.format-setting-wrap {
+	display: table;
+	width: 100%;
+	border-top: 1px solid #e3e3e3;
+	padding: 15px 5px;
+	text-align: left;
+	vertical-align: top;
+
+	&:first-child {
+		border-top: none;
+	}
+
+	.format-setting-label,
+	.format-setting {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.format-setting-label {
+		width: 25%;
+		label {
+			color: #555;
+			font-weight: bold;
+		}
+	}
+
+	.format-setting {
+
+		.nice_textarea {
+			width: 80%;
+			height: 100px;
+			margin: 0 0 10px 0;
+			color: #222;
+			padding: 5px;
+		}
+
+		.nice-input-checkbox {
+			display: inline-block;
+			float: left;
+			margin-right: 8px;
+		}
+
+		span.description {
+			display: block;
+			cursor: help;
+			color: #999;
+			@include transition(color 0.2s ease-in);
+
+			&:hover {
+				color: #555
+			}
+		}
+
+	}
+}

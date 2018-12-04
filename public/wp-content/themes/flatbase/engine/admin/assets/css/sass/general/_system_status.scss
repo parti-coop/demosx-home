@@ -1,0 +1,61 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the system status.
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+
+.nice-system-status {
+  table {
+	margin: 20px 0;
+
+	th {
+	  font-weight: bold;
+	}
+
+	td {
+	  &.title {
+		width: 25%;
+	  }
+
+	  &.help {
+		width: 20px;
+	  }
+
+	  &.description {
+		&.right {
+		  color: #7AD03A;
+		}
+
+		&.wrong {
+		  color: #F00;
+		}
+
+		.choice {
+		  font-size: 1.75em;
+		}
+	  }
+	}
+  }
+}
+
+.nice-system-status-report {
+  padding: 20px 10px 30px 10px;
+
+  input {
+	float: left;
+  }
+
+  p {
+	float: left;
+	margin: 4px 0 10px 10px;
+	padding: 0;
+  }
+}

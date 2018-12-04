@@ -1,0 +1,57 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for older versions of WP
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+/* backwards compatibility */
+
+.branch-3-1,
+.branch-3-2,
+.branch-3-3,
+.branch-3-4,
+.branch-3-5,
+.branch-3-6,
+.branch-3-7 {
+
+	#nice-container {
+		#nice-header {
+			background: #fff;
+		}
+
+		input {
+			&.checkbox,
+			&.nice-radio {
+				width: 30px;
+			}
+		}
+	}
+}
+
+.mp6 #nice-container #nice-header {
+	background: #eee;
+}
+
+.admin-color-light #nice-container #nice-header {
+	background: #f5f5f5;
+}
+
+#nice-container.is-mp6 #nice-content .section-checkbox .controls {
+	margin-right: 0;
+
+	input[type="checkbox"] {
+		margin: 0;
+	}
+}
+
+.branch-3-8 #nice-container #nice-content,
+.mp6 #nice-container #nice-content {
+	font-family: inherit;
+}

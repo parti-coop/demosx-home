@@ -1,0 +1,292 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for dark skin
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+body.dark {
+	color: $color__text-main-dark;
+}
+
+.dark {
+	#wrapper {
+		background: $color__background-dark;
+		color: $color__text-main-dark;
+	}
+
+	#modal-content {
+		background: $color__background-dark;
+		color: $color__text-main-dark;
+	}
+
+	#modal-close:before,
+	#modal-close:after {
+		background-color: $white;
+	}
+
+	#container,
+	#container & {
+		a {
+			color: $white;
+			&:hover {
+				color: darken($white, 3%);
+			}
+		}
+	}
+
+	form {
+		label {
+			color: $white;
+		}
+	}
+
+	ins {
+		color: $color__background-dark;
+	}
+
+	pre,
+	code {
+		background: darken($color__background-dark, 3%);
+		border-color: rgba($black, .2);
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	textarea,
+	select,
+	.select2-choice {
+		color: darken( $white, 10%);
+		border: 1px solid rgba($white, .2) !important;
+		background-color: rgba($color__background-dark, .4);
+		@include box-shadow(none);
+	}
+
+	#container .widget {
+		h4 {
+			border-bottom-color: rgba($white, .25);
+		}
+	}
+
+	color: darken( $white, 3%);
+
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .entry-title {
+		color: $white;
+	}
+
+	.nice-knowledgebase h3,
+	.nice-knowledgebase h3 a {
+		color: $white;
+	}
+
+	.home-block,
+	#related-posts li,
+	article.faq,
+	ul.faq-questions li {
+		border-bottom-color: $color__border-dark;
+	}
+
+	tr {
+		border-bottom-color: $color__border-dark;
+	}
+
+	table,
+	.blog-masonry .post {
+		border-color: $color__border-dark;
+	}
+
+	.blog-masonry .no-more-posts span {
+		background: $color__background-widget-dark;
+	}
+
+	article {
+		&.format-quote {
+			.quote,
+			.quote-author {
+				color: $white;
+			}
+		}
+	}
+
+	.entry-meta {
+		.nice-views,
+		.nice-reading-time,
+		.nice-like,
+		.edit-link,
+		.tag-links a,
+		.category-links a {
+			background: $color__background-widget-dark;
+		}
+	}
+
+	#sidebar {
+		.widget {
+			h4 {
+				color: $white;
+			}
+
+			ul li {
+				border-bottom-color: $color__border-dark;
+			}
+		}
+	}
+
+	.btn-default {
+		background: $white;
+		border-color: $white;
+		color: $black !important;
+
+		&:not(.btn-disable-hover):hover {
+			background: transparent;
+			color: $white !important;
+		}
+
+		&.btn-outline {
+			background-color: transparent !important;
+			border-color: $white !important;
+			color: $white !important;
+
+			&:not(.btn-disable-hover):hover {
+				background-color: $white !important;
+				color: $black !important;
+			}
+		}
+	}
+
+	&.btn-default {
+		background: $color__background-button;
+		border-color: $color__border-button;
+		color: $white !important;
+
+		&:not(.btn-disable-hover):hover {
+
+			background: transparent;
+			color: $color__background-button !important;
+		}
+
+		&.btn-outline {
+			background-color: transparent !important;
+			border-color: $color__background-button !important;
+			color: $color__background-button !important;
+
+			&:not(.btn-disable-hover):hover {
+				background-color: $color__border-button !important;
+				color: $white !important;
+			}
+		}
+	}
+
+	.pre-footer-navigation,
+	&.pre-footer-navigation {
+		background: lighten($color__background-dark, 6%);
+		outline-color: none;
+
+		a {
+			color: $white !important;
+		}
+
+	}
+
+}
+
+#header {
+	@mixin header-text-dark {
+		a {
+			color: $white;
+
+			svg {
+				&, path {
+					@include transition( fill 0.2s linear );
+					fill: $white;
+				}
+			}
+
+			&:hover {
+				color: $white;
+
+				svg {
+					&, path {
+						fill: $white;
+					}
+				}
+			}
+		}
+	}
+
+	@mixin header-text-logo-dark {
+		.text-logo {
+			color: $color__text-logo-dark;
+		}
+
+		.tagline {
+			color: $color__text_tagline-dark;
+		}
+	}
+
+	&.transparent-dark:not(.shrunk):not(.scrolled) {
+		#header-inner {
+			@include desktop {
+				@include header-text-dark;
+				@include header-text-logo-dark;
+				#toggle-nav-container a.toggle-nav:before,
+				#toggle-nav-container a.toggle-nav:after,
+				#toggle-nav-container a.toggle-nav i.toggle-bar {
+					background-color: $white;
+				}
+			}
+		}
+	}
+
+	&.header-dark {
+		background-color: #35a49e;
+
+		&:not(.transparent),
+		&.transparent.shrunk,
+		&.transparent.scrolled {
+			#header-inner {
+				@include header-text-dark;
+				@include header-text-logo-dark;
+			}
+		}
+
+		@include tablet {
+			&:not(.transparent),
+			&.transparent {
+				#header-inner {
+					@include header-text-dark;
+					@include header-text-logo-dark;
+				}
+			}
+		}
+
+		#toggle-nav-container {
+			a.toggle-nav {
+				color: $white;
+
+				&:before,
+				&:after,
+				i.toggle-bar {
+					background-color: $white;
+				}
+			}
+		}
+
+		&.vertical {
+			#navigation-extras {
+				@include desktop {
+					border-top: 1px solid rgba(255,255,255, 0.1);
+				}
+			}
+		}
+	}
+}

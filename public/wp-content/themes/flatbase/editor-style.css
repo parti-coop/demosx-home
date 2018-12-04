@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/**
+ * Flatbase by NiceThemes.
+ *
+ * Styles for post editor.
+ *
+ * @package   Flatbase
+ * @author    NiceThemes <hello@nicethemes.com>
+ * @license   GPL-2.0+
+ * @link      http://nicethemes.com/theme/flatbase
+ * @copyright 2014-2015 NiceThemes
+ * @since     1.0.4
+ */
+body {
+	font: 15px/20px 'Lato', sans-serif;
+	background: #fff;
+	color: #8b989e;
+}
+
+hr {
+	background-color: #e3e3e3;
+	border: 0 none;
+	height: 1px;
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #5bc4be;
+}
+
+a img { border: none; }
+
+a > img {
+	vertical-align: bottom;
+}
+
+p,
+pre,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+table,
+fieldset,
+form,
+.gallery-row,
+.post-thumb,
+.author-bio { margin-bottom: 20px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Nunito';
+	font-weight: normal;
+	padding: 0;
+	color: #4b4d4b;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 28px;
+}
+
+h2{
+	font-size: 28px;
+	line-height: 24px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 20px;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+h1 a, h1 a:hover,
+h2 a, h2 a:hover,
+h3 a, h3 a:hover,
+h4 a, h4 a:hover,
+h5 a, h5 a:hover,
+h6 a, h6 a:hover{ border: none; }

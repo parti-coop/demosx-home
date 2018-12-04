@@ -1,0 +1,123 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for page loaders.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+.pace {
+	pointer-events: none;
+
+	body[data-page-loader="full-page"] & {
+		display: none;
+	}
+
+	&-progress {
+		background: $color__accent-color;
+		position: fixed;
+		z-index: 2000;
+		top: 0;
+		right: 100%;
+		width: 100%;
+		height: 3px;
+
+		body.admin-bar & {
+			top: 32px;
+		}
+	}
+
+	&-inactive {
+		display: none;
+	}
+}
+
+body[data-page-loader="full-page"] {
+	&:not(.pace-done) #wrapper {
+		max-height: 100vh;
+		overflow: hidden;
+
+		@include in('<.admin-bar') {
+			max-height: calc(100vh - 32px);
+		}
+	}
+
+	.nice-page-loader-full {
+		$offset: 187;
+		$duration: 2s;
+
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $color__dark-color-1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 1;
+		z-index: 1000000000;
+		transition: opacity $duration ease-out 0s, z-index 0s ease-out 0s;
+
+		.spinner {
+			animation: nice-page-loader-full-rotate $duration linear infinite;
+			width: 65px;
+			height: 65px;
+			transform-origin: center center;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		.path {
+			stroke-dasharray: 1, 200;
+			stroke-dashoffset: 0;
+			stroke: white;
+			animation: nice-page-loader-full-dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+			stroke-linecap: round;
+		}
+
+		&.nice-page-loader-hidden {
+			opacity: 0;
+			z-index: -1;
+			transition: opacity $duration ease-out 0s, z-index 0s ease-out $duration;
+		}
+
+		.loader {
+			@include loader-beat( 'full-page-overlay' );
+		}
+
+		@keyframes nice-page-loader-full-fade {
+			0% { opacity: 1; }
+			100% { opacity: 0; z-index: -1; }
+		}
+
+		@keyframes nice-page-loader-full-rotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes nice-page-loader-full-dash {
+			0% {
+				stroke-dasharray: 1, 200;
+				stroke-dashoffset: 0;
+			}
+			50% {
+				stroke-dasharray: 89, 200;
+				stroke-dashoffset: -35px;
+			}
+			100% {
+				stroke-dasharray: 89, 200;
+				stroke-dashoffset: -124px;
+			}
+		}
+	}
+}

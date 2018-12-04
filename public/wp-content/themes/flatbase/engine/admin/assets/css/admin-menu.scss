@@ -1,0 +1,199 @@
+/*-------------------------------------------------------------------------------------------*/
+/* Nice Admin Menu Styles */
+/*-------------------------------------------------------------------------------------------*/
+
+/* backward compability */
+
+.branch-3-3,
+.branch-3-4,
+.branch-3-5,
+.branch-3-6,
+.branch-3-7 {
+	#adminmenu {
+
+		.menu-icon-slide,
+		.menu-icon-article,
+		.menu-icon-faq,
+		.menu-icon-feedback,
+		.menu-icon-infobox,
+		.menu-icon-service,
+		.menu-icon-staff,
+		.menu-icon-portfolio,
+		.menu-icon-menu {
+
+			 div.wp-menu-image {
+
+				img {
+					display: block;
+				}
+
+				&:before {
+					content: '';
+				}
+
+			}
+		}
+
+		.toplevel_page_nicethemes {
+			div.wp-menu-image {
+				img {
+					opacity: 0.6;
+				}
+			}
+
+			&:hover {
+				div.wp-menu-image {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+/* MP6 Compatibility */
+
+.mp6 {
+	#adminmenu {
+
+		.menu-icon-slide,
+		.menu-icon-article,
+		.menu-icon-faq,
+		.menu-icon-feedback,
+		.menu-icon-infobox,
+		.menu-icon-service,
+		.menu-icon-staff,
+		.menu-icon-portfolio,
+		.menu-icon-menu {
+			div.wp-menu-image {
+				img {
+					display: none;
+				}
+			}
+		}
+
+		.toplevel_page_nicethemes div.wp-menu-image img {
+			opacity: 1;
+		}
+
+		.menu-icon-slide div.wp-menu-image:before {
+			content: '\f161';
+		}
+
+		.menu-icon-article div.wp-menu-image:before {
+			content: '\f123';
+		}
+
+		.menu-icon-faq div.wp-menu-image:before {
+			content: '\f223';
+		}
+
+		.menu-icon-feedback div.wp-menu-image:before {
+			content: '\f122';
+		}
+
+		.menu-icon-infobox div.wp-menu-image:before {
+			content: '\f180';
+		}
+
+		.menu-icon-service div.wp-menu-image:before {
+			content: '\f111';
+		}
+
+		.menu-icon-staff div.wp-menu-image:before {
+			content: '\f338';
+		}
+
+		.menu-icon-slide div.wp-menu-image:before {
+			content: '\f161';
+		}
+
+		.menu-icon-portfolio div.wp-menu-image:before {
+			content: '\f309';
+		}
+
+		.menu-icon-menu div.wp-menu-image:before {
+			font: 16px 'niceadmin' !important;
+			content: '\e800';
+		}
+
+	}
+}
+
+
+/* Admin menu icons */
+
+#adminmenu {
+
+	.menu-icon-slide,
+	.menu-icon-article,
+	.menu-icon-faq,
+	.menu-icon-feedback,
+	.menu-icon-infobox,
+	.menu-icon-service,
+	.menu-icon-staff,
+	.menu-icon-portfolio,
+	.menu-icon-menu {
+		div.wp-menu-image {
+			img {
+				display: none;
+			}
+		}
+	}
+
+	.menu-icon-article div.wp-menu-image:before {
+		content: '\f123';
+	}
+
+	.menu-icon-faq div.wp-menu-image:before {
+		content: '\f223';
+	}
+
+	.menu-icon-feedback div.wp-menu-image:before {
+		content: '\f122';
+	}
+
+	.menu-icon-infobox div.wp-menu-image:before {
+		content: '\f180';
+	}
+
+	.menu-icon-service div.wp-menu-image:before {
+		content: '\f111';
+	}
+
+	.menu-icon-staff div.wp-menu-image:before {
+		content: '\f338';
+	}
+
+	.menu-icon-slide div.wp-menu-image:before {
+		content: '\f161';
+	}
+
+	.menu-icon-portfolio div.wp-menu-image:before {
+		content: '\f309';
+	}
+
+	.menu-icon-menu div.wp-menu-image:before {
+		font: 16px 'niceadmin' !important;
+		content: '\e800';
+	}
+
+	.toplevel_page_nicethemes {
+		div.wp-menu-image {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.wp-list-table {
+	th,
+	td {
+		&.column-icon {
+			width: 80px;
+		}
+	}
+}

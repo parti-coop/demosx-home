@@ -1,0 +1,171 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for light skin
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+.light {
+
+	color: $color__text-main;
+
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .entry-title {
+		color: $color__text-heading;
+	}
+
+	.btn-default {
+		background: $color__background-button;
+		border-color: $color__border-button;
+		color: $white !important;
+
+		&.btn-outline {
+			background-color: transparent !important;
+			border-color: $color__background-button !important;
+			color: $color__background-button !important;
+
+			&:not(.btn-disable-hover):hover {
+				background-color: $color__border-button !important;
+				color: $white !important;
+			}
+		}
+	}
+
+	&.btn-default {
+		background: $white;
+		border-color: $white;
+		color: $black !important;
+
+		&:not(.btn-disable-hover):hover {
+			background: transparent;
+			color: $white !important;
+		}
+
+		&.btn-outline {
+			background-color: transparent !important;
+			border-color: $white !important;
+			color: $white !important;
+
+			&:not(.btn-disable-hover):hover {
+				background-color: $white !important;
+				color: $black !important;
+			}
+		}
+	}
+}
+
+#header {
+	@mixin header-text-logo-light {
+		.text-logo {
+			color: $color__text-logo;
+		}
+
+		.tagline {
+			color: $color__text-tagline;
+		}
+	}
+
+	&.header-light {
+		@include header-text-logo-light;
+	}
+
+	&.transparent-light:not(.shrunk):not(.scrolled) {
+		@include desktop {
+			@include header-text-logo-light;
+		}
+	}
+
+	&.submenu-light {
+		@include desktop {
+			#main-nav.default > .menu-item .sub-menu {
+				background: #fbfbfb;
+
+				@include in('<.megamenu') {
+					.sub-menu {
+						background-color: transparent;
+					}
+				}
+
+				.menu-item {
+					a {
+						color: $color__text-navigation-main;
+					}
+
+					a:hover,
+					&.current-menu-item a,
+					&.current_page_item a {
+						color: $color__text-navigation-main-hover;
+					}
+				}
+			}
+
+			#main-nav.default:not(.no-separators) {
+				> .menu-item {
+					&.megamenu {
+						> .sub-menu {
+							> .menu-item {
+								@include desktop {
+									border-right: 1px solid rgba(0, 0, 0, 0.08);
+
+									html[dir="rtl"] & {
+										border-right: none;
+										border-left: 1px solid rgba(0, 0, 0, 0.08);
+									}
+								}
+
+								&.background-image {
+									border: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#heading {
+	&.light {
+		.page-title,
+		.page-subtitle {
+			color: $color__text-heading;
+		}
+
+		.heading-content .post-meta {
+			color: rgba(0, 0, 0, .8);
+			a {
+				color: rgba(0, 0, 0, .8);
+
+				&:hover {
+					color: $color__text-heading;
+				}
+			}
+		}
+
+		#heading-scrolldown {
+			a {
+				color: $color__text-heading;
+			}
+		}
+	}
+}
+
+.pills {
+	.light & {
+		a {
+			@include in( '<.pills-default-color' ) {
+				color: rgba(0, 0, 0, .7);
+			}
+
+			@include in( '<.pills-outline' ) {
+				border-color: rgba(0, 0, 0, .7);
+			}
+		}
+	}
+}

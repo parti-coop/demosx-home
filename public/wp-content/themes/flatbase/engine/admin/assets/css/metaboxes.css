@@ -1,0 +1,481 @@
+body.nice-framework #nicethemes-settings .inside {
+  margin-top: 12px;
+}
+
+.nice-metaboxes input[type=text] {
+  margin: 0 0 10px 0;
+  color: #222;
+  min-width: 250px;
+}
+
+.nice-metaboxes input.nice-color-picker {
+  margin: 0;
+  width: 65px;
+  padding: 3px;
+}
+
+.nice-metaboxes select {
+  margin: 0 0 10px 0;
+  color: #222;
+  min-width: 250px;
+}
+
+.nice-metaboxes label {
+  color: #555;
+  font-weight: bold;
+}
+
+.nice-metaboxes .description {
+  display: block;
+  cursor: help;
+  color: #999;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.nice-metaboxes .description:hover {
+  color: #555;
+}
+
+.nice-metaboxes .nice-row {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 15px 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nice-metaboxes .nice_textarea {
+  width: 80%;
+  height: 100px;
+  margin: 0 0 10px 0;
+  color: #222;
+  padding: 5px;
+}
+
+.nice-metaboxes .nice-input-checkbox {
+  display: inline-block;
+  float: left;
+  margin-right: 8px;
+}
+
+.nice-metaboxes .section:last-child {
+  border-bottom: none;
+}
+
+.nice-metaboxes .section .nice-custom-info {
+  font-size: 11px;
+  line-height: 1.5em;
+}
+
+.nice-metaboxes .branch-3-7,
+.nice-metaboxes .branch-3-6 #nice-metabox tr.nice-custom-info {
+  background: #f8f8f8;
+}
+
+.nice-metaboxes .border-bottom-none {
+  border-bottom: none;
+}
+
+/**
+ *  Workaround for jQuery-UI.
+ */
+#nice-metaboxes-tabs {
+  background: none;
+}
+
+/* -----------------------------------------------------------------------------
+   1 - Helpers
+   -------------------------------------------------------------------------- */
+.nav-horizontal a {
+  display: inline-block;
+}
+
+.nav-horizontal ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-horizontal li {
+  position: relative;
+  float: left;
+}
+
+div.updated,
+div.error {
+  margin: 15px 0;
+}
+
+/* -----------------------------------------------------------------------------
+   2 - Tabs
+   -------------------------------------------------------------------------- */
+.nice-tabs {
+  background: none;
+  margin: 0 0 2em 0;
+}
+
+.nice-tabs.ui-widget-content {
+  border: none;
+  box-shadow: none;
+}
+
+.nice-tabs .nice-nav li.ui-state-default {
+  border-bottom: 1px solid #ddd;
+}
+
+.nice-tabs .nice-nav li.ui-state-active, .nice-tabs .nice-nav li.ui-state-hover, .nice-tabs .nice-nav li {
+  border: none;
+}
+
+.nice-tabs.ui-tabs .ui-tabs-hide {
+  position: absolute;
+  left: -10000px;
+}
+
+.nice-tabs .nice-nav {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0;
+  background: none;
+  border: 0;
+  float: none;
+}
+
+.nice-tabs .nice-nav li {
+  float: left;
+  position: relative;
+  margin: 0 4px -1px 0 !important;
+  z-index: 10;
+  list-style: none !important;
+}
+
+.nice-tabs .nice-nav li.ui-state-active {
+  margin: 0 4px -1px 0 !important;
+}
+
+.nice-tabs .nice-nav li:focus, .nice-tabs .nice-nav li:visited {
+  outline: none;
+}
+
+.nice-tabs .nice-nav li a {
+  border: 1px solid #ddd !important;
+  border-bottom: none !important;
+  display: block;
+  overflow: hidden;
+  padding: 12px 15px;
+  font-size: 14px;
+  background: #fff;
+  margin: 0 !important;
+  text-decoration: none;
+  color: #444c56 !important;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -ms-border-radius: 2px 2px 0 0;
+  -o-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
+
+.nice-tabs .nice-nav li a:hover {
+  background: #fff !important;
+  margin: 0 !important;
+}
+
+.nice-tabs .nice-nav li a i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.nice-tabs .nice-nav {
+  border-bottom: 1px solid #e7e7e7;
+  height: 43px;
+  overflow: visible;
+}
+
+.nice-tabs .nice-nav .ui-state-active a {
+  background: #fff;
+}
+
+.nice-tabs .nice-nav li:not(.ui-state-active) a {
+  background: #fbfbfb;
+}
+
+.nice-tabs .nice-tab {
+  background: #fff;
+  padding: 20px 15px;
+  border: 1px solid #e7e7e7;
+  margin-top: -1px;
+}
+
+.nice-tabs .nice-tab-inner.ui-widget-content {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+.nice-tabs-vertical {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+}
+
+.nice-tabs-vertical .nice-metabox-nav {
+  padding: 0;
+  width: 20%;
+  display: table-cell;
+  background: #f5f5f5;
+  vertical-align: top;
+  border-right: 1px solid #ddd;
+}
+
+html[dir="rtl"] .nice-tabs-vertical .nice-metabox-nav {
+  border-right: none;
+  border-left: 1px solid #ddd;
+}
+
+.nice-tabs-vertical .nice-metabox-panels {
+  display: table-cell;
+  padding: 0 1em 1em;
+  width: 80%;
+}
+
+.nice-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  width: 100%;
+  margin: 0;
+}
+
+.nice-tabs-vertical .ui-tabs-nav li a {
+  display: block;
+}
+
+.nice-tabs-vertical .nice-nav {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0;
+  background: none;
+  border: 0;
+  overflow: visible;
+}
+
+.nice-tabs-vertical .nice-nav li {
+  position: relative;
+  z-index: 10;
+  list-style: none !important;
+  margin: 0;
+}
+
+.nice-tabs-vertical .nice-nav li:focus, .nice-tabs-vertical .nice-nav li:visited {
+  outline: none;
+}
+
+.nice-tabs-vertical .nice-nav li:not(.ui-state-active) a {
+  background: #f5f5f5;
+}
+
+.nice-tabs-vertical .nice-nav li a {
+  border-bottom: 1px solid #eee !important;
+  display: block;
+  overflow: hidden;
+  padding: 12px 15px;
+  font-size: 14px;
+  background: #fff;
+  margin: 0 !important;
+  text-decoration: none;
+  color: #444c56 !important;
+}
+
+.nice-tabs-vertical .nice-nav li a:hover {
+  background: #fff !important;
+  margin: 0 !important;
+}
+
+.nice-tabs-vertical .nice-nav li a i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+html[dir="rtl"] .nice-tabs-vertical .nice-nav li a i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.nice-tabs-vertical .nice-nav .ui-state-active a {
+  background: #fff;
+  border-right: 1px solid #fff;
+  margin-right: -1px;
+}
+
+.nice-tabs-vertical .section {
+  border-top: 1px solid #e3e3e3;
+}
+
+.nice-tabs-vertical .section:first-child {
+  border: none;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap {
+  display: table;
+  width: 100%;
+  padding: 15px 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap:first-child {
+  border-top: none;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap .format-setting-label,
+.nice-tabs-vertical .section .format-setting-wrap .format-setting-input,
+.nice-tabs-vertical .section .format-setting-wrap .format-setting {
+  display: table-row;
+  vertical-align: top;
+  width: 100%;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap .format-setting-input {
+  padding-bottom: 5px;
+}
+
+html[dir="rtl"] .nice-tabs-vertical .section .format-setting-wrap .format-setting-input {
+  text-align: right;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap .format-setting-label {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+html[dir="rtl"] .nice-tabs-vertical .section .format-setting-wrap .format-setting-label {
+  text-align: right;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap .format-setting-label label {
+  color: #555;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.nice-tabs-vertical .section .format-setting-wrap .format-setting-description {
+  color: #aaa;
+  margin-top: 10px;
+  cursor: help;
+}
+
+html[dir="rtl"] .nice-tabs-vertical .section .format-setting-wrap .format-setting-description {
+  text-align: right;
+}
+
+.nice-tabs-vertical .section.section-measurement .format-setting-wrap .format-setting-input input[type='text'] {
+  width: 265px;
+  min-width: 265px;
+  margin-right: 5px;
+}
+
+.nice-tabs-vertical .section.section-measurement .format-setting-wrap .format-setting-input select {
+  width: 70px;
+  min-width: 70px;
+}
+
+.nice-tabs-vertical .section.section-upload .format-setting-wrap .format-setting-input input[type='text'] {
+  width: 265px;
+  min-width: 265px;
+  margin-right: 5px;
+}
+
+.nice-tabs-vertical .section.section-upload .format-setting-wrap .format-setting-input input[type='button'] {
+  width: auto;
+  min-width: 70px;
+  margin-left: 0;
+}
+
+.nav-tab {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-tab i.dashicons {
+  margin-top: 3px;
+}
+
+body:not(.is-mp6) .nav-tab i.dashicons {
+  display: none;
+}
+
+.nav-tab.nav-tab-active {
+  color: #222;
+  background: transparent;
+}
+
+.nav-tab:not(.nav-tab-active):focus, .nav-tab:not(.nav-tab-active):visited, .nav-tab:not(.nav-tab-active):active {
+  color: #555;
+}
+
+.format-setting-wrap {
+  display: table;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  padding: 15px 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.format-setting-wrap:first-child {
+  border-top: none;
+}
+
+.format-setting-wrap .format-setting-label,
+.format-setting-wrap .format-setting {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.format-setting-wrap .format-setting-label {
+  width: 25%;
+}
+
+.format-setting-wrap .format-setting-label label {
+  color: #555;
+  font-weight: bold;
+}
+
+.format-setting-wrap .format-setting .nice_textarea {
+  width: 80%;
+  height: 100px;
+  margin: 0 0 10px 0;
+  color: #222;
+  padding: 5px;
+}
+
+.format-setting-wrap .format-setting .nice-input-checkbox {
+  display: inline-block;
+  float: left;
+  margin-right: 8px;
+}
+
+.format-setting-wrap .format-setting span.description {
+  display: block;
+  cursor: help;
+  color: #999;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.format-setting-wrap .format-setting span.description:hover {
+  color: #555;
+}

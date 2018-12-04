@@ -1,0 +1,267 @@
+=== NiceThemes Framework Changelog ===
+
+= 2.0.9.1 (2018.03.04) =
+ * Fix: Customizer breaking when using WooCommerce 3.0.0 and higher.
+
+= 2.0.9 (2018.03.01) =
+ * Improvement: Update links for the Admin Support Template.
+ * Improvement: Fix the select_sidebar field for the options panel.
+ * Improvement: Update the styles for some inputs.
+ * Improvement: Print SVG logo using the `<svg>` tag instead of `<img>`.
+ * Improvement: Add `nice_get_option_type()` so we can know the type of an option by its name.
+ * Improvement: Make sure the value of a slider option is always a floating number.
+ * Improvement - Customizer: Support options with `select_sidebar` type.
+ * New: Add and implement `_nice_clean_option_name()` function to normalize option names without an explicit prefix.
+ * Fix - Customizer: Prevent changes in WP 4.9+ from checking boxes that are not really checked.
+
+= 2.0.8 (2017.11.13) =
+ * Improvement: Re-process all possible missing items during the demo importing process.
+ * Improvement: Return empty URL for web fonts if no Google Fonts are registered.
+ * Improvement: Allow force-checking for theme and framework updates.
+ * New: Added `nice_int_option()` function to get theme settings formatted as integers.
+ * New: Prevent activating the theme if running an unsupported PHP version.
+
+= 2.0.7 (2017.10.25) =
+ * Fix: Support for custom logo links using the `link` argument when hooking `nice_logo_default_args` and `nice_logo_args`.
+ * Fix: `nice_opengraph_for_posts()` messing up post loops in some edge cases.
+ * Improvement: Update PO file with new translatable strings.
+
+= 2.0.6 (2017.10.09) =
+ * Fix: Prevent custom meta boxes from not showing up for the first time a post is edited.
+ * Fix: Output not being printed correctly for `nice_option_get_date()`.
+ * Fix: Demo Pack Importer - PHP execution time limit showing error when current value is zero.
+ * Fix: License Registration - Correctly update license status when a license is deactivated by the user.
+ * Fix: License Registration - Don't show current date as expiration date for lifetime licenses.
+ * Improvement: Validate AJAX referrer when updating color options.
+ * Improvement: Demo Importer - Reduce memory usage by processing posts in batches and deactivating thumbnail generation.
+
+= 2.0.5.3 (2017.08.19) =
+ * Fix: List of demo packs not being always correctly updated.
+
+= 2.0.5.2 (2017.08.10) =
+ * Fix bug with Customizer preview being reset after some modifications.
+
+= 2.0.5.1 (2017.08.05) =
+ * Fix fatal error in PHP 7: "[] operator not supported for strings".
+
+= 2.0.5 (2017.08.04) =
+ * Improved PHP file loading performance.
+ * Make sure `nice_loader()` doesn't try to load the same file twice in the same call when using a Child Theme.
+ * Added `nice_get_theme_file_path()`, `nice_get_parent_theme_file_path()` and `nice_dir_path` to help improve relative file location.
+ * Tidy up bootstraping process.
+
+= 2.0.4 (2017.07.27) =
+ * Improved the UI for the product registration page. Now it actually tells you that your product is registered and your license is active.
+ * Improved UI and UX for the importer layout.
+ * Improved importer plugin requirements, attempt to detect mod_security to give the user more info.
+ * Added the System Requirements to the Requirements tab over the importer.
+ * Added missing docblocks.
+ * Added Small style amendments for the options panel.
+
+= 2.0.3 (2017.06.27) =
+ * Allow custom IDs for retina images in `Nice_Logo_Image` class.
+ * Fix wrong string replacement in framework update nag.
+
+= 2.0.2 (2017.06.26)
+ * Allow filtering URLs for demo packs to make sure they show up even after reanming the parent theme's folder.
+
+= 2.0.1 (2017.06.23) =
+ * Hotfix for license checking.
+ * Hotfix for framework updater.
+
+= 2.0 (2017.06.22) =
+ * Ensure all modifications made via Customizer are previewed correctly.
+ * Fix incorrect URLs for embedded videos using dynamic URL schemes.
+ * Fix bug for nice_embed() parameters. Decoded values on nice_get_html_att()
+ * Updated PHPDoc
+ * Code cleanup.
+ * Custom styles are now registered and enqueued with WP functions.
+ * Custom scripts are now registered and enqueued with WP functions.
+ * New filter for nice_sidebar_position_class
+ * New filter for nice_browser_class
+ * Switched get_template_directory_uri() for get_stylesheet_directory_uri() in order to have things overridden in child themes.
+ * Added option type 'select_pages' in order to have pages dropdowns within the options.
+ * Added "upload" input for metaboxes.
+ * Dynamically set and get content width using nice_set_content_width() and nice_content_width().
+ * Add functions nice_get_post_playlists() to get all the playlists attached to a post.
+ * Add function nice_get_post_playlist() to get the first playlist attached to a post.
+ * Dynamically print the HTML class for the sidebar with nice_sidebar_class().
+ * Dynamically print the HTML class for the post content with nice_content_class().
+ * Obtain a column numbered class name for the content section of the theme with nice_content_cols().
+ * Obtain a column numbered class name for the sidebar section of the theme with nice_sidebar_cols().
+ * Obtain the URL of a minified JS file with nice_minified_script_maybe_uri().
+ * Adjust the percentual brightness of a hex color with nice_color_brightness().
+ * Register Theme CSS styles through the "nice_register_styles" action hook.
+ * Register Theme JS files through the "nice_register_scripts" action hook.
+ * Add function nice_sidebars_init() for sidebars to be registered through the "nice_register_sidebars" action hook.
+ * Add function nice_sidebar_do() to display sidebars dynamically.
+ * Move nice_opengraph_for_posts() function here.
+ * Load theme files before framework files in bootstrap.php to simplify hooking to the framework from the theme.
+ * Allow adding extra HTML after getting the HTML of a theme option.
+ * Improve nice_loader() function for better compatibility with Child Themes.
+ * Improve nice_admin_menu_icon() to load icons from Child Themes.
+ * Search for default retina logo inside Child Theme before parent.
+ * Fix possible error when loading files with nice_image().
+ * Add specific HTML classes and CSS selectors in Theme Options for the current Dashboard UI.
+ * Add filter "nice_metabox_title" to allow changing the title of meta boxes.
+ * Update Google Fonts to 725 items.
+ * Add color picker option type for meta boxes.
+ * Introduce `nice_get_file_info()`, `nice_get_file_path()` and `nice_get_file_uri()` for easier file management.
+ * Implement `nice_activation_redirect_url` filter to modify or disable redirection after theme installation.
+ * Load PHP files from Child Theme before the parent ones if they exist.
+ * `nice_image()` now accepts an `attr` to add extra properties to the generated HTML tag.
+ * Add sections to metaboxes, now separated with tabs.
+ * Properly enqueue styles for metaboxes.
+ * Add filter to rename the main options menu label.
+ * Add "Sidebar Selector" as a custom field.
+ * Move admin assets to `assets/` folder.
+ * Add image radio field.
+ * Add on/off radio field.
+ * Update color field type to use the native color picker functionality.
+ * Update typography selection field type to use the native color picker functionality.
+ * Updated NiceThemes logo for the options panel.
+ * Refactored script and styles inclusion.
+ * Grouped options and custom fields functions.
+ * Added conditional fields for metaboxes and options.
+ * Styles are now organized with SASS.
+ * Included new class to handle Admin Pages.
+ * Register framework CSS styles through the "nice_admin_register_styles" action hook.
+ * Register framework JS files through the "nice_admin_register_scripts" action hook.
+ * Added deprecated.php file with functions to deprecate and erase in upcoming versions.
+ * Grouped JS functionality in one file for the admin section.
+ * The color option is now using the WP native color picker.
+ * Add `nice_sidebar_position` filter.
+ * Add `Nice_Admin_System_Status` class, which gathers system information.
+ * Introduce `nice_get_option()` function to obtain either the current value of a setting or its default.
+ * Introduce `nice_doing_ajax()` function to check AJAX context.
+ * Introduce `nice_development_mode()` function for development and debugging purposes.
+ * Add body `mobile` and `desktop` body classes depending the device in which the site is visited.
+ * Add `nice_color_hex2rgba()` function to convert an hexadecimal value to rgb or rgba.
+ * Deprecate `vt_resize()` function. Use `nice_resize_image()` instead.
+ * Total revamp of the admin area.
+ * Framework pages are now handled with a nicely developed class, and they can be overriden on a theme basis via template.
+ * We now have an amazing Demo importer.
+ * We have implemented TGMPA in an amazing way to provide simple plugin installer.
+ * The typography fields now support letter spacing value and unit.
+ * We can add groups to the options panel.
+ * Add `nice_css_classes()` to handle array of classes in templates.
+ * Add `nice_data_attributes()` to handle array of data attributes in templates.
+ * Add `nice_get_option_default()` to obtain default values from options.
+ * Add `nice_use_minified_files()` function to check if assets should be minified.
+ * Add `nice_bool_option()` to check if a theme option has a boolean value.
+ * Allow theme options to be obtained without prefix when using `nice_get_option()`.
+ * Updated Fancybox to v3.
+ * Add hook to filter the theme text domain.
+ * Remove support for shortcodes in widgets and excerpt.
+
+= 1.1.6 (2016.06.03) =
+ * Hotfix - Replace `add_object_page` function to avoid deprecated call.
+ * Use `add_menu_page()` to create the main menu page.
+
+= 1.1.5 (2014.05.26) =
+ * Added support for the WP3.5 <= Media UI in the upload option.
+ * Added 'nice_google_fonts' filter, for advanced users to add their own fonts if they're not already in the list.
+ * Notices are now shown across the admin section. They're only hidden for the Options Panel.
+ * Added the Backup (Import/Export) functionality for Theme Options.
+
+= 1.1.4 (2014.04.03) =
+ * Temporary removed the "More Themes" page. Monopolic request by Envato.
+ * Temporary removed the "Welcome Message" popup when the theme was activated. It had a link to NiceThemes.com and Envato disliked that. Another monopolic request.
+
+= 1.1.3 (2014.03.19) =
+ * Hotfix for nice_breadcrumbs()
+
+= 1.1.2 (2014.03.19) =
+ * Updated the typography option, now you can avoid having color and size.
+ * Fixed PHP notice for undefined index on activation.
+ * Added nice_logo(), nice_copyright() and nice_breadcrumbs() to theming/functions.php
+
+= 1.1.1 (2014.01.14) =
+ * Added the typography preview functionality for the typography fields within the options panel.
+ * Updated the styles for the jquery ui slider.
+ * Updated the niceadmin icon font.
+ * Fixed the Menu Custom Post Type icon bug.
+ * Fixed the font weight problem for Raleway, when it was selected from the typography option.
+ * Added a new modal box to welcome the user when the theme is activated.
+
+= 1.1.0 (2013.12.12) =
+ * Fixed the order in which the skin css is called - /theming/theming.php nice_wp_head()
+ * Fixed the colorpicker load when the option is not saved /admin/panel.php
+ * Updated styles for the new WordPress version 3.8 (added fonticon, styles, etc)
+
+= 1.0.9 (2013.11.06) =
+ * Fixed bug for the framework update URL.
+
+= 1.0.8 (2013.11.06) =
+ * Metaboxes rework I - changed the conditional while saving the metadata for the post to solve conflicts with notices  - /engine/admin/metaboxes.php
+ * Metaboxes rework II - Implemented checked() and selected() functions for the radio, select, checkboxes  - /engine/admin/metaboxes.php
+ * Metaboxes rework II - Implemented encoding strings functions. (esc_url(), esc_attr(), esc_textarea(), etc) - /engine/admin/metaboxes.php
+ * Moved the thumbnail styles for the admin list to the admin-styles.css file.
+
+= 1.0.7 (2013.11.05) =
+ * Small fix over the panel, to avoid PHP notices (isset) - /engine/admin/panel.php (js for slider input)
+
+= 1.0.6 (2013.10.31) =
+ * Removed TimThumb - /engine/timthumb.php
+ * Added generator meta data.
+ * Added nice_blog_url() function.
+ * Shortcodes are now allowed into the Text Widget.
+ * Shortcodes are now allowed into the excerpt.
+ * CDATA for inline JavaScript
+ * Added password input to the options inputs
+ * Added nice_user_ip() function to get visitor's IP.
+ * Added encoding strings functions across the framework. (esc_url(), esc_attr(), esc_textarea(), esc_js())
+ * Implemented checked() and selected() functions for the radio, select, checkboxes.
+ * Added slide input (jQuery UI).
+ * Added image quality filter if option is defined. nice_jpeg_quality() - /engine/admin/media.php
+ * Theme updates notices are now in the Updates section.
+ * Added nice_unit_wrapper() function - /engine/admin/functions/
+ * Added JS functions to handle the audio post format custom fields.
+
+= 1.0.5 (2013.07.04) =
+ * Updated TimThumb script to version 2.8.11 /engine/timthumb.php
+ * Added the function vt_resize() /engine/admin/media.php to handle image resizing.
+ * Updated function get_nice_image_path() with a parameter to get the full image path /engine/admin/media.php
+ * Updated function nice_image() - now it works with timthumb.php, vt_image() and wp native functions for thumbnails /engine/admin/media.php
+ * Updated the panel, added loading spinner when saving the options.
+ * Added JavaScript functionalities to hide and show the metaboxes when using post formats.
+ * Updated and added icons for CTPs.
+ * Updated google web fonts.
+
+= 1.0.4 (2013.01.21) =
+ * Fix on nice_custom_css() on engine/theming/theming.php
+
+= 1.0.35 (2013.01.17) =
+ * Fix on nice_option_get_select_multiple() on engine/admin/options.php
+ * Another Fix on nice_option_get_file() on engine/admin/options.php
+ * Added more Google Fonts -> engine/admin/init.php
+
+= 1.0.3 (2013.01.10) =
+ * Fix on nice_option_get_file() on engine/admin/options.php
+ * Added the typography option (engine/admin/options.php), (color picker in engine/admin/panel.php), nice_custom_font_css() on engine/theming/theming.php
+ * Added the possibility of using Google Fonts -> engine/admin/init.php
+
+= 1.0.25 (2013.01.02) =
+ * Changed priority for nice_option_setup() -> engine/admin/init.php so options are initialized when theme is activated.
+ * engine/theming/theming.php - Included new function nice_custom_js()
+
+= 1.0.2 (2012.12.28) =
+ * Updated styles for WP3.5
+ * Added "More Themes" & "Support" pages
+ * Fixed js problem for the admin screens. Floated header function was breaking the menu when the html wasn't there.
+
+= 1.0.12 (2012.11.25) =
+ * engine/admin/media.php modified nice_embed(), now treating embed parameter.
+ * engine/admin/options.php added multiple select field nice_option_get_select_multiple()
+
+= 1.0.11 (2012.11.03) =
+ * Minor CSS updates (f/IE8)
+ * added nice_bool()
+ * engine/admin/media.php few minor bugs on nice_embed()
+ * updated/added some graphics.
+
+= 1.0.1 (2012.05.03) =
+ * Modified loading order in engine/bootstrap.php
+
+= 1.0.0 (2012.04.23) =
+ * First Logged release

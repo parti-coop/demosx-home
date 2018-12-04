@@ -1,0 +1,150 @@
+=== Flatbase Changelog ===
+
+= 2.0.6 (2018.03.27) =
+ * Improvement: RTL Support.
+ * Add: bbPress RTL Support.
+
+= 2.0.5 (2018.03.01) =
+ * Add: `.bypostauthor` class.
+ * Add: Missing Textdomain for Author & Date strings.
+ * Add: Reset the contact form after sending the message.
+
+= 2.0.4 (2018.02.23) =
+ * Fix: Article number for the home page.
+ * Fix: Text Title Logo line height. It was looking different on the single article template.
+ * Fix: Default button background color for default search form.
+ * Fix: Accessibility - changed color for post meta data text and links.
+ * Add: Sub categories for the "Articles Categories" Widget.
+
+= 2.0.3 (2018.02.15) =
+ * Fix: FAQ (Accordion) page template always showing FAQs expanded.
+
+= 2.0.2 (2018.02.6) =
+ * Add: Theme support for `title-tag`
+ * Add: FAQ new functions with categories. You can now use the `[nicethemes_faq]` shortcode.
+ * Fix: Call to undefined function when creating articles as editor (User Role).
+ * Fix: Sub-category link problem on the Knowledge Base.
+ * Improvement: Customizer is taking theme options now.
+
+= 2.0.1 (2017.11.15) =
+ * Fix: `check_ajax_referer()` being called too early and breaking AJAX requests.
+
+= 2.0 (2017.11.13) =
+ * Add: New Organization to the theme options panel.
+ * Add: Performance options
+ * Add: Customization options
+ * Add: Custom fields for pages, posts and articles.
+ * Add: Usage of skins.
+ * Add: New footer skin.
+ * Add: New header skins.
+ * Add: Usage of the new color palette instead of color selectors.
+ * Add: Implementation of the new social media tool, they can be sorted now. And you can add new ones.
+ * Add: Home page template blocks con now be sorted.
+ * Add: You can pick different button styles.
+ * Add: Option for changing the live search placeholder via options.
+ * Add: Compatibility with Contact Form 7 and Gravity forms.
+ * Add: Page loader functionality,
+ * Add: Navigation bar color selection.
+ * Add: Navigation highlight color selection.
+ * Add: Different navigation skins.
+ * Add: Different sub navigation skins.
+ * Add: Option to add text alignment on Info Boxes.
+ * Add: Option to add/remove hover effect on images for Info Boxes.
+ * Add: Recent Articles Widget
+ * Add: Demo Importer Functionality
+ * Improvement: Header handler, now using actions.
+ * Improvement: Footer handler, now using actions.
+ * Improvement: Sidebar handler, now using actions.
+ * Improvement: Home page template handler, now using actions.
+ * Improvement: Styles are now generated via SASS.
+ * Improvement: Improved the Widget registration.
+ * Improvement: Full compatibility with NiceFramework 2.0
+ * Improvement: JavaScript libraries.
+ * Improvement: General code improvements.
+ * Improvement: Updated the page template structure. It now uses template parts.
+ * Fix: overflow issue in header while scrolling.
+ * Updated: FontAwesome to 4.7
+
+= 1.1.2 (2017.09.27) =
+ * Improvement: Updated 404 template.
+
+= 1.1.1 (2017.06.28) =
+ * Make theme compatible with NiceFramework 2.0
+ * Add bbPress to the list of plugins managed by TGMPA
+ * Update Fancybox to v3.
+ * Fix responsive issues.
+
+= 1.1.0 (2016.12.23) =
+ * Change enqueueing priorities to fix child theme compatibility issues.
+ * Improve responsive navigation menu. Fix scrolling issue.
+ * Improve child theme compatibility with bbpress and styles.
+
+= 1.0.9 (2016.09.19) =
+ * Fix the sub category query on the main knowledge base function.
+ * Fix breadcumbs disappearing after post a comment on bbPress.
+ * Fix bbPress child theme compatibility issues.
+ * Fix blank gap in bbPress user page.
+ * Fix PHP notices for widgets.
+ * Add `nice_homepage_knowledgebase` hook to enable/disable Knowledge Base in the Home Page Template.
+
+= 1.0.8 (2016.05.23) =
+ * SEO by Yoast compatibility. Sanitized the title attribute with `esc_attr()`.
+ * Add `datetime` attribute for functions within `template-tags.php`
+ * Allow to use `page` post type in the live search via hook.
+ * Update FontAwesome to version 4.6
+ * Include WPML configuration file.
+ * Add escaping to the Call to Action text, url and attributes.
+
+= 1.0.7 (2016.03.28) =
+ * Add "Category" and "Tag" in the dashboard article list. Make them sortable.
+ * Set the rewrite parameter 'with_front' as 'false' by default when registering articles. Avoiding permalinks conflict with people that would like to have a prefixed blog url.
+ * Stop enqueueing the 'user-profile' scripts on the bbPress user edit form. It was causing a conflict.
+ * Fix live search responsive problems (width wasn't responding)
+ * Update FontAwesome to version 4.5
+
+= 1.0.6 (2015.08.06) =
+ * Fix child theme compatibility issues.
+ * Break a new record. Three versions released on the same day.
+
+= 1.0.5 (2015.08.06) =
+ * Hotfix for redeclared class error (Nice_Walker_Nav_Menu), when users update their themes through Envato Toolkit.
+
+= 1.0.4 (2015.08.06) =
+ * CSS fix for hiding the topic author avatar in the topics list.
+ * CSS fix for the select input.
+ * Add 'nice_livesearch_label' filter to enable label customization (programmatically).
+ * Added Editor Styles. (includes/editor-styles.php)
+ * Updated post types registration functions.
+
+= 1.0.3 (2015.07.31) =
+ * Fix for parent forum description bug.
+ * Remove protocol for remote JavaScript inclusion.
+ * Updated jQuery.validate() to version 1.13.1
+ * Updated translations catalog, now including some missed plural translations.
+ * Updated FontAwesome to version 4.4
+ * Added the category description for the Article Category template.
+ * Added 'numberposts' parameter to the [nicethemes_knowledgebase] shortcode.
+ * Added filter to give the possibility to display the Article Category description: 'nicethemes_knowledgebase_display_category_description'.
+
+= 1.0.2 (2015.04.15) =
+ * Added revisions support for Articles.
+ * Updated Font Awesome to version 4.3
+ * Added Buttons as a typography option.
+ * Fixed bug for typography selection on input fields and buttons.
+ * Added arguments for order and orderby in nicethemes_knowledgebase()
+ * Added filter for nice_options
+ * Added tags and categories on the single post page.
+
+= 1.0.1 (2014.09.18) =
+ * Updated Font Awesome to version 4.2
+ * Updated Twitter oAuth to avoid object duplication.
+ * Added filter to enable/disable the contact form.
+ * Added author field for articles.
+ * Fixed bug for checkboxes and radio fields in Chrome.
+ * Modified the order for the FAQs template.
+ * Added filter nice_faq_order to set an order for the FAQs templates.
+ * Added filter nice_live_search_post_type in order to programatically add or remove post types for the live search functionality.
+ * Fixed the "Less than a minute" reading time issue.
+
+= 1.0.0 (2014.04.03) =
+ * First Logged release

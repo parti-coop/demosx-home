@@ -1,0 +1,110 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * SCSS for responsive styles
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+// Responsive.
+@mixin responsive( $breakpoint, $media: all ) {
+	@media only #{$media} and ($breakpoint) {
+		@content;
+	}
+}
+
+@mixin min-width( $width, $media: all ) {
+	@include responsive("min-width: #{$width}", $media ) {
+		@content;
+	}
+}
+
+@mixin max-width( $width, $media: all ) {
+	@include responsive("max-width: #{$width}", $media ) {
+		@content;
+	}
+}
+
+@mixin min-height( $height, $media: all ) {
+	@include responsive("min-height: #{$height}", $media ) {
+		@content;
+	}
+}
+
+@mixin max-height( $height, $media: all ) {
+	@include responsive("max-height: #{$height}", $media ) {
+		@content;
+	}
+}
+
+// Desktop / laptop viewports.
+@mixin desktop() {
+	@include min-width( $size__site-desktop ) {
+		@content;
+	}
+}
+
+// Tablet / small-sized desktop and laptop viewports.
+@mixin tablet() {
+	@include max-width( $size__site-tablet ) {
+		@content;
+	}
+}
+
+// Large-sized mobile / tablet viewports.
+@mixin mobile-lg() {
+	@include max-width( $size__site-mobile-lg ) {
+		@content;
+	}
+}
+
+// Medium-sized mobile / tablet viewports.
+@mixin mobile-md() {
+	@include max-width( $size__site-mobile-md ) {
+		@content;
+	}
+}
+
+// Small-sized mobile viewports.
+@mixin mobile-sm() {
+	@include max-width( $size__site-mobile-sm ) {
+		@content;
+	}
+}
+
+// Extra small-sized mobile viewports.
+@mixin mobile-xs() {
+	@include max-width( $size__site-mobile-xs ) {
+		@content;
+	}
+}
+
+// Default mobile viewports. Wrapper for mobile-lg.
+@mixin mobile() {
+	@include mobile-lg {
+		@content;
+	}
+}
+
+// hidpi: same concept as "responsive", except that this is focusing on
+// HiDPI (a.k.a. retina) displays.
+@mixin hidpi( $media: all ) {
+	@media
+		only #{$media} and (-webkit-min-device-pixel-ratio: 1.5),
+		only #{$media} and (min-device-pixel-ratio: 1.5),
+		only #{$media} and (min-resolution: 144dpi),
+		only #{$media} and (min-resolution: 1.5dppx) {
+		@content;
+	}
+}
+
+// And just because the term "retina" is so widely used, we'll create
+// a mixin that uses it as an alias.
+@mixin retina( $media: all ) {
+	@include hidpi($media) { @content; }
+}

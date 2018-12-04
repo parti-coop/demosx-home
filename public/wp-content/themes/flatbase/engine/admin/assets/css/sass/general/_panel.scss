@@ -1,0 +1,509 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the options panel.
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+
+#nice-container {
+	margin: 15px;
+	width: 1000px;
+	position: relative;
+
+	#nice-header {
+		height: 110px;
+		display: inline-block;
+		z-index: 200;
+		width: 1000px;
+		position: absolute;
+		background: #fff;
+		padding: 20px 0;
+		border-bottom: 1px solid #e7e7e7;
+
+		.icon-option {
+			float: right;
+			height: 32px;
+			width: 32px;
+			margin: 15px 0 15px 20px;
+			width: 500px;
+			text-align: right;
+
+			html[dir="rtl"] & {
+				float: left;
+				text-align: left;
+				margin: 15px 20px 15px 0;
+			}
+		}
+
+		.theme-logo {
+			float: left;
+			margin: 15px 0;
+
+			html[dir="rtl"] & {
+				float: right;
+			}
+
+			h2 {
+				margin: 0;
+			}
+
+			span {
+				color: #bbb;
+				a {
+					color: #bbb;
+				}
+			}
+
+			.notice,
+			.updated,
+			.nice-wp-notice {
+				display: none;
+			}
+
+		}
+
+		a.reset-options,
+		a.backup-options {
+			padding: 12px;
+			display: inline-block;
+			border: 1.5px solid #ddd;
+			@include border-radius(2px);
+			color: #ddd;
+			&:hover {
+				border-color: #d6d6d6;
+			}
+		}
+	}
+
+	#main {
+		padding-top: 110px;
+	}
+
+	#nice-nav {
+		ul {
+			margin: 0;
+			background: #fafafa;
+
+			li {
+				margin-bottom: 0;
+				width: 100%;
+
+				a {
+
+					i {
+						margin-right: 8px;
+
+						html[dir="rtl"] & {
+							margin-right: 0;
+							margin-left: 8px;
+						}
+					}
+
+					&:link,
+					&:visited {
+						display: block;
+						padding: 10px 10px 10px 15px;
+						font-size: 14px;
+						text-decoration: none;
+						color: #595959;
+						border-bottom: 1px solid #d8d8d8;
+					}
+
+					&:hover {
+						color: #21759b;
+						background-color: #fff;
+					}
+
+					&:focus {
+						box-shadow: none;
+					}
+				}
+
+				&.current {
+					a {
+						border-bottom-color: $color__background-header;
+						border-top-color: $color__background-header;
+						color: #fff;
+						background-color: $color__background-header;
+
+						&:hover {
+							box-shadow: none;
+						}
+					}
+
+					div {
+						background: url(../images/menu-arrow-frame.png) no-repeat scroll right top transparent;
+						height: 40px;
+						width: 15px;
+						position: relative;
+						z-index: 100;
+						float: right;
+						top: -38px;
+						right: -1px;
+
+						html[dir="rtl"] & {
+							@supports( transform: scaleX(-1) ) {
+								float: left;
+								right: auto;
+								left: -1px;
+								transform: scaleX(-1);
+							}
+						}
+					}
+				}
+
+				&.child {
+					a {
+						padding-left: 35px;
+
+						html[dir="rtl"] & {
+							padding-left: 0;
+							padding-right: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#nice-content {
+		border-left: 1px solid #d8d8d8;
+
+		html[dir="rtl"] & {
+			border-left: none;
+			border-right: 1px solid #d8d8d8;
+		}
+	}
+
+}
+
+#nice-container {
+
+	#nice-content {
+
+		.section {
+			margin-bottom: 20px;
+			border-bottom: 1px solid #e7e7e7;
+			padding-bottom: 20px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			.format-setting-wrap {
+				position: relative;
+
+				.nice-help-button {
+					position: absolute;
+					right: 0;
+					top: 15px;
+
+					html[dir="rtl"] & {
+						right: auto;
+						left: 0;
+					}
+				}
+			}
+
+			h3.heading {
+				margin: 10px 0 15px;
+				padding: 7px 0;
+				font-size: 16px;
+				border: none;
+			}
+
+			.option {
+				min-height: 55px;
+			}
+
+			.explain {
+				float: left;
+				width: 225px;
+				padding: 10px;
+				font-size: 12px;
+				color: #999999;
+				display: none;
+				background: #eee;
+				@include border-radius(4px);
+			}
+
+			.explain-checkbox {
+				float: left;
+				padding: 0 10px 0;
+				font-size: 12px;
+				color: #999999;
+				width: 90%;
+				line-height: 1em;
+
+				html[dir="rtl"] & {
+					float: right;
+				}
+			}
+
+
+		} // /.section
+	} // /.nice-content
+
+	.meta-two {
+		margin-right: 10px;
+	}
+
+	.controls {
+		.nice-border-style {
+			width: 120px;
+			float: left;
+		}
+	}
+	.nice-section-title {
+		padding-bottom: 20px;
+		h2 {
+			display: none;
+		}
+	}
+
+	.accept {
+		background: #dbf6b3 no-repeat 10px center;
+		border: solid #9BBF65;
+		border-width: 0 1px 1px 1px;
+		color: #060;
+		font-weight: bold;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.warning {
+		background: #ffeeee no-repeat 10px center;
+		border: solid #dfbfbf;
+		border-width: 0 1px 1px 1px;
+		color: #333;
+		font-weight: bold;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.update_available {
+		background: #FFFEEB no-repeat 10px center;
+		border: solid #ccc;
+		border-width: 0 1px 1px 1px;
+		color: #333;
+		font-weight: bold;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.nice-save-popup {
+		position: absolute;
+		@include border-radius(5px);
+		background: url(../images/nice-save-popup-bg.png) rgba(0, 0, 0, 0.5);
+		color: #f9f9f9;
+		font-size: 30px;
+		text-align: center;
+		display: none;
+		z-index: 999;
+	}
+
+	.nice-save-save {
+		background: url(../images/approved.png) 20px 50% no-repeat;
+		padding: 25px 25px 25px 70px;
+	}
+
+	.nice-save-reset {
+		background: url(../images/disapproved.png) 20px 50% no-repeat;
+		padding: 25px 25px 25px 70px;
+	}
+}
+
+.upload_button_div {
+	margin-bottom: 10px;
+
+	.button { padding: 4px 14px; }
+	.image_reset_button { margin-left: 10px; }
+
+}
+
+.upload-error {
+	float: left;
+	color: #666;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 10px 0 0;
+	padding: 3px 10px;
+	background: #FFDFEC;
+	@include border-radius(4px);
+}
+
+.save_bar_top {
+	background: #f3f3f3;
+	border: solid #ccc;
+	border-width: 0 1px 1px 1px;
+	padding: 10px 20px 0 20px;
+	height: 35px;
+	text-align: right;
+	border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+}
+
+.hide { display: none; }
+
+.ajax-loading-img-top {
+	margin: 8px 4px 0;
+	float: left;
+}
+
+.nice-icon-loading {
+	display: none;
+	background: url(../images/loader.gif) no-repeat center center;
+	width: 25px;
+	height: 32px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.icon-option .button{
+	float: right;
+}
+
+.nice-option-image { max-width: 340px; }
+
+#nice-container .mini .controls select,
+#nice-container #nice-content .section .mini .controls { width: 70px; }
+
+#nice-container .mini .controls input,
+#nice-container #nice-content .mini .controls { width: 70px; }
+
+#nice-container #nice-content .mini .explain { width: 500px; }
+
+/*
+	Notices
+*/
+
+.nice-notice {
+	background: #ffd1d1;
+	border: 1px solid #DFA8A7;
+	-moz-border-radius: 8px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.notes {
+	background-color: #FFFFE0;
+	border-color: #e6DB55;
+	@include border-radius(3px);
+	border-style: solid;
+	border-width: 1px;
+	padding: 0 0.6em;
+	width: 580px;
+
+	p {
+		line-height: 1;
+		margin: 0.5em 0;
+		padding: 2px;
+	}
+}
+
+#nice-container {
+
+	.save-options-button {
+		color: #eee;
+		background: #646464;
+		@include border-radius(4px);
+		cursor: pointer;
+		height: auto;
+		padding: 15px 25px;
+		margin-left: 12px;
+		float: right;
+
+		html[dir="rtl"] & {
+			float: left;
+			margin-left: 0;
+			margin-right: 12px;
+		}
+	}
+
+}
+
+.nice-help-button {
+	text-align: right;
+	float: right;
+	cursor: help;
+	color: #bbb !important;
+	height: 45px;
+	width: 28px;
+
+	i {
+		font-size: 20px;
+	}
+}
+
+.nice-group-title {
+	background-color: #fafafa;
+	padding: 14px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	margin-top: 20px;
+	cursor: pointer;
+
+	&:hover {
+		@include box-shadow(0 1px 2px rgba(0,0,0,.09));
+	}
+
+	& > * {
+		pointer-events: none;
+	}
+
+	h3 {
+		margin: 0 !important;
+		padding: 0 !important;
+		border: 0 !important;
+		font-size: 16px;
+
+		i {
+			margin-right: 10px;
+
+			&.dark-background {
+				&:before {
+					background-color: #333;
+				}
+			}
+
+			html[dir="rtl"] & {
+				margin-right: 0;
+				margin-left: 10px;
+			}
+		}
+
+		span {
+			float: right;
+			color: #aaa;
+
+			html[dir="rtl"] & {
+				float: left;
+			}
+
+			&:after {
+				font-family: 'dashicons';
+				content: '\f343';
+			}
+		}
+	}
+
+	&.closed {
+		h3 span {
+			@include transform(rotate(180deg));
+		}
+	}
+}

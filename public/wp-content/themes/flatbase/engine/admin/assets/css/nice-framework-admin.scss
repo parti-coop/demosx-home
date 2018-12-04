@@ -1,0 +1,236 @@
+
+@import "sass/mixins/_mixins-master";
+@import "sass/variables/_variables";
+
+/*-------------------------------------------------------------------------------------------*/
+/* Theme Options Admin Styles */
+/*-------------------------------------------------------------------------------------------*/
+
+body {
+	#nice-theme-wp-notices {
+	  margin-top: 20px;
+
+	  &.hide-third-parties {
+		& > * {
+		  &:not(.nice-wp-notice) {
+			display: none !important;
+		  }
+		}
+	  }
+	}
+}
+
+/*
+	The options panel
+*/
+@import "sass/general/_panel";
+
+.fixed .column-thumbnail {
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 80px;
+}
+
+// @TODO: Move this so it is loaded when the lists are made.
+.wp-list-table {
+	td,
+	th {
+		&.column-thumbnail,
+		&.column-icon {
+
+			max-width: 120px;
+
+			img {
+				max-width: 80px;
+				max-height: 80px;
+			}
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   Main
+   -------------------------------------------------------------------------- */
+
+// Include Grid styles
+@import "sass/general/_main";
+
+
+/* -----------------------------------------------------------------------------
+   Grids
+   -------------------------------------------------------------------------- */
+
+// Include Grid styles
+@import "sass/general/_grid";
+
+.support-articles {
+
+	ul.article-list {
+		font-size: 15px;
+		li {
+			margin-bottom: 0.5em;
+			a {
+				//color: #aaa;
+				&:hover {
+					color: #5a5a5a;
+				}
+			}
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+
+.nice-admin-filter {
+	max-width: 200px;
+	min-width: 150px;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	text-align: left;
+	z-index: 99;
+	float: right;
+	margin-right: 10px;
+	@include border-radius(2px);
+
+	html[dir="rtl"] & {
+		text-align: right;
+
+		margin-left: 10px;
+		margin-right: 0;
+
+		a.sort-items {
+			padding-left: 30px;
+			padding-right: 0;
+			background-position: left center;
+
+			i {
+				margin-right: 0;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	a.sort-items {
+		padding: 10px 15px;
+		display: inline-block;
+		@include border-radius(2px);
+		background-color: #fafafa;
+		color: #777;
+		background-image: url('../images/select.png');
+		padding-right: 30px;
+		background-repeat: no-repeat;
+		background-position: right center;
+		width: 100%;
+
+		text-transform: capitalize;
+		font-size: 12px;
+		line-height: 1.5em;
+		border: none;
+		cursor: pointer;
+
+		i {
+			margin-right: 5px;
+		}
+
+		[class$="-content"] & {
+			background-color: #333;
+		}
+
+	}
+
+	ul {
+		display: none;
+		list-style-type: none;
+		margin: 0;
+		padding: 5px 0;
+		position: absolute;
+		width: 100%;
+		background-color: #333;
+		-webkit-border-bottom-right-radius: 3px;
+		-webkit-border-bottom-left-radius: 3px;
+		-moz-border-radius-bottomright: 3px;
+		-moz-border-radius-bottomleft: 3px;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+
+		[class$="-content"] & {
+			position: absolute;
+		}
+
+		li {
+			margin: 0;
+			display: block;
+			width: 100%;
+
+			a {
+				display: block;
+				padding: 7px 15px;
+				width: 100%;
+				font-size: 13px;
+				border: inherit;
+				border-top: none;
+				text-transform: capitalize;
+				color: #fff;
+
+				&:hover,
+				&.active {
+				}
+
+				&.filter {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	[class$="-content"] & {
+		position: relative;
+		right: 0;
+		float: right;
+		margin-bottom: 15px;
+
+		html[dir="rtl"] & {
+			float: left;
+		}
+	}
+
+}
+
+@import "sass/general/_general";
+
+// Include tabs styles
+@import "sass/general/_tabs";
+
+// Include accordion styles
+@import "sass/general/_accordion";
+
+// Include notices styles
+@import "sass/general/_toggle";
+
+// Include notices styles
+@import "sass/general/_notices";
+
+// Include tooltip styles
+@import "sass/general/_tooltip";
+
+// Include forms styles
+@import "sass/forms/_forms";
+
+// Include Item Browser styles
+@import "sass/general/_item_browser";
+
+// Include Demo Installer styles
+@import "sass/general/_demo_installer";
+
+// Include Plugin Installer styles
+@import "sass/general/_plugin_installer";
+
+// Include System Status styles
+@import "sass/general/_system_status";
+
+// Include Backwards compatibility
+@import "sass/general/_backwards-compatibility";

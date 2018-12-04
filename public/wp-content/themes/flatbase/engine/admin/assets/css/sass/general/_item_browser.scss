@@ -1,0 +1,322 @@
+/**
+ * Nice Framework by NiceThemes.
+ *
+ * Styles for the demos and plugins installation pages.
+ *
+ * @package   NiceFramework
+ * @author    NiceThemes <hello@nicethemes.com>
+ * @license   GPL-2.0+
+ * @link      http://nicethemes.com/
+ * @copyright 2016 NiceThemes
+ * @since     2.0
+ */
+
+
+.nice-install-items {
+
+	margin-top: 20px;
+
+	*,*::before,*::after {
+		-webkit-box-sizing: initial;
+		-moz-box-sizing: initial;
+		box-sizing: initial;
+	}
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.nice-important-notice {
+		padding: 20px 30px;
+		background: #eee;
+		margin: 0 0 30px;
+		padding-top: 5px;
+		@include border-radius(2px);
+	}
+
+	.nice-item-filters {
+		margin-top: 30px !important;
+		margin-bottom: 30px !important;
+		width: 100%;
+		display: block;
+		float: left;
+	}
+
+	.isotope-empty {
+		clear: both;
+		width: 100%;
+		padding: 40px 0;
+
+		p {
+			font-size: 1.5em;
+			text-align: center;
+		}
+	}
+
+.nice-item-browser {
+	clear: both !important;
+	margin-left: -1.5%;
+	margin-right: -1.5%;
+
+	.item {
+		display: block;
+		float: left;
+		border: 1px solid #dedede;
+		box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		width: 30%;
+		margin: 0 1.5% 3% 1.5%;
+		overflow: hidden;
+		box-sizing: border-box;
+
+		html[dir="rtl"] & {
+			display: block;
+		}
+
+		.item-name {
+			min-height: 18px;
+			margin: 0;
+			padding: 15px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			font-size: 15px;
+			font-weight: 600;
+			line-height: 1.3em !important;
+			cursor: auto;
+			background-color: #fafafa;
+		}
+
+		.item-screenshot {
+			width: 100%;
+			cursor: auto;
+			background-color: #fafafa;
+
+			img {
+				max-width: 100%;
+				width: 100%;
+				height: auto;
+				opacity: 1 !important;
+				cursor: auto;
+				@include transform(rotate(0deg));
+			}
+
+			&:after {
+				padding-top: 75%;
+			}
+		}
+
+		.item-update {
+			cursor: auto;
+			background: rgba(213, 78, 33, 0.95) none repeat scroll 0 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+			color: #fff;
+			display: block;
+			font-size: 13px;
+			font-weight: 400;
+			height: 48px;
+			left: 0;
+			line-height: 48px;
+			overflow: hidden;
+			padding: 0 10px;
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			&.new-version {
+				background-color: rgba(50, 205, 50, 0.95) !important;
+			}
+
+			&:before {
+				content: "";
+				display: inline-block;
+				font: 400 20px/1 dashicons;
+				margin: 0 6px 0 0;
+				opacity: 0.8;
+				position: relative;
+				top: 5px;
+			}
+		}
+
+		.item-info {
+			width: 100%;
+			font-size: 12px;
+			font-weight: normal;
+			display: block;
+			color: #777;
+		}
+
+		.item-ribbon {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 75px 75px 0;
+			border-color: transparent #ccc transparent transparent;
+			text-align: right;
+			line-height: 0;
+			cursor: default;
+			_border-color: #000000 #000000 #000000 #ccc;
+			_filter: progid:DXImageTransform.Microsoft.Chroma(color='#cccccc');
+
+			html[dir="rtl"] & {
+				right: auto;
+				left: 0;
+				border-width: 0 0 75px 75px;
+				border-color: transparent transparent transparent #ccc;
+			}
+
+			&.required {
+
+			}
+
+			&.active {
+				border-color: transparent #a8db7f transparent transparent;
+				text-align: right;
+				line-height: 0;
+				cursor: default;
+				_border-color: #000000 #a8db7f #000000 #000000;
+				_filter: progid:DXImageTransform.Microsoft.Chroma(color='#A8DB7F');
+				cursor: default;
+
+				html[dir="rtl"] & {
+					_border-color: #000000 #000000 #000000 #a8db7f;
+					border-color: transparent transparent transparent #a8db7f;
+				}
+			}
+
+			.item-ribbon-icon {
+				padding: 15px 15px 20px 20px;
+				position: absolute;
+				right: -75px;
+				top: 0;
+				color: #fff;
+
+				html[dir="rtl"] & {
+					right: auto;
+					left: -75px;
+					padding: 15px 20px 20px 15px;
+				}
+			}
+
+		}
+
+		.item-actions {
+			display: none;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 28px;
+			padding: 10px 0 10px 10px;
+			opacity: 1;
+			background: rgba(244, 244, 244, 0.7) none repeat scroll 0 0;
+			@include transition(opacity 0.1s ease-in-out 0s);
+			@include box-sizing(content-box);
+
+			html[dir="rtl"] & {
+				right: auto;
+				left: 0;
+				padding: 10px 10px 10px 0;
+			}
+
+			.button {
+				float: right;
+				margin-right: 10px;
+				padding: 0 15px;
+
+				html[dir="rtl"] & {
+					float: left;
+					margin-right: 0;
+					margin-left: 10px;
+				}
+
+				&.button-preview {
+					i {
+						line-height: 22px;
+					}
+				}
+
+			}
+		}
+
+		&.active {
+			.item-name {
+				background: #2f2f2f;
+				color: #fff;
+				font-weight: normal;
+
+				span {
+				font-weight: 600;
+				}
+			}
+		}
+
+		&:hover {
+			.item-actions {
+				display: block !important;
+			}
+		}
+	}
+	}
+
+	.nice-thanks {
+		clear:both;
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+
+	.nice-install-items {
+		.nice-item-browser {
+			.item {
+			width: 47% !important;
+
+			.item-info {
+				top: 175px !important;
+			}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.nice-install-items {
+		.nice-item-browser {
+			.item {
+			.item-actions {
+				display: block !important;
+
+				.button {
+					padding: 6px 5px !important;
+				}
+			}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 620px) {
+
+	.nice-install-items {
+		.nice-item-browser {
+			.item {
+				width: 100% !important;
+				margin-bottom: 5% !important;
+				margin-left: 0 !important;
+					margin-right: 0 !important;
+
+				.item-info {
+					top: 155px !important;
+				}
+			}
+		}
+	}
+
+}

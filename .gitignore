@@ -1,0 +1,19 @@
+/public/wp
+/vendor
+development-config.php
+production-config.php
+production-config-backup.php
+
+/.bundle
+/.powenv
+/.powenv-bak
+.sass-cache
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+.byebug_history
+dump.rdb
+
+.DS_Store

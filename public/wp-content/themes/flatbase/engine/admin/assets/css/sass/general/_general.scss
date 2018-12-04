@@ -1,0 +1,35 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * General styles
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+body.nice-framework-page {
+
+	&.nice-framework-page-about,
+	&.nice-framework-page-getting_started {
+		.nice-admin-wrapper {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		.content {
+			padding-top: 20px;
+
+			hr {
+				margin: 2em 0;
+			}
+		}
+	}
+
+}

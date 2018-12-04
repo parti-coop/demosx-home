@@ -1,0 +1,12 @@
+<wpml-config>
+	<admin-texts>
+		<key name="nice_options">
+			<key name="nice_cta_text" />
+			<key name="nice_cta_url_text" />
+			<key name="nice_custom_copyright_text" />
+			<key name="nice_welcome_message" />
+			<key name="nice_welcome_message_extended" />
+			<key name="nice_welcome_message_placeholder" />
+		</key>
+	</admin-texts>
+</wpml-config>

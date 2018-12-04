@@ -1,0 +1,1 @@
+var NiceAdminFancybox=function($){"use strict";var n=function(){$(".fancybox").fancybox({padding:0})},c=function(){n()};return{ready:c}}(jQuery);jQuery(NiceAdminFancybox.ready);

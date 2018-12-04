@@ -1,0 +1,257 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * SCSS color variables.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+// Basic color palette.
+$white: #fff;
+$black: #111;
+$bright-blue: #68BDBB;
+$medium-blue: #43979B;
+$dark-blue: #43979B;
+$light-red: #f44c46;
+$dark-red: #c00;
+$light-green: #48b855;
+
+// Basic color roles.
+$color__bright-color: $white;
+$color__dark-color: $black;
+$color__accent-color: #5bc4be;
+$color__complementary-color: #50dfc2;
+$color__focus-color: $bright-blue;
+$color__alert-color: $dark-red;
+$color__success-color: $light-green;
+$color__black-color: #222;
+$color__dark-color-1: #333;
+$color__dark-color-2: #454545;
+$color__dark-color-3: #686868;
+$color__white-color: $white;
+$color__light-color-1: #eee;
+$color__light-color-2: #ddd;
+$color__light-color-3: #bbb;
+
+// Basic background colors.
+$color__background-default: transparent;
+$color__background-contrast: #333;
+$color__background-menu: #384047;
+$color__background-body: $white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #e0e0e0;
+$color__background-button: #c6ccd2;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__background-button-default: $color__background-button;
+$color__background-button-hover: darken($color__background-button, 5% );
+$color__background-button-focus: darken($color__background-button, 5% );
+$color__background-calendar-widget: #eff2f3;
+$color__background-calendar-widget-th: #f4f4f4;
+
+// Basic border colors.
+$color__border: #e3e3e3;
+$color__border-box: #e3e3e3;
+$color__border-th: #eee;
+$color__border-input: $color__border;
+$color__border-input-focus: #d3d3d3;
+$color__border-abbr: #666;
+$color__border-pre: #e8e8e8;
+$color__border-select-hover: #b3b3b3;
+$color__border-button: rgba(0,0,0,0.1);
+$color__border-button-hover: rgba(0,0,0,0.1);
+$color__border-button-focus: rgba(0,0,0,0.1);
+
+// Basic text colors.
+$color__text-main: #707070;
+$color__text-main-light: #838d8f;
+$color__text-heading: #3b3d3b;
+$color__text-contrast: $white;
+$color__text-label: #777;
+$color__text-label-error: $light-red;
+$color__text-screen: $color__text-main;
+$color__text-screen-border: #ddd;
+$color__text-input: #666;
+$color__text-blockquote: #999;
+$color__text-input-focus: #333;
+$color__text-input-placeholder: #111;
+$color__text-caption: #999;
+$color__text-required: $color__alert-color;
+$color__text-success: $color__success-color;
+$color__text-button-default: #434950;
+$color__text-calendar-widget: #555;
+$color__text-twitter-widget: #555;
+
+// Basic link colors.
+$color__link: #5bc4be;
+$color__link-visited:  #5bc4be;
+$color__link-hover: #5bc4be;
+
+// Header.
+$color__background-header: #fff;
+$color__text-logo: #333;
+$color__text-logo-dark: #eee;
+$color__text_tagline: #898989;
+$color__text_tagline-dark: #eee;
+
+// Navigation.
+$color__text-navigation-main: #eff2f3;
+$color__text-navigation-main-hover: #fff;
+$color__text-pagenavi-current: #333;
+$color__text-pagenavi: #aaa;
+$color__text-pagenavi-hover: #777;
+$color__text-toggle-nav: #3a3b3c;
+$color__background-pagenavi-current: transparent;
+$color__background-pagenavi-hover: transparent;
+$color__background-pagenavi: transparent;
+$color__background-toggle-nav: #eff2f3;
+$color__background-caption: #f8f8f8;
+$color__background-caption-footer: rgba(0, 0, 0, 0.1);
+$color__link-top-navigation: #9f9693;
+$color__link-top-navigation-hover: #6c6360;
+$color__background-link-top-navigation-hover: #f8f8f8;
+$color__background-top-navigation-hover: #f8f8f8;
+$color__background-top-navigation: #f8f8f8;
+
+$color__text_back-to-top: #ccc;
+$color__text_back-to-top-hover: #aaa;
+$color__background_back-to-top: transparent;
+$color__background_back-to-top-hover: transparent;
+
+// Pagination.
+$color_background-pagination: transparent;
+$color_text-pagination: #aaa;
+$color_background-pagination-hover: transparent;
+$color_text-pagination-hover: #777;
+
+// Footer - default
+$color__text-footer: #eaeaea;
+$color__text-footer-widget: #b3b3b3;
+$color__text-footer-hover: rgba(255,255,255,0.5);
+$color__background-footer: #212020;
+$color__link-footer-hover: $color__text-footer-hover;
+$color__text-footer-extended: #d3d3d3;
+$color__background-footer-extended: #191818;
+$color__link-footer-extended: #ddd;
+$color__link-footer-extended-hover: #fff;
+
+// Posts.
+$color__text-post: #7a7a7a;
+$color__text-post-title-link: #3a3b3c;
+$color__text-post-link: #eee;
+$color__text-post-link-hover: #efefef;
+$color__text-post-header-meta: #ababab;
+$color__text-post-meta: #ababab;
+$color__text-post-footer-meta: $color__text-post-meta;
+$color__text-post-meta-link: $color__link;
+$color__text-post-meta-link-hover: $black;
+$color__text-post-author-link: #ccc;
+$color__text-masonry-post-meta-link: #ddd;
+$color__border-post-link-hover: #ccc;
+$color__border-calendar-widget-th: #ccc;
+$color__border-post-header-meta: #ececec;
+$color__border-post: #ececec;
+$color__border-avatar: #ececec;
+$color__border-article: #e3e3e3;
+$color__text-post-block-title: #555;
+$color__border-post-box: #e9e9e9;
+$color__background-featured-image: $color__focus-color;
+$color__background-button-load-more: $color__focus-color;
+$color__background-no-more: #eff2f3;
+$color__background-post-header-meta: #f0f0f0;
+
+// Gallery.
+$color__border-flexslider-item: #fff;
+$color__background-flexslider-item-active: #fff;
+$color__text-flexslider-arrow: #fff;
+
+// Comments.
+$color__text-comment-button: $white;
+$color__text-comment-author: #2b2b2b;
+$color__text-comment-reply-link: #999;
+$color__text-comment-reply-title-link: #2b2b2b;
+$color__text-comment-reply-title-link-hover: $color__focus-color;
+$color__text-comment-meta-link: #767676;
+$color__text-comment-meta-link-hover: #777;
+$color__text-comment-other: #767676;
+$color__border-pingback: $color__border-box;
+
+// Widgets.
+$color__text-widget-default: #8a8a8a;
+$color__text-widget-link-active: #5a5a5a;
+$color__text-widget-link-not-active: #bbb;
+$color__text-widget-link-hover: #5a5a5a;
+$color__text-widget-link: #5a5a5a;
+$color__text-widget-tagcloud-link: rgba(0, 0, 0, .2);
+$color__text-widget-tagcloud-link-hover: rgba(0, 0, 0, .3);
+$color__border-widget: $color__border;
+$color__border-widget-li: rgba($white, .1);
+$color__background-widget: rgba(0, 0, 0, .1);
+$color__background-widget-li: rgba(0, 0, 0, .2);
+
+// Form elements.
+$color__shadow-form-element: rgba(0, 0, 0, 0.01);
+$color__background-form-element: white;
+
+// Contact form.
+$color__text-contact-node: #777;
+
+////////////////
+// Skins
+//
+
+///////
+// Light
+$color__text-overlay-input-light: #3b3d3b;
+$color__background-menu-light: #ddd;
+
+$color__text-navigation-main-light: #555;
+$color__text-navigation-main-hover-light: darken($color__text-navigation-main-light,2%);
+
+
+///////
+// Dark
+
+// General
+$color__background-dark: #191818;
+
+// Text colors - dark
+$color__text-main-dark: #bababa;
+$color__text-secondary-dark: rgba(255,255,255,0.5);
+$color__text-input-dark: $white;
+$color__text-caption-dark: rgba(255,255,255,0.5);
+
+// background colors - Dark
+$color__background-caption-dark: rgba(255,255,255,0.03);
+
+// Border colors - dark
+$color__border-dark: rgba(255,255,255,0.2);
+$color__border-box-dark: rgba(255,255,255,0.2);
+$color__border-input-dark: rgba(255,255,255,0.2);
+$color__border-input-focus-dark: rgba(255,255,255,0.5);
+$color__border-select-hover-dark: rgba(255,255,255,0.5);
+
+// Widgets - dark
+$color__text-widget-dark: rgba(255,255,255,0.9);
+$color__text-widget-tagcloud-link-dark: rgba(255,255,255,0.2);
+$color__text-widget-tagcloud-link-dark-hover: rgba(255,255,255,0.5);
+$color__border-widget-dark: $color__border-box-dark;
+$color__background-widget-dark: rgba(255,255,255,0.2);
+
+// Footer - light
+$color__text-footer-light: #888;
+$color__text-footer-light-widget: #b3b3b3;
+$color__background-footer-light: #eee;
+$color__border-footer-light: rgba(0,0,0,.1);
+$color__text-heading-footer-light: #555;
+$color__link-footer-light: #555;
+$color__link-footer-hover-light: #444;
+$color__text-footer-extended-light: #6b6b6b;
+$color__background-footer-extended-light: #ddd;
+$color__link-footer-extended-light: #505050;
+$color__link-footer-extended-light-hover: #444;

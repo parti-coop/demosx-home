@@ -1,0 +1,66 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the Plugin Installer.
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+body.nice-framework-page .nice-admin-wrapper {
+	.nice-bulk-actions {
+		float: left;
+		display: block;
+		margin-bottom: 20px;
+		padding: 10px 0;
+
+		html[dir="rtl"] & {
+			float: right;
+		}
+
+		select {
+
+			-webkit-appearance: none;
+			-moz-appearance:    none;
+			appearance:         none;
+
+			padding: 10px 15px;
+			display: inline-block;
+			@include border-radius(2px);
+			background-color: #fafafa;
+			color: #777;
+			background-image: url('../images/select.png');
+			padding-right: 30px;
+			background-repeat: no-repeat;
+			background-position: right center;
+			max-width: 150px;
+
+			text-transform: capitalize;
+			font-size: 13px;
+			line-height: 1.5em;
+			border: none;
+			cursor: pointer;
+			float: left;
+			margin-right: 10px;
+			height: unset;
+
+			html[dir="rtl"] & {
+				padding-right: 15px;
+				padding-left: 30px;
+				background-position: left center;
+			}
+
+		}
+
+		input[type=submit],
+		button {
+			padding: 7px 15px;
+			border: none;
+			cursor: pointer;
+			height: unset;
+		}
+	}
+}

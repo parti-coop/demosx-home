@@ -1,0 +1,521 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for form button elements.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	//border: 1px solid $color__border-button;
+	font-family: $font__button;
+	cursor: pointer; // Improves usability and consistency of cursor style between image-type 'input' and others.
+	-webkit-appearance: button; // Corrects inability to style clickable 'input' types in iOS.
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-transform: uppercase;
+	@include border-radius(3px);
+
+	&:hover {
+		border-color: $color__border-button-hover;
+		background: $color__background-button-hover;
+	}
+
+	&:focus,
+	&:active {
+		border-color: $color__border-button-focus;
+		background: $color__background-button-focus;
+	}
+}
+
+body.error404,
+body.page-template-sitemap {
+	#content input#searchsubmit {
+		padding: 11px 15px 9px;
+		@include border-radius(4px);
+	}
+}
+
+.btn,
+.btn-link {
+	font-family: $font__button;
+	display: inline-block;
+	font-size: 13px;
+	line-height: normal;
+	padding: 13px 30px !important;
+	font-style: normal !important;
+	text-align: center;
+	vertical-align: middle;
+	margin: 1px auto;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid;
+	outline: none;
+	-webkit-text-stroke: 0;
+	@include border-radius(3px);
+	@include transition(all 200ms ease-in-out);
+	@include user-select(none);
+
+	&.btn-top-margin {
+		margin-top: 18px;
+	}
+
+	// sizes
+	&.btn-sm {
+		font-size: 10px !important;
+		padding: 10px 25px !important;
+
+		@include mobile-md {
+			&:not(input) {
+				padding: 8px 20px !important;
+			}
+		}
+	}
+
+	&.btn-md {
+		font-size: 13px !important;
+		padding: 13px 30px !important;
+
+		@include mobile-md {
+			&:not(input) {
+				font-size: 12px !important;
+				padding: 10.4px 24px !important;
+			}
+		}
+	}
+
+	&.btn-lg {
+		font-size: 15px !important;
+		padding: 15px 40px !important;
+
+		@include mobile-md {
+			&:not(input) {
+				font-size: 13px !important;
+				padding: 12px 36px !important;
+			}
+		}
+	}
+
+	&.btn-xl {
+		font-size: 18px !important;
+		padding: 17px 45px !important;
+
+		@include mobile-md {
+			&:not(input) {
+				font-size: 14.4px !important;
+				padding: 13.6px 36px !important;
+			}
+		}
+	}
+
+	&.btn-shadow {
+		@include box-shadow(0 4px 10px -5px rgba(0, 0, 0, 0.8));
+	}
+
+	&.btn-outline {
+		background: transparent !important;
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+
+	&.btn-disable-hover:not(.allow-pointer-events) {
+		pointer-events: none !important;
+	}
+
+	// Icons
+	i {
+		position: relative;
+	}
+
+	&.btn-icon-left i {
+		margin-right: 10px;
+	}
+
+	&.btn-icon-right i {
+		margin-left: 10px;
+	}
+
+	&.btn-italic {
+		font-style: italic !important;
+	}
+
+}
+
+// Shapes
+.btn-square {
+	@include border-radius(0 !important);
+}
+body[data-btn-shape] .btn.btn-square {
+	@extend .btn-square;
+}
+
+.btn-round {
+	@include border-radius(6px !important);
+}
+body[data-btn-shape] .btn.btn-round {
+	@extend .btn-round;
+}
+
+.btn-circle {
+	@include border-radius(10em);
+}
+body[data-btn-shape] .btn.btn-circle {
+	@extend .btn-circle;
+}
+
+.btn-shadow {
+	@include box-shadow(0 4px 10px -5px rgba(0, 0, 0, 0.8));
+}
+
+.btn-outline {
+	border-style: solid;
+}
+
+@include mobile-md {
+	.btn,
+	.btn-link {
+		&:not(input) {
+			padding: 10.4px 24px !important;
+			margin: 0.8px !important;
+			font-size: 10.4px;
+		}
+	}
+}
+
+// Colors
+.btn {
+	&:not(.btn-outline):not(.btn-link):not(.btn-disable-hover):hover {
+		border-style: solid !important;
+	}
+}
+
+.btn-default {
+	background: $color__background-button;
+	border-color: $color__background-button;
+	color: $white !important;
+	border-width: 1px !important;
+	border-style: solid;
+
+	&:not(.btn-outline):not(.btn-disable-hover):hover {
+		border-style: solid !important;
+		border-color: darken($color__background-button, 5%) !important;
+		background-color: darken($color__background-button, 5%);
+	}
+
+	&.btn-outline {
+		&,
+		body[data-btn-color] & {
+			border-color: $color__background-button !important;
+			color: $color__background-button !important;
+			background: transparent;
+
+			&:hover {
+				background-color: $color__background-button !important;
+				color: $white !important;
+			}
+		}
+	}
+}
+
+
+.btn-accent-color {
+	background: $color__accent-color;
+	border-color: $color__accent-color;
+	color: $white !important;
+
+	&.btn-outline {
+		border-color: $color__accent-color !important;
+		color: $color__accent-color !important;
+
+		&:hover {
+			background-color: $color__accent-color !important;
+			color: $white !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):not(.btn-disable-hover):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+
+}
+
+.btn-complementary-color {
+	background: $color__complementary-color;
+	border-color: $color__complementary-color;
+	color: $white !important;
+
+	&.btn-outline {
+		border-color: $color__complementary-color !important;
+		color: $color__complementary-color !important;
+
+		&:hover {
+			background-color: $color__complementary-color !important;
+			color: $white !important;
+		}
+	}
+}
+
+.btn-black-color {
+	background: $color__black-color;
+	border-color: $color__black-color;
+	color: $white !important;
+
+	&.btn-outline {
+		border-color: $color__black-color !important;
+		color: $color__black-color !important;
+
+		&:hover {
+			background-color: $color__black-color !important;
+			color: $white !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+}
+
+.btn-dark-color-1 {
+	background: $color__dark-color-1;
+	border-color: $color__dark-color-1;
+	color: $white !important;
+
+	&.btn-outline {
+		border-color: $color__dark-color-1 !important;
+		color: $color__dark-color-1 !important;
+
+		&:hover {
+			background-color: $color__dark-color-1 !important;
+			color: $white !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+}
+
+.btn-dark-color-2 {
+	background: $color__dark-color-2;
+	border-color: $color__dark-color-2;
+	color: $white !important;
+
+	&.btn-outline {
+		border-color: $color__dark-color-2 !important;
+		color: $color__dark-color-2 !important;
+
+		&:hover {
+			background-color: $color__dark-color-2 !important;
+			color: $white !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+}
+
+.btn-dark-color-3 {
+	background: $color__dark-color-3;
+	border-color: $color__dark-color-3;
+	color: $white !important;
+
+	&.btn-outline {
+		border-color: $color__dark-color-3 !important;
+		color: $color__dark-color-3 !important;
+
+		&:hover {
+			background-color: $color__dark-color-3 !important;
+			color: $white !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+}
+
+.btn-white-color {
+	background: $color__white-color;
+	border-color: $color__white-color;
+	color: $black !important;
+
+	&.btn-outline {
+		border-color: $color__white-color !important;
+		color: $color__white-color !important;
+
+		&:hover {
+			background-color: $color__white-color !important;
+			color: $black !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+		color: $black !important;
+	}
+}
+
+.btn-light-color-1 {
+	background: $color__light-color-1;
+	border-color: $color__light-color-1;
+	color: $black !important;
+
+	&.btn-outline {
+		border-color: $color__light-color-1 !important;
+		color: $color__light-color-1 !important;
+
+		&:hover {
+			background-color: $color__light-color-1 !important;
+			color: $black !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+		color: $black !important;
+	}
+}
+
+.btn-light-color-2 {
+	background: $color__light-color-2;
+	border-color: $color__light-color-2;
+	color: $black !important;
+
+	&.btn-outline {
+		border-color: $color__light-color-2 !important;
+		color: $color__light-color-2 !important;
+
+		&:hover {
+			background-color: $color__light-color-2 !important;
+			color: $black !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+		color: $black !important;
+	}
+}
+
+.btn-light-color-3 {
+	background: $color__light-color-3;
+	border-color: $color__light-color-3;
+	color: $black !important;
+
+	&.btn-outline {
+		border-color: $color__light-color-3 !important;
+		color: $color__light-color-3 !important;
+
+		&:hover {
+			background-color: $color__light-color-3 !important;
+			color: $black !important;
+			border-width: 1px !important;
+			border-style: solid !important;
+		}
+	}
+
+	&:not(.btn-outline):hover {
+		border-width: 1px !important;
+		border-style: solid !important;
+		color: $black !important;
+	}
+}
+
+
+.btn-container {
+	display: block;
+
+	&.btn-inline {
+		display: inline-block;
+		padding-left: 9px;
+		padding-right: 9px;
+		vertical-align: bottom;
+		margin-top: 0 !important;
+	}
+}
+
+@include mobile-md {
+	.btn-container.btn-inline {
+		display: block;
+		padding: 0;
+		margin-top: 9px !important;
+	}
+}
+
+* > .btn-container:first-of-type {
+	padding-left: 0;
+}
+
+* > .btn-container:last-of-type {
+	padding-right: 0;
+}
+
+.btn-link {
+	border: 1px solid transparent;
+	padding: 0 !important;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+	width: 100%;
+}
+
+.button:not(.fancybox-button),
+input[type="submit"],
+input[type="button"],
+.cta-button {
+	@extend .btn;
+	@extend .btn-default;
+
+	body[data-btn-shape="round"] & {
+		@extend .btn-round;
+	}
+
+	body[data-btn-shape="circle"] & {
+		@extend .btn-circle;
+	}
+
+	body[data-btn-shape="square"] & {
+		@extend .btn-square;
+	}
+}

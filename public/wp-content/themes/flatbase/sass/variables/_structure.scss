@@ -1,0 +1,52 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Structural variables.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+// Define responsive breakpoints.
+//
+// The following breakpoints should describe the minimum size for each kind of
+// device. Always make sure they match the same breakpoints defined in the
+// `nice_responsive_breakpoints()` PHP function. Otherwise responsive layouts
+// may break.
+$mobile-breakpoints: (
+	desktop:   1024px,
+	tablet:    768px,
+	mobile-lg: 425px,
+	mobile-md: 375px,
+	mobile-sm: 320px,
+);
+
+$size__site-main: 1080px;
+$size__site-min: map-get( $mobile-breakpoints, 'mobile-sm' );
+$size__site-content: 100%;
+$size__site-content-sidebar: 61.583%;
+$size__site-sidebar: 31.25%;
+$size__grid-gutter: 30px;
+$size__site-main-padding: 30px;
+$size__nav-vertical: 225px;
+$size__nav-vertical-hidden: 60px;
+$size__logo-image: 23px;
+$size__logo-image-shrunk: $size__logo-image * 0.9;
+$size__logo-padding: 40px;
+$size__logo-padding-shrunk: $size__logo-padding / 2;
+$size__navigation-min-height: 43px;
+$size__header-default: $size__logo-image + ( $size__logo-padding * 2 );
+$size__header-shrunk: $size__logo-image-shrunk + ( $size__logo-padding-shrunk * 2 );
+$size__header-centered: $size__logo-padding + $size__logo-image + 20 + $size__navigation-min-height;
+$size__header-centered-shrunk: $size__logo-padding-shrunk + $size__logo-image-shrunk + 20 + $size__navigation-min-height;
+
+$size__site-desktop:   map-get( $mobile-breakpoints, 'desktop' );
+$size__site-tablet:    map-get( $mobile-breakpoints, 'desktop' ) - 1px;
+$size__site-mobile-lg: map-get( $mobile-breakpoints, 'tablet' ) - 1px;
+$size__site-mobile-md: map-get( $mobile-breakpoints, 'mobile-lg' ) - 1px;
+$size__site-mobile-sm: map-get( $mobile-breakpoints, 'mobile-md' ) - 1px;
+$size__site-mobile-xs: map-get( $mobile-breakpoints, 'mobile-sm' ) - 1px;

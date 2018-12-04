@@ -1,0 +1,271 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for text elements.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: $color__background-pre;
+	font-family: $font__pre;
+	@include font-size(15);
+	line-height: $font__line-height-pre;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	@include font-size(15);
+	font-family: $font__code;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: $color__background-ins;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+address {
+	font-style: italic;
+}
+
+abbr[title],
+acronym[title],
+dfn[title] {
+	cursor: help;
+}
+
+blockquote {
+	min-height: 40px;
+	font-style: italic;
+	margin-left: 15px;
+	padding: 0 40px;
+	color: $color__text-blockquote;
+}
+
+em,
+dfn,
+cite {
+	font-style: italic;
+}
+
+dfn {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: top;
+}
+
+sub {
+	vertical-align: bottom;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+var,
+kbd,
+samp,
+code,
+pre {
+	font: 14px/18px Monaco, Courier, "Courier New", monospace;
+}
+
+kbd {
+	font-weight: bold;
+}
+
+samp,
+var {
+	font-style: italic;
+}
+
+pre {
+	white-space: pre-wrap;
+	overflow: auto;
+	word-break: break-all;
+	word-wrap: break-word;
+	padding: 15px;
+	border: 1px solid $color__border-pre;
+	clear: both;
+	line-height: 1.5;
+	background: $color__background-pre;
+
+	&, code {
+		white-space: pre-line;
+		word-wrap: break-word;
+	}
+
+	& code {
+		font-size: 14px;
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-no-transform {
+	text-transform: none;
+}
+
+.uppercase,
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase,
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize,
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.font-weight-100 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 100;
+	}
+}
+
+.font-weight-200 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 200;
+	}
+}
+
+.font-weight-300 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 300;
+	}
+}
+
+.font-weight-400 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 400;
+	}
+}
+
+.font-weight-500 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 500;
+	}
+}
+
+.font-weight-600 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 600;
+	}
+}
+
+.font-weight-700 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 700;
+	}
+}
+
+.font-weight-800 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 800;
+	}
+}
+
+.font-weight-900 {
+	&,
+	& *:not(strong):not(b) {
+		font-weight: 900;
+	}
+}

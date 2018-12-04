@@ -1,0 +1,159 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * SCSS mixins.
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+@mixin gradient($from, $to) {
+	background-color: $from;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(center top, $from, $to);
+	background-image:    -moz-linear-gradient(center top, $from, $to);
+	background-image:      -o-linear-gradient(center top, $from, $to);
+	background-image:         linear-gradient(center top, $from, $to);
+}
+
+// Rem output with px fallback.
+@mixin font-size( $sizeValue: 1.6 ) {
+	font-size: $sizeValue + px;
+}
+
+// Box model.
+@mixin box-sizing( $box-model ) {
+	-webkit-box-sizing: $box-model;
+	   -moz-box-sizing: $box-model;
+	    -ms-box-sizing: $box-model;
+	     -o-box-sizing: $box-model;
+	        box-sizing: $box-model;
+}
+
+// Border radius.
+@mixin border-radius( $radius ) {
+	background-clip: padding-box;   /* Stops background color from leaking outside the border. */
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	     -o-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+// Opacity.
+@mixin opacity( $value: 0.5 ) {
+	$IEValue: $value * 100;
+	opacity: $value;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $IEValue + ")";
+	filter: alpha( opacity=$IEValue );
+	zoom: 1;
+}
+
+// Box shadow.
+@mixin box-shadow( $args ) {
+	-webkit-box-shadow: $args;
+	   -moz-box-shadow: $args;
+	    -ms-box-shadow: $args;
+	     -o-box-shadow: $args;
+	        box-shadow: $args;
+}
+
+// Transitions.
+@mixin transition( $args ) {
+	-webkit-transition: $args;
+	   -moz-transition: $args;
+	    -ms-transition: $args;
+	     -o-transition: $args;
+	        transition: $args;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	   -moz-transform: $transform;
+	    -ms-transform: $transform;
+	     -o-transform: $transform;
+	        transform: $transform;
+}
+
+@mixin transform-origin($origin) {
+	-webkit-transform-origin: $origin;
+	   -moz-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	        transform-origin: $origin;
+}
+
+// Animations.
+@mixin animation( $args ) {
+	-webkit-animation: $args;
+	   -moz-animation: $args;
+	    -ms-animation: $args;
+	     -o-animation: $args;
+	        animation: $args;
+}
+
+// Center block.
+@mixin center-block {
+	display: block;
+	margin: 0 auto;
+}
+
+// Responsive.
+@mixin responsive( $breakpoint, $media: all ) {
+	@media only #{$media} and ($breakpoint) {
+		@content;
+	}
+}
+
+@mixin breakpoint( $breakpoint, $media: all ) {
+	// Change these values as required.
+	$medium: 640px / 16px * 1em;
+	$large: 1024px / 16px * 1em;
+	$xlarge: 1280px / 16px * 1em;
+
+	@if $breakpoint == medium {
+		@media only #{$media} and (min-width: $medium) {
+			@content;
+		}
+	} @else if $breakpoint == large {
+		@media only #{$media} and (min-width: $large) {
+			@content;
+		}
+	} @else if $breakpoint == xlarge {
+		@media only #{$media} and (min-width: $xlarge) {
+			@content;
+		}
+	}
+}
+
+// hidpi: same concept as "responsive", except that this is focusing on
+// HiDPI (a.k.a. retina) displays.
+@mixin hidpi( $media: all ) {
+	@media
+		only #{$media} and (min--moz-device-pixel-ratio: 1.5),
+		only #{$media} and (-o-min-device-pixel-ratio: 3/2),
+		only #{$media} and (-webkit-min-device-pixel-ratio: 1.5),
+		only #{$media} and (min-device-pixel-ratio: 1.5),
+		only #{$media} and (min-resolution: 144dpi),
+		only #{$media} and (min-resolution: 1.5dppx) {
+
+		@content;
+	}
+}
+
+// And just because the term "retina" is so widely used, we'll create
+// a mixin that uses it as an alias.
+@mixin retina( $media: all ) {
+	@include hidpi($media) { @content; }
+}
+
+// Webkit only.
+@mixin webkit {
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		@content;
+	}
+}

@@ -1,0 +1,3153 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: NiceThemes Framework\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-24 15:15-0300\n"
+"PO-Revision-Date: \n"
+"Language-Team: NiceThemes <hello@nicethemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.12\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: dev/*\n"
+"X-Poedit-SearchPathExcluded-1: vendor/*\n"
+"X-Poedit-SearchPathExcluded-2: admin/lib/*\n"
+
+#: admin/admin-pages.php:60 admin/deprecated.php:43
+#: admin/templates/about.php:53
+msgid "Theme Options"
+msgstr ""
+
+#: admin/admin-pages.php:61
+msgid ""
+"Welcome to the Settings Panel. Here you can set up and configure all of the "
+"different options for this magnificent theme."
+msgstr ""
+
+#: admin/admin-pages.php:76
+msgid "Import/Export Theme Options"
+msgstr ""
+
+#: admin/admin-pages.php:77
+msgid ""
+"You can import or export your Theme Options from one site to another by "
+"using the forms on this page."
+msgstr ""
+
+#: admin/admin-pages.php:91
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: admin/admin-pages.php:92 admin/classes/class-admin-page.php:123
+msgid "Welcome"
+msgstr ""
+
+#: admin/admin-pages.php:93
+#, php-format
+msgid ""
+"%s is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it!"
+msgstr ""
+
+#: admin/admin-pages.php:108
+msgid "Getting Started"
+msgstr ""
+
+#: admin/admin-pages.php:109
+#, php-format
+msgid ""
+"Use the tips below to get started using %s. Your website will be up and "
+"running in no time!"
+msgstr ""
+
+#: admin/admin-pages.php:124
+msgid "Register your Product"
+msgstr ""
+
+#: admin/admin-pages.php:125
+msgid "Product Registration"
+msgstr ""
+
+#: admin/admin-pages.php:126
+msgid ""
+"Please register your purchase to get support and automatic theme updates. We "
+"hope you enjoy it!"
+msgstr ""
+
+#: admin/admin-pages.php:141
+msgid "Support &amp; Updates"
+msgstr ""
+
+#: admin/admin-pages.php:142
+msgid "We're here for you. How can we help you today?"
+msgstr ""
+
+#: admin/admin-pages.php:156 admin/admin-pages.php:171
+#, php-format
+msgid "%s Changelog"
+msgstr ""
+
+#: admin/admin-pages.php:157
+msgid "Changelog"
+msgstr ""
+
+#: admin/admin-pages.php:185 admin/templates/support.php:225
+msgid "System Status"
+msgstr ""
+
+#: admin/admin-pages.php:186
+msgid "Some useful information about your installation."
+msgstr ""
+
+#: admin/admin-pages.php:210 admin/plugin.php:129
+msgid "Install Plugins"
+msgstr ""
+
+#: admin/admin-pages.php:211
+msgid ""
+"Some of these plugins are required, other are recommended. You can install, "
+"update, activate or deactivate any of them from here."
+msgstr ""
+
+#: admin/admin-pages.php:235
+msgid "Install Demos"
+msgstr ""
+
+#: admin/admin-pages.php:236
+msgid "Install Demo Packs"
+msgstr ""
+
+#: admin/admin-pages.php:237
+msgid ""
+"Installing a demo pack makes your site look like its preview. Instead of "
+"starting from scratch, you can edit and replace the default content with "
+"yours."
+msgstr ""
+
+#: admin/backup.php:41
+#, php-format
+msgid ""
+"Please note that this backup manager backs up only your options and not your "
+"content. To backup your content, please use the %sWordPress Export Tool%s."
+msgstr ""
+
+#: admin/backup.php:44
+msgid "There was a problem importing your options. Please Try again."
+msgstr ""
+
+#: admin/backup.php:46
+msgid "There was a problem exporting your options. Please Try again."
+msgstr ""
+
+#: admin/backup.php:48
+msgid "The import file you've provided is invalid. Please try again."
+msgstr ""
+
+#: admin/backup.php:50
+#, php-format
+msgid "Options successfully imported. | Return to %sTheme Options%s"
+msgstr ""
+
+#: admin/classes/class-nice-customizer.php:598 admin/options.php:816
+#: admin/options.php:2031 admin/options.php:2061
+msgid "Default"
+msgstr ""
+
+#: admin/classes/class-nice-logo-image.php:242
+#: admin/classes/class-nice-logo.php:219
+msgid "The output property should be empty before processing HTML"
+msgstr ""
+
+#: admin/classes/class-nice-on-demand-script.php:67
+#, php-format
+msgid "The %s script should be registered before setting it to load on demand."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:242
+msgid "Active:"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:250
+#, php-format
+msgid "Version %s by %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:252
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:261
+#, php-format
+msgid "New Version: %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:265
+#, php-format
+msgid "Minimum Required Version: %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:274
+#: admin/templates/demos.php:143 admin/templates/demos.php:503
+#, php-format
+msgid "Install %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:275
+#: admin/classes/class-nice-tgm-plugin-activation.php:690
+#: admin/templates/demos.php:143 admin/templates/demos.php:503
+#: admin/templates/getting-started.php:59
+msgid "Install"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:278
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:279
+#: admin/classes/class-nice-tgm-plugin-activation.php:691
+msgid "Update"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:282
+#, php-format
+msgid "Activate %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:283
+#: admin/classes/class-nice-tgm-plugin-activation.php:692
+#: admin/templates/getting-started.php:64
+msgid "Activate"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:286
+#, php-format
+msgid "Deactivate %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:287
+#: admin/classes/class-nice-tgm-plugin-activation.php:693
+msgid "Deactivate"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:292
+#: admin/classes/class-nice-tgm-plugin-activation.php:497
+#, php-format
+msgid "You need to register %s to install or update %s."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:298
+msgid "This plugin is required. Please install it and activate it."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:344
+msgid "Apply"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:354
+#: admin/classes/class-nice-tgm-plugin-activation.php:379
+#: admin/classes/class-nice-tgm-plugin-activation.php:733
+msgid "All Plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:406
+msgid "No plugins match your selection."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:408
+#: admin/templates/demos.php:598
+msgid "Try a different combination."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:689
+msgid "Install &amp; Activate"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:737
+msgid "Required Only"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:738
+msgid "Recommended Only"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:771
+msgid "What?"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:772
+#: admin/classes/class-nice-tgm-plugin-activation.php:782
+#: admin/classes/class-nice-tgm-plugin-activation.php:1363
+#: admin/classes/class-nice-tgm-plugin-activation.php:1450
+#: admin/classes/class-theme-demo-pack.php:2247 admin/demo.php:141
+msgid "ERROR:"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:772
+msgid "Invalid action or plugin group requested."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:960
+msgid "The requested actions are invalid."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:992
+msgid "You don't have enough permissions to do this."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1013
+msgid "The requested plugin group is invalid."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1048
+#: admin/classes/class-nice-tgm-plugin-activation.php:1112
+#: admin/classes/class-nice-tgm-plugin-activation.php:1218
+#: admin/classes/class-nice-tgm-plugin-activation.php:1313
+#: admin/classes/class-nice-tgm-plugin-activation.php:1400
+msgid "required plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1051
+#: admin/classes/class-nice-tgm-plugin-activation.php:1115
+#: admin/classes/class-nice-tgm-plugin-activation.php:1221
+#: admin/classes/class-nice-tgm-plugin-activation.php:1316
+#: admin/classes/class-nice-tgm-plugin-activation.php:1403
+msgid "recommended plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1054
+#: admin/classes/class-nice-tgm-plugin-activation.php:1118
+#: admin/classes/class-nice-tgm-plugin-activation.php:1224
+#: admin/classes/class-nice-tgm-plugin-activation.php:1319
+#: admin/classes/class-nice-tgm-plugin-activation.php:1406
+msgid "plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1059
+#, php-format
+msgid "The %1$s demo has no %2$s to be processed."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1061
+#, php-format
+msgid "There are no %1$s to be processed."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1123
+#, php-format
+msgid "Currently, no %1$s need to be installed."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1229
+#, php-format
+msgid "Currently, no %1$s need to be updated."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1324
+#, php-format
+msgid "Currently, no %1$s need to be activated."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1355
+msgid "The following plugins have been successfully activated:"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1363
+#: admin/classes/class-nice-tgm-plugin-activation.php:1450
+msgid "The following plugins could not activated:"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1411
+#, php-format
+msgid "Currently, no %1$s need to be deactivated."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1442
+msgid "The following plugins have been successfully deactivated:"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1490
+#, php-format
+msgid "Demo: %s"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1565
+#: admin/classes/class-nice-tgm-plugin-activation.php:1716
+#, php-format
+msgid "Install %s demo plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1567
+msgid "Install plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1674
+#, php-format
+msgid ""
+"Before installing the %s demo, the following plugins should be installed, "
+"updated and activated."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1675
+msgid ""
+"Otherwise, you won't obtain its full functionality, and it also may not work "
+"as expected."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1676
+#: admin/classes/class-nice-theme-updater-admin.php:428
+#, php-format
+msgid "View %s demo details"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1676
+msgid "View the full list of plugins"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin-activation.php:1696
+#, php-format
+msgid "Return to %s demo plugin installer"
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin.php:284
+msgid "Invalid plugin."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin.php:286
+msgid "Invalid plugin data."
+msgstr ""
+
+#: admin/classes/class-nice-tgm-plugin.php:288
+msgid "Non-TGM plugin."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:269
+msgid "Theme License"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:270
+msgid "Enter your theme license key."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:271
+msgid "Validate License Key"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:272
+msgid "License Key"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:273
+msgid "License Action"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:274
+msgid "Deactivate License"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:275
+msgid "Activate License"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:276
+#: admin/classes/class-nice-theme-updater-admin.php:289
+msgid "License status is unknown."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:277
+msgid "Renew?"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:278
+msgid "unlimited"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:279
+msgid "License key is active."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:280
+#, php-format
+msgid "Expires %s."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:281
+#, php-format
+msgid "You have %1$s / %2$s sites activated."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:282
+#, php-format
+msgid "License key expired %s."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:283
+msgid "License key has expired."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:284
+msgid "License keys do not match."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:285
+msgid "License is inactive."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:286
+msgid "License key is disabled."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:287
+msgid "Site is inactive."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:288
+msgid "License is unknown."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:290
+msgid ""
+"Updating the theme will lose any customizations you have made to its code. "
+"'Cancel' to stop, 'OK' to update."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:291
+msgid ""
+"Updating the framework will lose any customizations you have made to its "
+"code. 'Cancel' to stop, 'OK' to update."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:292
+#, php-format
+msgid "%1$s is available. %2$sPlease update it now%3$s."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:293
+#, php-format
+msgid ""
+"%1$s is available. %2$sPlease update it now%3$s or %4$sdismiss this notice"
+"%5$s."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:294
+#, php-format
+msgid "A new version of %1$s is available. %2$sPlease update it now%3$s."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:426
+#, php-format
+msgid "Before you can install the %1$s demo, %2$s and %3$s must be updated."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:427
+msgid "You can update them both from the bottom of this page."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater-admin.php:428
+#, php-format
+msgid "View default %s page"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:367
+msgid "You do not have sufficient permissions to update themes for this site."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:372
+#, php-format
+msgid ""
+"You need to <a href=\"%s\" target=\"_blank\">get a license</a> to obtain "
+"support and updates."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:387
+msgid "Update Nice Framework"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:401
+msgid "The framework is at the latest version."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:402
+msgid "Update package not available."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:403
+msgid "Downloading update from NiceThemes server&#8230;"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:404
+msgid "Unpacking the update&#8230;"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:405
+msgid "Removing the old version of the framework&#8230;"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:406
+msgid "Could not remove the old framework."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:407
+msgid "Framework update failed."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:408
+msgid "Nice Framework updated successfully."
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:476
+#, php-format
+msgid "Return to %1$s"
+msgstr ""
+
+#: admin/classes/class-nice-theme-updater.php:480
+#, php-format
+msgid "Return to %1$s demo details"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:412
+#, php-format
+msgid "%s is not an available demo pack."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:447
+msgid "The demo pack slug was not provided."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:925
+#: admin/templates/system-status.php:36
+msgid "WordPress"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:931
+#, php-format
+msgid "WordPress %s or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:932
+#, php-format
+msgid "Your current WordPress version is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:933
+#, php-format
+msgid ""
+"Your current WordPress version is %s. We recommend you to update to version "
+"%s or higher."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:934
+#, php-format
+msgid ""
+"Your current WordPress version is %s. This version is not supported by the "
+"theme. We recommend you to update to version %s or higher."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:938
+msgid "Upload Directory"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:944
+msgid "Writable Upload Directory"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:945
+msgid "Your upload directory is writable. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:947
+msgid "Your upload directory is not writable"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:951
+#: admin/templates/system-status.php:265
+msgid "MySQL"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:957
+#, php-format
+msgid "MySQL %s or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:958
+#, php-format
+msgid "Your current MySQL version is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:959
+#, php-format
+msgid ""
+"Your current MySQL version is %s. We recommend you to update to version %s "
+"or higher."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:960
+#, php-format
+msgid ""
+"Your current MySQL version is %s. This version is not supported by the "
+"theme. We recommend you to update to version %s or higher."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:964
+#: admin/templates/system-status.php:180
+msgid "PHP"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:970
+#, php-format
+msgid "PHP %s or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:971
+#, php-format
+msgid "Your current PHP version is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:972
+#, php-format
+msgid ""
+"Your current PHP version is %s. We recommend you to update to version %s or "
+"higher."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:973
+#, php-format
+msgid ""
+"Your current PHP version is %s. This version is not supported by the theme. "
+"We recommend you to update to version %s or higher."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:977
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:983
+#, php-format
+msgid "PHP Memory Limit: %s or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:984
+#, php-format
+msgid "Your current PHP Memory Limit is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:985
+#: admin/classes/class-theme-demo-pack.php:986
+#, php-format
+msgid ""
+"Your current PHP Memory Limit is %s. We recommend you to increase it to at "
+"least %s."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:990
+msgid "PHP Time Limit"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:997
+#, php-format
+msgid "PHP Time Limit: %s seconds or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:998
+#, php-format
+msgid "Your current PHP Time Limit is %s seconds. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:999
+#: admin/classes/class-theme-demo-pack.php:1000
+#, php-format
+msgid ""
+"Your current PHP Time Limit is %s seconds. We recommend you to increase it "
+"to at least %s seconds."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1004
+msgid "PHP Maximum Upload File Size"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1010
+#, php-format
+msgid "PHP Maximum Upload File Size: %s"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1011
+#, php-format
+msgid "Your current PHP Maximum Upload File Size is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1012
+#: admin/classes/class-theme-demo-pack.php:1013
+#, php-format
+msgid ""
+"Your current PHP Maximum Upload File Size is %s. We recommend you to "
+"increase it to at least %s."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1017
+msgid "PHP Maximum POST Size"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1023
+#, php-format
+msgid "PHP Maximum POST Size: %s or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1024
+#, php-format
+msgid "Your current PHP Maximum Post Size is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1025
+#: admin/classes/class-theme-demo-pack.php:1026
+#, php-format
+msgid ""
+"Your current PHP Maximum Post Size is %s. We recommend you to increase it to "
+"at least %s."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1030
+msgid "PHP Maximum Input Variables"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1036
+#, php-format
+msgid "PHP Maximum Input Variables: %s or higher"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1037
+#, php-format
+msgid ""
+"Your current value for PHP Maximum Input Variables is %s. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1038
+#: admin/classes/class-theme-demo-pack.php:1039
+#, php-format
+msgid ""
+"Your current value for PHP Maximum Input Variables is %s. We recommend you "
+"to increase it to at least %s."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1043
+msgid "PHP Remote GET"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1049
+msgid "PHP Remote GET: Enabled"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1050
+msgid "PHP Remote GET is enabled. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1051
+#: admin/classes/class-theme-demo-pack.php:1052
+msgid "PHP Remote GET is disabled."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1056
+msgid "Xdebug"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1062
+msgid "Xdebug: Disabled"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1063
+msgid "Xdebug is disabled. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1064
+msgid "Xdebug is enabled."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1069
+msgid "mod_security"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1075
+msgid "mod_security: Disabled"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1076
+msgid "mod_security was not detected in your server. You should be fine."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1077
+msgid "mod_security is enabled."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:1226
+#, php-format
+msgid "Demo Pack for %s theme."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2244
+msgid "Unknown error."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2247
+#, php-format
+msgid "%1$sReload this page%2$s."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2525
+msgid "The minimum requirements aren't met. This demo pack can't be installed."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2565
+msgid "The directory for the demo packs couldn't be created."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2583
+msgid "Done!"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2584
+#, php-format
+msgid ""
+"%1$sView your site%4$s, %2$sgo to the Dashboard%4$s, or just %3$sreload this "
+"page%4$s."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2623
+msgid "We're good to go!"
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2729
+msgid "The plugin installer couldn't be loaded."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2829
+msgid "All the required plugins were installed and activated successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:2829
+msgid "No plugins needed to be installed or activated."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3024
+msgid "Some old upload files couldn't be removed."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3045
+msgid "All website content was removed successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3078
+#, php-format
+msgid ""
+"The remote GET method (%s), which is needed to download the demo packs, is "
+"disabled. Please enable it and try again."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3092
+msgid "The demo pack ZIP file couldn't be downloaded."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3105
+msgid "Some old demo pack files couldn't be removed."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3118
+msgid "The directory for the demo pack files couldn't be created."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3130
+msgid "The demo pack ZIP file couldn't be saved."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3142
+msgid "The demo pack files couldn't be extracted."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3161
+msgid "The demo pack files were downloaded successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3202
+msgid "WordPress Importer plugin was deactivated to ensure compatibility."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3281
+#, php-format
+msgid "%s of %s content items were processed."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3288
+msgid "WordPress content was imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3394
+msgid "WordPress menus were imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3436
+msgid ""
+"Widget Importer & Exporter plugin was deactivated to ensure compatibility."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3477
+msgid "No widgets needed to be imported."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3477
+msgid "The widgets were imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3517
+msgid "There are no theme options to import."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3524
+msgid "There are no valid theme options to import."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3571
+msgid "The theme options were imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3640
+msgid "WordPress options were imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:3697
+#: admin/classes/class-theme-demo-pack.php:3756
+#: admin/classes/class-theme-demo-pack.php:3813
+#: admin/classes/class-theme-demo-pack.php:3870
+#: admin/classes/class-theme-demo-pack.php:3927
+#: admin/classes/class-theme-demo-pack.php:3984
+#: admin/classes/class-theme-demo-pack.php:4041
+#: admin/classes/class-theme-demo-pack.php:4117
+#, php-format
+msgid "%s data was imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4182
+#, php-format
+msgid "%s content couldn't be processed."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4245
+#: admin/classes/class-theme-demo-pack.php:4252
+#, php-format
+msgid "%s content couldn't be imported."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4264
+#, php-format
+msgid "\"%s\" slider was imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4265
+#, php-format
+msgid "%s more slider remaining."
+msgid_plural "%s more sliders remaining."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/classes/class-theme-demo-pack.php:4265
+msgid "Global settings remaining."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4350
+#, php-format
+msgid "%s content couldn't be updated in the database."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4367
+#, php-format
+msgid "%s content was imported successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4406
+msgid "No transients needed to be removed."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4424
+msgid "Transients were removed successfully."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4737
+msgid "Removing all website content..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4753
+msgid "Installing and activating required plugins..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4769
+msgid "Downloading demo pack files..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4785
+msgid "Processing WordPress content..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4801
+msgid "Processing WordPress menus..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4817
+msgid "Processing WordPress widgets..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4833
+msgid "Processing theme options..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4849
+msgid "Processing WordPress options..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4865
+#: admin/classes/class-theme-demo-pack.php:4881
+#: admin/classes/class-theme-demo-pack.php:4897
+#: admin/classes/class-theme-demo-pack.php:4913
+#: admin/classes/class-theme-demo-pack.php:4929
+#: admin/classes/class-theme-demo-pack.php:4945
+#: admin/classes/class-theme-demo-pack.php:4961
+#: admin/classes/class-theme-demo-pack.php:4977
+#, php-format
+msgid "Processing %s data..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:4993
+#, php-format
+msgid "Processing %s content..."
+msgstr ""
+
+#: admin/classes/class-theme-demo-pack.php:5009
+msgid "Removing old transients..."
+msgstr ""
+
+#: admin/customizer.php:61 admin/metaboxes.php:246
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: admin/customizer.php:62
+msgid "Configure your theme settings here"
+msgstr ""
+
+#: admin/demo.php:141
+msgid "Reload this page"
+msgstr ""
+
+#: admin/demo.php:219
+#, php-format
+msgid "%s Version %s+"
+msgstr ""
+
+#: admin/demo.php:221 admin/templates/system-status.php:167
+msgid "Enabled"
+msgstr ""
+
+#: admin/demo.php:222 admin/templates/system-status.php:169
+#: admin/templates/system-status.php:254
+msgid "Disabled"
+msgstr ""
+
+#: admin/demo.php:279
+msgid ""
+"Some of the required plugins are inactive, outdated or missing. The Demo "
+"Installer process will take care of these requirements automatically."
+msgstr ""
+
+#: admin/demo.php:308 admin/templates/demos.php:265
+#, php-format
+msgid "%s is active, but outdated."
+msgstr ""
+
+#: admin/demo.php:308 admin/demo.php:312 admin/demo.php:318 admin/demo.php:322
+#: admin/templates/demos.php:265 admin/templates/demos.php:285
+#, php-format
+msgid "Its current version is %s."
+msgstr ""
+
+#: admin/demo.php:308
+msgid "It must be updated or deactivated."
+msgstr ""
+
+#: admin/demo.php:312
+#, php-format
+msgid "%s is active."
+msgstr ""
+
+#: admin/demo.php:312
+msgid "No action is needed."
+msgstr ""
+
+#: admin/demo.php:318
+#, php-format
+msgid "%s is installed, but outdated and inactive."
+msgstr ""
+
+#: admin/demo.php:318
+msgid "It should be updated and activated."
+msgstr ""
+
+#: admin/demo.php:322
+#, php-format
+msgid "%s is installed, but inactive."
+msgstr ""
+
+#: admin/demo.php:322
+msgid "It should be activated."
+msgstr ""
+
+#: admin/demo.php:328
+#, php-format
+msgid "%s is not installed."
+msgstr ""
+
+#: admin/demo.php:328
+msgid "It should be installed and active."
+msgstr ""
+
+#: admin/deprecated.php:46
+msgid "About"
+msgstr ""
+
+#: admin/deprecated.php:74 admin/templates/options.php:25
+msgid "Changes saved successfully"
+msgstr ""
+
+#: admin/deprecated.php:96 admin/templates/options.php:58
+msgid ""
+"All your theme options will be removed. This operation cannot be undone."
+msgstr ""
+
+#: admin/deprecated.php:96
+msgid "Reset options"
+msgstr ""
+
+#: admin/deprecated.php:98 admin/templates/options.php:61
+msgid "Save Changes"
+msgstr ""
+
+#: admin/deprecated.php:173
+msgid "Welcome to the NiceThemes Backup Manager."
+msgstr ""
+
+#: admin/deprecated.php:174
+msgid "Here are a few notes on using this screen."
+msgstr ""
+
+#: admin/deprecated.php:175
+msgid ""
+"The backup manager allows you to backup or restore your \"Theme Options\" to "
+"or from a text file."
+msgstr ""
+
+#: admin/deprecated.php:176
+msgid "To create a backup, simply hit the \"Download Export File\" button."
+msgstr ""
+
+#: admin/deprecated.php:177
+msgid ""
+"To restore your options from a backup, browse your computer for the file "
+"(under the \"Import Options\" heading) and hit the \"Upload File and Import"
+"\" button. This will restore only the settings that have changed since the "
+"backup."
+msgstr ""
+
+#: admin/deprecated.php:179
+msgid ""
+"Please note that only valid backup files generated through the NiceThemes "
+"Backup Manager should be imported."
+msgstr ""
+
+#: admin/deprecated.php:181
+msgid "Looking for assistance?"
+msgstr ""
+
+#: admin/deprecated.php:182
+#, php-format
+msgid ""
+"Please post your query on the %sNiceThemes Support Forums%s where we will do "
+"our best to help you."
+msgstr ""
+
+#: admin/deprecated.php:204
+msgid "Houdini Post Type"
+msgstr ""
+
+#: admin/deprecated.php:299
+msgid "Themes by NiceThemes.com"
+msgstr ""
+
+#: admin/deprecated.php:313
+msgid "More Info"
+msgstr ""
+
+#: admin/deprecated.php:320
+msgid "Error: Error when fetching themes."
+msgstr ""
+
+#: admin/deprecated.php:570 admin/scripts.php:139
+msgid "Add Media"
+msgstr ""
+
+#: admin/deprecated.php:573 admin/options.php:901 admin/scripts.php:142
+msgid "Remove Media"
+msgstr ""
+
+#: admin/deprecated.php:759
+#, php-format
+msgid ""
+"New Framework version %1$s(%2$s)%3$s ready to be installed. %4$sClick here"
+"%5$s"
+msgstr ""
+
+#: admin/deprecated.php:818
+msgid "NiceThemes.com Support"
+msgstr ""
+
+#: admin/deprecated.php:820
+msgid ""
+"We have a variety of resources to help you get the most out of our themes."
+msgstr ""
+
+#: admin/deprecated.php:821
+msgid "Visit the Support Center &rarr;"
+msgstr ""
+
+#: admin/deprecated.php:869
+msgid ""
+"Usage of this function is not recommended anymore. Please use nice_logo() "
+"without compatibility mode instead."
+msgstr ""
+
+#: admin/deprecated.php:994
+msgid ""
+"This function is deprecated, since constants are already defined in the "
+"framework's config.php file."
+msgstr ""
+
+#: admin/functions.php:632
+msgid "NiceFramework"
+msgstr ""
+
+#: admin/functions.php:633
+#, php-format
+msgid "(This message was added in %s version %s.)"
+msgstr ""
+
+#: admin/functions.php:634
+#, php-format
+msgid "%1$s was called incorrectly. %2$s %3$s"
+msgstr ""
+
+#: admin/media.php:682
+msgid "This function should receive the ID of an SVG file."
+msgstr ""
+
+#: admin/options.php:60
+msgid "All theme options were reset to defaults."
+msgstr ""
+
+#: admin/options.php:604
+msgid "Sorry, this function does not exist"
+msgstr ""
+
+#: admin/options.php:727
+msgid "Please select a color"
+msgstr ""
+
+#: admin/options.php:895
+msgid "Browse"
+msgstr ""
+
+#: admin/options.php:895
+msgid "Upload or select a file from the media library"
+msgstr ""
+
+#: admin/options.php:1237 admin/options.php:1319
+msgid "Option Name"
+msgstr ""
+
+#: admin/options.php:1513
+msgid "Set the Font Family"
+msgstr ""
+
+#: admin/options.php:1514
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: admin/options.php:1527
+msgid "Google Fonts"
+msgstr ""
+
+#: admin/options.php:1554
+msgid "Thin"
+msgstr ""
+
+#: admin/options.php:1555
+msgid "Thin/Italic"
+msgstr ""
+
+#: admin/options.php:1556
+msgid "Normal"
+msgstr ""
+
+#: admin/options.php:1557
+msgid "Italic"
+msgstr ""
+
+#: admin/options.php:1558
+msgid "Bold"
+msgstr ""
+
+#: admin/options.php:1559
+msgid "Bold/Italic"
+msgstr ""
+
+#: admin/options.php:1571
+msgid "Set the Font Weight"
+msgstr ""
+
+#: admin/options.php:1587 admin/options.php:1602
+msgid "Set the Font Size"
+msgstr ""
+
+#: admin/options.php:1606
+msgid "Set the Font Size Unit"
+msgstr ""
+
+#: admin/options.php:1623
+msgid "Set the Letter Spacing"
+msgstr ""
+
+#: admin/options.php:1625
+msgid "px"
+msgstr ""
+
+#: admin/options.php:1625
+msgid "em"
+msgstr ""
+
+#: admin/options.php:1630
+msgid "Set the Letter Spacing Unit"
+msgstr ""
+
+#: admin/options.php:1880
+msgid "Select an option"
+msgstr ""
+
+#: admin/options.php:1979
+msgid "unit"
+msgstr ""
+
+#: admin/options.php:2032
+msgid "h1"
+msgstr ""
+
+#: admin/options.php:2033
+msgid "h2"
+msgstr ""
+
+#: admin/options.php:2034
+msgid "h3"
+msgstr ""
+
+#: admin/options.php:2035
+msgid "h4"
+msgstr ""
+
+#: admin/options.php:2036
+msgid "h5"
+msgstr ""
+
+#: admin/options.php:2037
+msgid "h6"
+msgstr ""
+
+#: admin/options.php:2062
+msgid "UPPERCASE"
+msgstr ""
+
+#: admin/options.php:2063
+msgid "lowercase"
+msgstr ""
+
+#: admin/options.php:2064
+msgid "Capitalize"
+msgstr ""
+
+#: admin/plugin.php:57
+msgid "Handle with NiceThemes Plugin Installer"
+msgstr ""
+
+#: admin/plugin.php:128
+msgid "Install and activate required plugins"
+msgstr ""
+
+#: admin/plugin.php:130
+#, php-format
+msgid "Installing plugin: %s"
+msgstr ""
+
+#: admin/plugin.php:131
+#, php-format
+msgid "Updating plugin: %s"
+msgstr ""
+
+#: admin/plugin.php:132
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: admin/plugin.php:133
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:134
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:135
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:136
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:137
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:138
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:139
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:140
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:141
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/plugin.php:142
+msgid "Return to the plugin installer"
+msgstr ""
+
+#: admin/plugin.php:143
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: admin/plugin.php:144
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: admin/plugin.php:145
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: admin/plugin.php:146
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: admin/plugin.php:147
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: admin/plugin.php:148
+msgid "Dismiss this notice"
+msgstr ""
+
+#: admin/plugin.php:149
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: admin/plugin.php:150
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: admin/plugin.php:163
+#, php-format
+msgid ""
+"In order to be fully functional, %s requires some plugins, and recommends "
+"some others. You can install, update, activate or deactivate any of them "
+"from here."
+msgstr ""
+
+#: admin/scripts.php:64
+msgid "The quick brown fox jumps over the lazy dog."
+msgstr ""
+
+#: admin/scripts.php:65
+msgid "Preview your customized typography settings"
+msgstr ""
+
+#: admin/scripts.php:94
+msgid "Processing..."
+msgstr ""
+
+#: admin/scripts.php:95
+msgid "Process successful."
+msgstr ""
+
+#: admin/scripts.php:96 admin/templates/demos.php:418
+#: admin/templates/demos.php:436 admin/templates/demos.php:451
+msgid "Something went wrong."
+msgstr ""
+
+#: admin/scripts.php:96
+#, php-format
+msgid ""
+"Please %1$sReload this page%2$s and check that you meet the requirements."
+msgstr ""
+
+#: admin/scripts.php:97
+msgid ""
+"Your system may need some improvement in order to import this demo site "
+"correctly. Do you want to continue anyway?"
+msgstr ""
+
+#: admin/scripts.php:140 admin/scripts.php:141
+msgid "Use This File"
+msgstr ""
+
+#: admin/scripts.php:144
+msgid "Add new"
+msgstr ""
+
+#: admin/scripts.php:145
+msgid "New Option Name"
+msgstr ""
+
+#: admin/scripts.php:146
+msgid "Please validate the name of this option"
+msgstr ""
+
+#: admin/scripts.php:147 admin/scripts.php:148
+msgid "Option name validated correctly."
+msgstr ""
+
+#: admin/scripts.php:149
+msgid "Please enter a name for this option."
+msgstr ""
+
+#: admin/scripts.php:150
+msgid "There's already an option with that name. Please choose another one."
+msgstr ""
+
+#: admin/scripts.php:151
+msgid "Are you sure you want to remove this item?"
+msgstr ""
+
+#: admin/templates/about.php:27
+msgid "Get ready to have an amazing website"
+msgstr ""
+
+#: admin/templates/about.php:29
+#, php-format
+msgid ""
+"Welcome and thank you for installing %s! It means the world to us at "
+"NiceThemes. We are fully commited to making your experience perfect."
+msgstr ""
+
+#: admin/templates/about.php:31
+#, php-format
+msgid ""
+"If this is your first experience with %s, we recommend you visiting the "
+"following pages:"
+msgstr ""
+
+#: admin/templates/about.php:36
+#, php-format
+msgid "%1$sProduct Registration%2$s"
+msgstr ""
+
+#: admin/templates/about.php:37
+#, php-format
+msgid "%1$sTheme Options Panel%2$s"
+msgstr ""
+
+#: admin/templates/about.php:43
+#, php-format
+msgid "%1$sGetting Started%2$s"
+msgstr ""
+
+#: admin/templates/about.php:44
+#, php-format
+msgid "%1$sSupport and Updates%2$s"
+msgstr ""
+
+#: admin/templates/about.php:54 admin/templates/getting-started.php:32
+#, php-format
+msgid ""
+"The %1$sTheme Options Panel%2$s is extremely straightforward. Once you are "
+"there, you will find the different Option Sections on the left part of the "
+"screen and once you click on any of those you will be able to see the set of "
+"options for that section."
+msgstr ""
+
+#: admin/templates/about.php:56
+msgid "Register your purchase"
+msgstr ""
+
+#: admin/templates/about.php:57
+#, php-format
+msgid ""
+"Please %1$sregister your purchase%2$s to get support and automatic theme "
+"updates."
+msgstr ""
+
+#: admin/templates/about.php:68 admin/templates/getting-started.php:126
+msgid "Customizing your theme"
+msgstr ""
+
+#: admin/templates/about.php:74
+msgid "Using a Child Theme"
+msgstr ""
+
+#: admin/templates/about.php:75 admin/templates/getting-started.php:133
+#, php-format
+msgid ""
+"We highly encourage all of our users to customize their websites by using a "
+"child theme. That way you will not lose your changes once a new update is "
+"applied. If you are not familiar with child themes, we have a %1$sfull "
+"article explaining how to use them%2$s"
+msgstr ""
+
+#: admin/templates/about.php:80 admin/templates/getting-started.php:138
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/templates/about.php:81 admin/templates/getting-started.php:139
+msgid ""
+"You can choose to add custom styling within the theme files or the options "
+"panel. In the Theme Options panel, you'll find a special input where you can "
+"insert your custom CSS. Another option is to add your custom CSS to the "
+"custom.css you can find within the theme files."
+msgstr ""
+
+#: admin/templates/about.php:85 admin/templates/getting-started.php:143
+msgid "Custom PHP"
+msgstr ""
+
+#: admin/templates/about.php:86 admin/templates/getting-started.php:144
+msgid ""
+"You can also add custom PHP scripts in your functions.php file within the "
+"theme files."
+msgstr ""
+
+#: admin/templates/about.php:94 admin/templates/getting-started.php:152
+msgid "Need Help?"
+msgstr ""
+
+#: admin/templates/about.php:100 admin/templates/getting-started.php:158
+msgid "Phenomenal Support"
+msgstr ""
+
+#: admin/templates/about.php:101 admin/templates/getting-started.php:159
+#, php-format
+msgid ""
+"We do our best to provide the most reliable support you will ever find. If "
+"you encounter a problem or have a question, simply open a ticket using our "
+"%1$ssupport forums%2$s."
+msgstr ""
+
+#: admin/templates/about.php:105 admin/templates/getting-started.php:163
+#: admin/templates/support.php:73
+msgid "Documentation"
+msgstr ""
+
+#: admin/templates/about.php:106 admin/templates/getting-started.php:164
+#, php-format
+msgid ""
+"Our %1$sdocumentation and guides%2$s will help you get your problem solved "
+"without waiting for an answer."
+msgstr ""
+
+#: admin/templates/about.php:110 admin/templates/getting-started.php:168
+msgid "Articles"
+msgstr ""
+
+#: admin/templates/about.php:111 admin/templates/getting-started.php:169
+#, php-format
+msgid ""
+"Our %1$sKnowledge Base%2$s is plenty of useful articles that will help you "
+"with any problem or question you may have."
+msgstr ""
+
+#: admin/templates/changelog-framework.php:22 admin/templates/changelog.php:22
+#, php-format
+msgid "This is %1$s changelog. %2$sView %3$s changelog%4$s."
+msgstr ""
+
+#: admin/templates/changelog-framework.php:49 admin/templates/changelog.php:49
+msgid "No valid changelog was found."
+msgstr ""
+
+#: admin/templates/demos.php:74
+msgid "Theme"
+msgstr ""
+
+#: admin/templates/demos.php:77
+msgid "Framework"
+msgstr ""
+
+#: admin/templates/demos.php:80
+msgid "Plugins"
+msgstr ""
+
+#: admin/templates/demos.php:128
+#, php-format
+msgid "Updates: %s"
+msgstr ""
+
+#: admin/templates/demos.php:135
+msgid "Installed:"
+msgstr ""
+
+#: admin/templates/demos.php:135
+msgid "Partially Installed:"
+msgstr ""
+
+#: admin/templates/demos.php:143 admin/templates/demos.php:503
+#, php-format
+msgid "Reinstall %s"
+msgstr ""
+
+#: admin/templates/demos.php:143 admin/templates/demos.php:503
+msgid "Reinstall"
+msgstr ""
+
+#: admin/templates/demos.php:146 admin/templates/demos.php:506
+#, php-format
+msgid "Preview %s"
+msgstr ""
+
+#: admin/templates/demos.php:164
+msgid "Demo Description"
+msgstr ""
+
+#: admin/templates/demos.php:166 admin/templates/demos.php:616
+msgid "Requirements"
+msgstr ""
+
+#: admin/templates/demos.php:167
+msgid "Important Notes"
+msgstr ""
+
+#: admin/templates/demos.php:222
+#, php-format
+msgid "Requirements to install \"%s\""
+msgstr ""
+
+#: admin/templates/demos.php:230
+msgid ""
+"The demo installer may work fine with your current setup, but we recommend "
+"making some improvements to make sure the process doesn't fail. You can "
+"check which system requirements are showing warnings and fix them before "
+"proceeding."
+msgstr ""
+
+#: admin/templates/demos.php:232
+msgid ""
+"The demo installer will probably fail with your current setup. Please check "
+"which system requirements are showing errors and fix them before proceeding."
+msgstr ""
+
+#: admin/templates/demos.php:234
+msgid ""
+"Your current setup is fine for importing demo sites in most WordPress "
+"setups. However, this list of requirements only serves as a reference, and "
+"you may need to increase your resources depending on your particular "
+"installation, server or hosting plan."
+msgstr ""
+
+#: admin/templates/demos.php:238
+#, php-format
+msgid ""
+"For more information, read our %1$sImportant Notes%2$s, %3$scheck your "
+"System Status%4$s, or learn more about %5$ssystem status%6$s and %7$sserver "
+"requirements%8$s."
+msgstr ""
+
+#: admin/templates/demos.php:246
+msgid "System Requirements"
+msgstr ""
+
+#: admin/templates/demos.php:255
+msgid "Theme Requirements"
+msgstr ""
+
+#: admin/templates/demos.php:265 admin/templates/demos.php:285
+msgid "It must be updated."
+msgstr ""
+
+#: admin/templates/demos.php:285
+msgid "Nice Framework is active, but outdated."
+msgstr ""
+
+#: admin/templates/demos.php:294
+msgid "Nice Framework"
+msgstr ""
+
+#: admin/templates/demos.php:304
+msgid "Plugin Requirements"
+msgstr ""
+
+#: admin/templates/demos.php:317
+#, php-format
+msgid "Before you install \"%s\", please read:"
+msgstr ""
+
+#: admin/templates/demos.php:319
+msgid ""
+"By installing the demo pack you will be agreeing that you have read and "
+"understood these notes:"
+msgstr ""
+
+#: admin/templates/demos.php:325
+msgid "Avoid importing in Live Sites"
+msgstr ""
+
+#: admin/templates/demos.php:325 admin/templates/system-status.php:438
+msgid "Recommended"
+msgstr ""
+
+#: admin/templates/demos.php:326
+#, php-format
+msgid ""
+"Because of the nature of this process, %1$swe strongly advise you against "
+"using this feature in live sites%2$s. Its main purpose is to provide a quick "
+"start when creating new ones, and %1$snot all hosting services offer the "
+"necessary requirements to use the demo importer out the box%2$s."
+msgstr ""
+
+#: admin/templates/demos.php:332
+msgid "New content will be added"
+msgstr ""
+
+#: admin/templates/demos.php:333
+#, php-format
+msgid ""
+"Installing a demo %1$sadds new content%2$s to your site. This means that the "
+"new content will end up %1$smixed with any content you may have now%2$s "
+"(unless you choose to remove it first by checking the box in the sidebar)."
+msgstr ""
+
+#: admin/templates/demos.php:339
+msgid "Do you want to remove content?"
+msgstr ""
+
+#: admin/templates/demos.php:340
+#, php-format
+msgid ""
+"If you choose to %1$sremove the current content%2$s, your current pages, "
+"posts, categories, tags, widgets and plugin-related data %1$swill be erased"
+"%2$s. Choose this option only if you want to make a fresh start."
+msgstr ""
+
+#: admin/templates/demos.php:346
+msgid "Back up your site"
+msgstr ""
+
+#: admin/templates/demos.php:347
+#, php-format
+msgid ""
+"The current state of the site %1$swill not be backed up%2$s. This means that "
+"%1$sthis process can't be automatically undone%2$s; if you may want to "
+"restore the site as it is now, %1$syou should perform a manual backup%2$s "
+"before proceeding."
+msgstr ""
+
+#: admin/templates/demos.php:353
+msgid "Stay online"
+msgstr ""
+
+#: admin/templates/demos.php:354
+#, php-format
+msgid ""
+"Some of the contents to import (mainly images) are hosted in the cloud. "
+"You'll need to be %1$sconnected to the internet%2$s to complete the import."
+msgstr ""
+
+#: admin/templates/demos.php:360
+msgid "Be patient"
+msgstr ""
+
+#: admin/templates/demos.php:361
+#, php-format
+msgid ""
+"Importing content for an entire site %1$scan take minutes%2$s, so grab a cup "
+"of coffee and have some patience while the contents are being installed."
+msgstr ""
+
+#: admin/templates/demos.php:373
+msgid "Before you continue"
+msgstr ""
+
+#: admin/templates/demos.php:377
+#, php-format
+msgid ""
+"The demo installer will probably fail with your current setup. Please check "
+"the %1$sRequirements%2$s tab."
+msgstr ""
+
+#: admin/templates/demos.php:382
+msgid "Please bear in mind"
+msgstr ""
+
+#: admin/templates/demos.php:383
+#, php-format
+msgid ""
+"This demo %1$sis already installed%2$s. Nothing will actually be done unless "
+"you enable the option to %1$sremove the current content%2$s."
+msgstr ""
+
+#: admin/templates/demos.php:385
+msgid "Something went wrong last time."
+msgstr ""
+
+#: admin/templates/demos.php:386
+#, php-format
+msgid ""
+"This demo %1$sis installed, but incomplete%2$s. It's not fully functional. "
+"If this is not intentional, consider resetting it by enabling the option to "
+"%1$sremove the current content%2$s."
+msgstr ""
+
+#: admin/templates/demos.php:395
+msgid "This demo is already installed."
+msgstr ""
+
+#: admin/templates/demos.php:398 admin/templates/demos.php:411
+#: admin/templates/demos.php:420
+msgid "This demo is installed, but not fully functional."
+msgstr ""
+
+#: admin/templates/demos.php:399 admin/templates/demos.php:412
+#: admin/templates/demos.php:421
+msgid "If this is not intentional, you should:"
+msgstr ""
+
+#: admin/templates/demos.php:401 admin/templates/demos.php:426
+#: admin/templates/demos.php:462
+msgid "Reinstall it removing all current content."
+msgstr ""
+
+#: admin/templates/demos.php:405
+msgid "Everything is set and you are good to go!"
+msgstr ""
+
+#: admin/templates/demos.php:405
+msgid "Go ahead and try this demo by clicking the \"Install\" button!"
+msgstr ""
+
+#: admin/templates/demos.php:414 admin/templates/demos.php:424
+#: admin/templates/demos.php:446 admin/templates/demos.php:460
+#: admin/templates/demos.php:473
+msgid "Install, update and activate all needed plugins."
+msgstr ""
+
+#: admin/templates/demos.php:438 admin/templates/demos.php:453
+msgid "This demo is installed, but probably malfunctioning."
+msgstr ""
+
+#: admin/templates/demos.php:439 admin/templates/demos.php:454
+msgid "To fix this, you should:"
+msgstr ""
+
+#: admin/templates/demos.php:442 admin/templates/demos.php:457
+#: admin/templates/demos.php:470
+msgid "Update both theme and framework."
+msgstr ""
+
+#: admin/templates/demos.php:466
+msgid "You're almost good to go!"
+msgstr ""
+
+#: admin/templates/demos.php:467
+msgid ""
+"You need to take some action before installing this demo, because some "
+"requirements are not met. So, please:"
+msgstr ""
+
+#: admin/templates/demos.php:476
+msgid "Please check the requirements tab to see what you are failing at."
+msgstr ""
+
+#: admin/templates/demos.php:484
+msgid "Remove current website content?"
+msgstr ""
+
+#: admin/templates/demos.php:486
+msgid ""
+"You can remove the content from this site before installing the demo. You "
+"will lose all the current site contents (pages, posts, etc)"
+msgstr ""
+
+#: admin/templates/demos.php:487
+msgid ""
+"Yes, I want to remove all the content of this site and I take the "
+"responsibility for it."
+msgstr ""
+
+#: admin/templates/demos.php:506
+msgid "Preview"
+msgstr ""
+
+#: admin/templates/demos.php:509
+msgid "Cancel and return to the Demo Installer"
+msgstr ""
+
+#: admin/templates/demos.php:509
+msgid "Cancel"
+msgstr ""
+
+#: admin/templates/demos.php:531
+msgid "Tag"
+msgstr ""
+
+#: admin/templates/demos.php:537
+msgid "Color"
+msgstr ""
+
+#: admin/templates/demos.php:543
+msgid "Feature"
+msgstr ""
+
+#: admin/templates/demos.php:568
+msgid "All"
+msgstr ""
+
+#: admin/templates/demos.php:588
+#, php-format
+msgid ""
+"Learn how easy is to install a demo content pack %1$shere%2$s or "
+"%3$swatching the step-by-step video%4$s."
+msgstr ""
+
+#: admin/templates/demos.php:596
+msgid "No demo packs match your selection."
+msgstr ""
+
+#: admin/templates/demos.php:606
+msgid "Please Read"
+msgstr ""
+
+#: admin/templates/demos.php:608
+msgid ""
+"Before installing any demo pack, you must understand the implications of the "
+"process. By clicking the \"Install\" button YOU CONFIRM that you have read "
+"the \"Requirements\" and \"Important Notes\" contents, and take full "
+"responsibility for the outcome of the process."
+msgstr ""
+
+#: admin/templates/demos.php:609
+msgid ""
+"This implies importing contents such as pages, posts, theme options, "
+"widgets, sidebars and other settings. It will replicate what you see in the "
+"live demo. The importing process will replace your current theme options and "
+"widgets. It can also take some minutes to complete."
+msgstr ""
+
+#: admin/templates/demos.php:610
+msgid ""
+"The process will not remove any of your site contents unless you choose to "
+"do so."
+msgstr ""
+
+#: admin/templates/demos.php:618
+#, php-format
+msgid ""
+"DEMO IMPORT REQUIREMENTS:\n"
+"\n"
+"- Memory Limit of %s, and max execution time (php time limit) of %s "
+"seconds.\n"
+"\n"
+"- Theme, Framework and Plugin requirements listed in the \"Requirements\" "
+"tab."
+msgstr ""
+
+#: admin/templates/demos.php:624
+#, php-format
+msgid ""
+"%1$sIMPORTANT:%2$s Some of the %3$sincluded plugins%4$s need to be installed "
+"and activated before you %1$sinstall a demo%2$s. Please check the %5$s"
+"\"System Status\"%6$s page to ensure your server meets all requirements for "
+"a successful import."
+msgstr ""
+
+#: admin/templates/demos.php:630
+#, php-format
+msgid "Can't load any demo pack for %s. Please check your internet connection."
+msgstr ""
+
+#: admin/templates/getting-started.php:18
+#: admin/templates/getting-started.php:24
+msgid "Theme Options Panel"
+msgstr ""
+
+#: admin/templates/getting-started.php:26
+#, php-format
+msgid ""
+"It is really simple to find. Just look where it says  %1$sTheme Options%2$s "
+"and with some simple clicks you will be able to customize your theme. You "
+"will find options to modify  the layout, colors, set a logo, change the "
+"typography and more, much more."
+msgstr ""
+
+#: admin/templates/getting-started.php:30
+msgid "How to use the options"
+msgstr ""
+
+#: admin/templates/getting-started.php:36
+msgid "Do not forget to save the changes!"
+msgstr ""
+
+#: admin/templates/getting-started.php:37
+msgid ""
+"Once you are done editing the theme options, do not forget to save them. If "
+"you do not save the changes, then you won't be able to see them."
+msgstr ""
+
+#: admin/templates/getting-started.php:48
+msgid "Installing the required plugins"
+msgstr ""
+
+#: admin/templates/getting-started.php:53
+msgid "Theme compatible Plugins"
+msgstr ""
+
+#: admin/templates/getting-started.php:54
+msgid ""
+"In most cases, part of the site functionality is handled by different "
+"plugins."
+msgstr ""
+
+#: admin/templates/getting-started.php:55
+#, php-format
+msgid ""
+"In most cases, part of the site functionality is handled by different "
+"plugins. If you visit the %1$sInstall Plugins%2$s page you will find a "
+"complete list of the plugins that are fully compatible with this theme."
+msgstr ""
+
+#: admin/templates/getting-started.php:60
+#, php-format
+msgid ""
+"In that same %1$slist of plugins%2$s you can see which ones are strictly "
+"required to make your site work. You will be able to see which ones are "
+"required, and others that we suggest you to use, and most important, you "
+"will be able to install them in the blink of an eye."
+msgstr ""
+
+#: admin/templates/getting-started.php:65
+msgid ""
+"There are cases in which you already have some of the required plugins "
+"installed already, if that is your case, you will need to activate them in "
+"order to make them work. You can also activate them directly from that "
+"screen."
+msgstr ""
+
+#: admin/templates/getting-started.php:77
+msgid "Importing Demo Contents"
+msgstr ""
+
+#: admin/templates/getting-started.php:84
+msgid "Choose the Demo Pack you want to import"
+msgstr ""
+
+#: admin/templates/getting-started.php:85
+#, php-format
+msgid ""
+"In the %1$sDemo Packs Importer Page%2$s you will find the different demos we "
+"have created for this theme. You can browse through the different options we "
+"have curated for you, preview them and see the special requirements for each "
+"one of them."
+msgstr ""
+
+#: admin/templates/getting-started.php:89
+msgid "Make sure you meet the requirements"
+msgstr ""
+
+#: admin/templates/getting-started.php:90
+msgid ""
+"Each demo has special functions, and it is quite likely that you will need "
+"to install or activate a plugin to fully import the contents correctly."
+msgstr ""
+
+#: admin/templates/getting-started.php:94
+msgid "Click and install"
+msgstr ""
+
+#: admin/templates/getting-started.php:95
+msgid ""
+"Once you decided which one you would like to import, all you need to do is "
+"click on the import button. As simple as that, all the contents will be "
+"imported and your site will be configured automatically!"
+msgstr ""
+
+#: admin/templates/getting-started.php:104
+msgid "Getting the demo contents XML"
+msgstr ""
+
+#: admin/templates/getting-started.php:105
+#, php-format
+msgid ""
+"To make your site look like the demo site you will need to import the demo "
+"contents and configure the options. You can find the %1$sdemo content XML "
+"file here%2$s."
+msgstr ""
+
+#: admin/templates/getting-started.php:109
+msgid "How to import the file"
+msgstr ""
+
+#: admin/templates/getting-started.php:110
+msgid ""
+"On Your WordPress Dashboard, go to Tools > Import > WordPress. Install the "
+"WordPress Importer. Browse for the XML file and import it."
+msgstr ""
+
+#: admin/templates/getting-started.php:114
+msgid "After importing contents"
+msgstr ""
+
+#: admin/templates/getting-started.php:115
+#, php-format
+msgid ""
+"You will need to: Set up the front page, set up the widgets for the "
+"different widgetized spaces, Configure the navigation menu, and save the "
+"theme options. You can read more about this %1$son this link%2$s"
+msgstr ""
+
+#: admin/templates/getting-started.php:132
+msgid "Use a Child Theme"
+msgstr ""
+
+#: admin/templates/getting-started.php:177
+msgid "Stay Up to Date"
+msgstr ""
+
+#: admin/templates/getting-started.php:183
+msgid "New releases and updates"
+msgstr ""
+
+#: admin/templates/getting-started.php:184
+#, php-format
+msgid ""
+"New releases are out periodically. Subscribe to our newsletter to stay up to "
+"date with our latest releases and updates. %1$sSign up now%2$s to ensure you "
+"do not miss a release!"
+msgstr ""
+
+#: admin/templates/getting-started.php:188
+msgid "Get Alerted About New Products"
+msgstr ""
+
+#: admin/templates/getting-started.php:189
+#, php-format
+msgid ""
+"%1$sYou can sign up%2$s to hear about the latest releases and updates about "
+"our products."
+msgstr ""
+
+#: admin/templates/getting-started.php:193
+msgid "Follow us on"
+msgstr ""
+
+#: admin/templates/getting-started.php:194
+#, php-format
+msgid ""
+"%1$sYou can sign up%2$s to hear about the latest tutorial releases that "
+"explain how to take your site further."
+msgstr ""
+
+#: admin/templates/global/footer.php:25
+#, php-format
+msgid "Made with %s by %s"
+msgstr ""
+
+#: admin/templates/global/footer.php:31
+msgid "Themes"
+msgstr ""
+
+#: admin/templates/global/footer.php:33
+msgid "Help &amp; Support"
+msgstr ""
+
+#: admin/templates/options-backup.php:33
+msgid "Import Theme Options"
+msgstr ""
+
+#: admin/templates/options-backup.php:35
+msgid ""
+"If you have options in a backup file on your computer, this form can import "
+"those into this site. To get started, upload your backup file to import from "
+"below."
+msgstr ""
+
+#: admin/templates/options-backup.php:40
+#, php-format
+msgid "Upload File: (Maximum Size: %s)"
+msgstr ""
+
+#: admin/templates/options-backup.php:43
+msgid "Upload File and Import"
+msgstr ""
+
+#: admin/templates/options-backup.php:54
+msgid "Export Theme Options"
+msgstr ""
+
+#: admin/templates/options-backup.php:56
+msgid ""
+"When you click the button below, a text file (.json) will be created for you "
+"to save to your computer."
+msgstr ""
+
+#: admin/templates/options-backup.php:57
+#, php-format
+msgid ""
+"This text file can be used to restore your options here on \"%s\", or to "
+"easily setup another website with the same options."
+msgstr ""
+
+#: admin/templates/options-backup.php:62
+msgid "Download Export File"
+msgstr ""
+
+#: admin/templates/options.php:48
+msgid "Version"
+msgstr ""
+
+#: admin/templates/options.php:48
+msgid "View Changelog"
+msgstr ""
+
+#: admin/templates/options.php:58
+msgid "Reset options to their default values"
+msgstr ""
+
+#: admin/templates/options.php:60
+msgid "Import/Export Options"
+msgstr ""
+
+#: admin/templates/register-product.php:28
+#, php-format
+msgid ""
+"In order to get support and one-click updates, you will need to %1$sregister "
+"your product%2$s by following the steps below."
+msgstr ""
+
+#: admin/templates/register-product.php:40
+msgid ""
+"Follow these simple steps. If you haven't purchased the theme on ThemeForest "
+"please go directly to step 3."
+msgstr ""
+
+#: admin/templates/register-product.php:44
+msgid "Step 1 - Get ThemeForest Purchase code"
+msgstr ""
+
+#: admin/templates/register-product.php:46
+#, php-format
+msgid ""
+"Get your purchase code from your \"Downloads\" section of your ThemeForest "
+"account. %1$sRead the tutorial here%2$s."
+msgstr ""
+
+#: admin/templates/register-product.php:50
+msgid "Step 2 - Signup for Support"
+msgstr ""
+
+#: admin/templates/register-product.php:52
+#, php-format
+msgid ""
+"%1$sClick here to signup%2$s at our support center. The account gives you "
+"access to our documentation, knowledgebase, video tutorials and ticket "
+"system. %3$sView a tutorial here%4$s."
+msgstr ""
+
+#: admin/templates/register-product.php:57
+msgid "Step 3 - Get the Theme License Key"
+msgstr ""
+
+#: admin/templates/register-product.php:58
+#, php-format
+msgid ""
+"Go to your %1$sNiceThemes.com Account Dashboard%2$s and register your "
+"purchase with the purchase code you got in \"Step 1\" Then insert the "
+"\"License Key\" below."
+msgstr ""
+
+#: admin/templates/register-product.php:69
+msgid ""
+"You are almost ready, please insert the theme license in the field below to "
+"get access to one-click updates. Do not forget to activate the license for "
+"this site."
+msgstr ""
+
+#: admin/templates/register-product.php:73
+msgid ""
+"Thanks for registering your product! You will now have access to one-click "
+"updates and support."
+msgstr ""
+
+#: admin/templates/support.php:27
+#, php-format
+msgid "%s is now installed and ready to use!"
+msgstr ""
+
+#: admin/templates/support.php:27
+#, php-format
+msgid ""
+"In order to get support and %1$sone-click updates%2$s, you will need to %1$s"
+"%3$sregister your product%4$s%2$s."
+msgstr ""
+
+#: admin/templates/support.php:34
+msgid "Popular Articles"
+msgstr ""
+
+#: admin/templates/support.php:36
+msgid ""
+"Here is a list of the most popular articles regarding theme configuration. "
+"You can read any of them by following the links or you can check the rest of "
+"articles and documentation in our support section at NiceThemes.com"
+msgstr ""
+
+#: admin/templates/support.php:43
+msgid "Configuring the Theme Options"
+msgstr ""
+
+#: admin/templates/support.php:44
+msgid "Using Featured Images"
+msgstr ""
+
+#: admin/templates/support.php:45
+msgid "Setting up and using the navigation menus"
+msgstr ""
+
+#: admin/templates/support.php:46
+msgid "Using SEO friendly permalinks"
+msgstr ""
+
+#: admin/templates/support.php:47
+msgid "How to use WordPress widgets?"
+msgstr ""
+
+#: admin/templates/support.php:55
+msgid "How to customize my theme?"
+msgstr ""
+
+#: admin/templates/support.php:56
+msgid "How to create and use Child Themes?"
+msgstr ""
+
+#: admin/templates/support.php:57
+msgid "How to translate my Theme?"
+msgstr ""
+
+#: admin/templates/support.php:58
+msgid "Setting up the Home Page"
+msgstr ""
+
+#: admin/templates/support.php:59
+msgid "Importing demo content"
+msgstr ""
+
+#: admin/templates/support.php:75
+msgid ""
+"Our online documentation is an amazing resource for learning all the special "
+"instructions for using this theme."
+msgstr ""
+
+#: admin/templates/support.php:77
+msgid "View documentation"
+msgstr ""
+
+#: admin/templates/support.php:84
+msgid "Knowledge Base"
+msgstr ""
+
+#: admin/templates/support.php:86
+msgid ""
+"In our Knowledge Base you can find additional content that is not inside of "
+"our documentation. This information is more specific and unique to different "
+"aspects of the theme."
+msgstr ""
+
+#: admin/templates/support.php:88
+msgid "View articles"
+msgstr ""
+
+#: admin/templates/support.php:95
+msgid "Support Forums"
+msgstr ""
+
+#: admin/templates/support.php:97
+msgid ""
+"Through the forums we offer top notch support. Make sure to register your "
+"purchase first to access our support services."
+msgstr ""
+
+#: admin/templates/support.php:99
+msgid "Visit the forums"
+msgstr ""
+
+#: admin/templates/support.php:110
+msgid "Framework Updates"
+msgstr ""
+
+#: admin/templates/support.php:125
+#, php-format
+msgid "You are running %1$s %2$s"
+msgstr ""
+
+#: admin/templates/support.php:130 admin/templates/support.php:180
+#, php-format
+msgid "%1$s demo requires at least %2$s."
+msgstr ""
+
+#: admin/templates/support.php:144 admin/templates/support.php:194
+#, php-format
+msgid "Update to %s"
+msgstr ""
+
+#: admin/templates/support.php:148 admin/templates/support.php:198
+#, php-format
+msgid "Version %s is available."
+msgstr ""
+
+#: admin/templates/support.php:154
+msgid "You are up to date."
+msgstr ""
+
+#: admin/templates/support.php:160 admin/templates/support.php:210
+#, php-format
+msgid "%1$sPlease register your product to get one-click updates%2$s."
+msgstr ""
+
+#: admin/templates/support.php:173
+msgid "Theme Updates"
+msgstr ""
+
+#: admin/templates/support.php:175
+#, php-format
+msgid "You are running %s %s"
+msgstr ""
+
+#: admin/templates/support.php:204
+msgid "You have the latest version."
+msgstr ""
+
+#: admin/templates/support.php:222
+msgid "Changelog & System Status"
+msgstr ""
+
+#: admin/templates/support.php:224
+msgid "Theme Changelog"
+msgstr ""
+
+#: admin/templates/system-status.php:24
+msgid "Get System Status Report"
+msgstr ""
+
+#: admin/templates/system-status.php:27
+msgid ""
+"Click the button to generate and download a full report. Then, attach it to "
+"your support ticket."
+msgstr ""
+
+#: admin/templates/system-status.php:43
+msgid "Home URL:"
+msgstr ""
+
+#: admin/templates/system-status.php:44
+msgid "The URL of the site's homepage."
+msgstr ""
+
+#: admin/templates/system-status.php:49
+msgid "Site URL:"
+msgstr ""
+
+#: admin/templates/system-status.php:50
+msgid "The root URL of the site."
+msgstr ""
+
+#: admin/templates/system-status.php:55 admin/templates/system-status.php:187
+#: admin/templates/system-status.php:272 admin/templates/system-status.php:301
+msgid "Version:"
+msgstr ""
+
+#: admin/templates/system-status.php:56
+msgid "The version of WordPress installed on the site."
+msgstr ""
+
+#: admin/templates/system-status.php:60 admin/templates/system-status.php:197
+#: admin/templates/system-status.php:277
+#, php-format
+msgid "Recommended version: %s or higher."
+msgstr ""
+
+#: admin/templates/system-status.php:66
+msgid "Multisite:"
+msgstr ""
+
+#: admin/templates/system-status.php:67
+msgid "Whether or not is WordPress Multisite enabled."
+msgstr ""
+
+#: admin/templates/system-status.php:72
+msgid "Memory Limit:"
+msgstr ""
+
+#: admin/templates/system-status.php:73
+msgid "The maximum amount of memory (RAM) that the site can use at one time."
+msgstr ""
+
+#: admin/templates/system-status.php:77 admin/templates/system-status.php:88
+#: admin/templates/system-status.php:212 admin/templates/system-status.php:227
+#: admin/templates/system-status.php:242
+#, php-format
+msgid "Recommended value: %s."
+msgstr ""
+
+#: admin/templates/system-status.php:77
+msgid "Please increase it"
+msgstr ""
+
+#: admin/templates/system-status.php:83
+msgid "Maximum Upload File Size:"
+msgstr ""
+
+#: admin/templates/system-status.php:84
+msgid ""
+"The largest file size that can be uploaded to this WordPress installation."
+msgstr ""
+
+#: admin/templates/system-status.php:94
+msgid "Allowed File Extensions:"
+msgstr ""
+
+#: admin/templates/system-status.php:95
+msgid ""
+"The file extensions the current user can upload to this WordPress "
+"installation."
+msgstr ""
+
+#: admin/templates/system-status.php:100
+msgid "Language:"
+msgstr ""
+
+#: admin/templates/system-status.php:101
+msgid "The language currently used by WordPress."
+msgstr ""
+
+#: admin/templates/system-status.php:106
+msgid "Upload Directory:"
+msgstr ""
+
+#: admin/templates/system-status.php:107
+msgid "Whether or not your upload directory is writable."
+msgstr ""
+
+#: admin/templates/system-status.php:108
+msgid "Writable"
+msgstr ""
+
+#: admin/templates/system-status.php:108
+msgid "Not writable"
+msgstr ""
+
+#: admin/templates/system-status.php:112
+msgid "Debug Mode:"
+msgstr ""
+
+#: admin/templates/system-status.php:113
+msgid "Whether or not is WordPress in debug mode."
+msgstr ""
+
+#: admin/templates/system-status.php:123
+msgid "Server"
+msgstr ""
+
+#: admin/templates/system-status.php:130
+msgid "Server Information:"
+msgstr ""
+
+#: admin/templates/system-status.php:131
+msgid "Information about the web server that is currently hosting the site."
+msgstr ""
+
+#: admin/templates/system-status.php:136
+msgid "Server Timezone:"
+msgstr ""
+
+#: admin/templates/system-status.php:137
+msgid "The default timezone for the server. It should be UTC."
+msgstr ""
+
+#: admin/templates/system-status.php:141
+msgid "The default timezone should be UTC."
+msgstr ""
+
+#: admin/templates/system-status.php:147
+msgid "Remote GET method:"
+msgstr ""
+
+#: admin/templates/system-status.php:148
+msgid ""
+"Whether or not can the GET method be used to communicate with different APIs."
+msgstr ""
+
+#: admin/templates/system-status.php:155
+msgid "Remote POST method:"
+msgstr ""
+
+#: admin/templates/system-status.php:156
+msgid ""
+"Whether or not can the POST method be used to communicate with different "
+"APIs."
+msgstr ""
+
+#: admin/templates/system-status.php:163
+msgid "mod_security:"
+msgstr ""
+
+#: admin/templates/system-status.php:164
+msgid ""
+"Whether the mod_security extension is enabled. This extension may cause "
+"issues with file uploads."
+msgstr ""
+
+#: admin/templates/system-status.php:188
+msgid "The version of PHP installed on your server."
+msgstr ""
+
+#: admin/templates/system-status.php:193 admin/templates/system-status.php:209
+#: admin/templates/system-status.php:224 admin/templates/system-status.php:239
+#, php-format
+msgid "%s isn't available."
+msgstr ""
+
+#: admin/templates/system-status.php:203
+msgid "Maximum Input Variables:"
+msgstr ""
+
+#: admin/templates/system-status.php:204
+msgid ""
+"The maximum number of variables the server can use for a single function to "
+"avoid overloads."
+msgstr ""
+
+#: admin/templates/system-status.php:218
+msgid "POST Maximum Size:"
+msgstr ""
+
+#: admin/templates/system-status.php:219
+msgid "The largest file size that can be contained in one POST request."
+msgstr ""
+
+#: admin/templates/system-status.php:233
+msgid "Time Limit:"
+msgstr ""
+
+#: admin/templates/system-status.php:234
+msgid ""
+"The amount of time (in seconds) that the site will spend on a single "
+"operation before timing out (to avoid server lockups)."
+msgstr ""
+
+#: admin/templates/system-status.php:248
+msgid "Xdebug:"
+msgstr ""
+
+#: admin/templates/system-status.php:249
+msgid ""
+"Whether the Xdebug extension is enabled. This value should always be "
+"disabled in live sites."
+msgstr ""
+
+#: admin/templates/system-status.php:252
+msgid "Xdebug is enabled. Please disable it if this is a live site."
+msgstr ""
+
+#: admin/templates/system-status.php:273
+msgid "The version of MySQL installed on your server."
+msgstr ""
+
+#: admin/templates/system-status.php:288
+msgid "Active Theme"
+msgstr ""
+
+#: admin/templates/system-status.php:295
+msgid "Name:"
+msgstr ""
+
+#: admin/templates/system-status.php:296
+msgid "The name of the currently active theme."
+msgstr ""
+
+#: admin/templates/system-status.php:302
+msgid "The installed version of the currently active theme."
+msgstr ""
+
+#: admin/templates/system-status.php:307
+msgid "Framework Version:"
+msgstr ""
+
+#: admin/templates/system-status.php:308
+msgid "The installed version of the Nice Framework."
+msgstr ""
+
+#: admin/templates/system-status.php:313
+msgid "Author's URL:"
+msgstr ""
+
+#: admin/templates/system-status.php:314
+msgid "The currently active theme developer's URL."
+msgstr ""
+
+#: admin/templates/system-status.php:319
+msgid "Child Theme:"
+msgstr ""
+
+#: admin/templates/system-status.php:320
+msgid "Whether or not is the currently active theme a child theme."
+msgstr ""
+
+#: admin/templates/system-status.php:324
+#, php-format
+msgid "If you're modifying %s, we recommend using a child theme."
+msgstr ""
+
+#: admin/templates/system-status.php:324
+msgid "Learn about them"
+msgstr ""
+
+#: admin/templates/system-status.php:332
+msgid "Parent Theme Name:"
+msgstr ""
+
+#: admin/templates/system-status.php:333
+msgid "The name of the parent theme."
+msgstr ""
+
+#: admin/templates/system-status.php:338
+msgid "Parent Theme Version:"
+msgstr ""
+
+#: admin/templates/system-status.php:339
+msgid "The installed version of the parent theme."
+msgstr ""
+
+#: admin/templates/system-status.php:344
+msgid "Parent Theme Author's URL:"
+msgstr ""
+
+#: admin/templates/system-status.php:345
+msgid "The parent theme developer's URL."
+msgstr ""
+
+#: admin/templates/system-status.php:357
+msgid "Installed Demo Packs"
+msgstr ""
+
+#: admin/templates/system-status.php:371
+msgid "WARNING:"
+msgstr ""
+
+#: admin/templates/system-status.php:371
+msgid "You have more than one demo pack installed."
+msgstr ""
+
+#: admin/templates/system-status.php:372
+msgid "This means their content could be merged, causing unexpected results."
+msgstr ""
+
+#: admin/templates/system-status.php:373
+msgid ""
+"If this is not intentional, consider reinstalling the one you prefer with "
+"the removing content option enabled."
+msgstr ""
+
+#: admin/templates/system-status.php:392
+msgid "Partial"
+msgstr ""
+
+#: admin/templates/system-status.php:398
+msgid ""
+"This demo pack may not be showing all its data, because of a partial install "
+"or required plugins not being active."
+msgstr ""
+
+#: admin/templates/system-status.php:399
+msgid ""
+"If this is not intentional, consider checking its details and reinstalling "
+"it with the removing content option enabled."
+msgstr ""
+
+#: admin/templates/system-status.php:411
+msgid "Currently, no demo packs are installed."
+msgstr ""
+
+#: admin/templates/system-status.php:422
+msgid "Active Plugins"
+msgstr ""
+
+#: admin/templates/system-status.php:436 admin/templates/system-status.php:538
+msgid "Required"
+msgstr ""
+
+#: admin/templates/system-status.php:442
+msgid "Must Use"
+msgstr ""
+
+#: admin/templates/system-status.php:444
+msgid "Network"
+msgstr ""
+
+#: admin/templates/system-status.php:460 admin/templates/system-status.php:556
+#, php-format
+msgid "Update Available: %s"
+msgstr ""
+
+#: admin/templates/system-status.php:484
+msgid "Currently, no plugins are active."
+msgstr ""
+
+#: admin/templates/system-status.php:496
+msgid "Required &amp; Recommended Plugins"
+msgstr ""
+
+#: admin/templates/system-status.php:497
+#, php-format
+msgid "which you should %1$sinstall, activate and keep updated%2$s"
+msgstr ""
+
+#: admin/templates/system-status.php:522
+msgid "Not Installed"
+msgstr ""
+
+#: admin/templates/system-status.php:525
+msgid "Inactive"
+msgstr ""
+
+#: admin/templates/system-status.php:529
+msgid "Needs Update"
+msgstr ""
+
+#: admin/templates/system-status.php:594
+msgid ""
+"Currently, no required or recommended plugins are missing, inactive or "
+"outdated."
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:610
+#: components/php-file-manager/classes/class-loader.php:136
+msgid "NiceThemes Loader Data:"
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:612
+#: components/php-file-manager/classes/class-loader.php:138
+#, php-format
+msgid "%s paths loaded."
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:614
+#, php-format
+msgid "%s files in library."
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:616
+#: components/php-file-manager/classes/class-loader.php:140
+#, php-format
+msgid "%s loaded files."
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:618
+#, php-format
+msgid "%s skipped class files."
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:620
+#, php-format
+msgid "%s loaded class files."
+msgstr ""
+
+#: components/php-file-manager/classes/class-advanced-loader.php:622
+#, php-format
+msgid "%s files attempted to be loaded twice or more times."
+msgstr ""
+
+#: components/php-file-manager/functions.php:46
+msgid "Please specify a valid file loader."
+msgstr ""
+
+#: theming/functions.php:234
+msgid "Home"
+msgstr ""
+
+#: theming/theming.php:327
+msgid "minutes ago"
+msgstr ""
+
+#: theming/theming.php:331
+msgid "hours ago"
+msgstr ""
+
+#: theming/theming.php:335
+msgid "days ago"
+msgstr ""

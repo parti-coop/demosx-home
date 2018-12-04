@@ -1,0 +1,68 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the jQuery UI Tooltip
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+/* -----------------------------------------------------------------------------
+   8.0 - Tooltips
+   -------------------------------------------------------------------------- */
+
+.ui-tooltip, .arrow:after {
+	background: #222 !important;
+}
+
+.ui-tooltip {
+	padding: 10px 20px;
+	position: absolute;
+	z-index: 999999;
+	max-width: 300px;
+	color: #fff !important;
+	@include border-radius(3px);
+	@include box-shadow(none);
+}
+
+.arrow {
+	width: 70px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: -16px;
+
+	html[dir="rtl"] & {
+		left: 0;
+		margin-left: 0;
+		right: 50%;
+	}
+
+	&.top {
+		top: -16px;
+		bottom: auto;
+	}
+	&.left {
+		left: 20%;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		left: 20px;
+		top: -20px;
+		width: 25px;
+		height: 25px;
+		box-shadow: none;
+		@include transform(rotate(45deg));
+	}
+	&.top:after {
+		bottom: -20px;
+		top: auto;
+	}
+}

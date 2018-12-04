@@ -1,0 +1,121 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * SCSS mixins.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+// Rem output with px fallback.
+@mixin font-size( $sizeValue: 1.6 ) {
+	font-size: $sizeValue + px;
+}
+
+// Box model.
+@mixin box-sizing( $box-model ) {
+	box-sizing: $box-model;
+}
+
+// Border radius.
+@mixin border-radius( $radius ) {
+	background-clip: padding-box; // Stops background color from leaking outside the border.
+	border-radius: $radius;
+}
+
+// Opacity.
+@mixin opacity( $value: 0.5 ) {
+	opacity: $value;
+}
+
+// Box shadow.
+@mixin box-shadow( $args ) {
+	box-shadow: $args;
+}
+
+// Transitions.
+// IE9 doesn't support transitions at all. If this mixin fails, we should check for a JS alternative.
+@mixin transition( $args... ) {
+	transition: $args;
+}
+
+// Transforms.
+// IE9 doesn't support 3D transforms at all. If these mixins fail, we should check for a JS alternative.
+@mixin transform($transform) {
+	-ms-transform: $transform;
+	    transform: $transform;
+
+}
+@mixin transform-origin($origin) {
+	-webkit-transform-origin: $origin;
+	        transform-origin: $origin;
+}
+
+// User-select.
+@mixin user-select($value) {
+	-webkit-user-select: $value;
+	   -moz-user-select: $value;
+	    -ms-user-select: $value;
+	        user-select: $value;
+}
+
+// Animations.
+// IE9 doesn't support animations. If these mixins fail, we should check for a JS alternative.
+@mixin animation( $args ) {
+	-webkit-animation: $args;
+	        animation: $args;
+}
+@mixin animation-duration( $speed: 0 ) {
+	-webkit-animation-duration: $speed;
+	        animation-duration: $speed;
+}
+@mixin animation-fill-mode( $mode ) {
+	-webkit-animation-fill-mode: $mode;
+	        animation-fill-mode: $mode;
+}
+
+// Flexbox.
+// IE9 doesn't support flexible boxes. If these mixins fail, we should check for a JS alternative.
+@mixin flexbox() {
+	display: -webkit-box;
+	display:    -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display:         flex;
+}
+@mixin inline-flexbox() {
+	display: -webkit-inline-box;
+	display:    -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-flex;
+	display:         inline-flex;
+}
+
+@mixin flex( $values ) {
+	-webkit-box-flex: $values;
+	   -moz-box-flex: $values;
+	    -webkit-flex: $values;
+	        -ms-flex: $values;
+	            flex: $values;
+}
+
+// Center block.
+@mixin center-block {
+	display: block;
+	margin: 0 auto;
+}
+
+// Webkit only.
+@mixin webkit {
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		@content;
+	}
+}
+
+// Import custom mixins.
+@import "mixins-custom";
+@import "mixins-responsive";

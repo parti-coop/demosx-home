@@ -1,0 +1,853 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the main framework page structure
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+
+/* Clear Floats  */
+.col-full:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.fix {
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+	margin: -1px 0 0;
+}
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear {
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+	overflow: hidden;
+}
+
+/* Hide from IE Mac \*/
+.clearfix {
+	display: block;
+}
+
+.clearfix {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		content: ' ';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+/* End hide from IE Mac */
+.none {
+	display: none;
+}
+
+/* End Clearfix */
+
+.nice-container {
+	* {
+		&,
+		&:before,
+		&:after {
+			@include box-sizing(border-box);
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   1.0 - HTML Elements.
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .nice-admin-wrapper {
+
+	font-size: 1em;
+	font-size: 14px;
+	line-height: 1.4;
+
+	*,
+	*:before,
+	*:after {
+		@include box-sizing(border-box);
+	}
+
+	html,
+	input:not([type=submit]),
+	select,
+	textarea {
+		color: $color__text-screen;
+		font-family: $font__main;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	select {
+		height: 45px;
+	}
+
+	.page-content {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $color__text-screen;
+			font-weight: 700;
+		}
+
+		a {
+			@include transition(color 0.2s);
+			text-decoration: none;
+		}
+
+		p {
+			font-size: 14px;
+			a {
+				color: $color__link;
+				&:visited {
+					color: $color__link-visited;
+				}
+				&:hover {
+					color: $color__link-hover;
+				}
+				&:focus {
+					outline: thin dotted;
+				}
+
+				&.button {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	address {
+		margin: 0 0 1.5em;
+	}
+
+	abbr[title],
+	acronym {
+		cursor: help;
+	}
+
+	ins {
+		background: $color__background-ins;
+		text-decoration: none;
+	}
+
+	img {
+		vertical-align: middle;
+	}
+
+	dt {
+		font-weight: 700;
+	}
+
+	fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	input[type="email"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="url"],
+	select,
+	textarea{
+		padding: 8px;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid $color__background-hr;
+		margin: 1em 0;
+		padding: 0;
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   2.0 - Helpers
+   -------------------------------------------------------------------------- */
+.nav-horizontal {
+	a {
+		display: inline-block;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		position: relative;
+		float: left;
+
+		html[dir="rtl"] & {
+			float: right;
+		}
+	}
+}
+
+div.updated,
+div.error {
+	margin: 15px 0;
+}
+
+
+body.nice-framework-page .nice-admin-wrapper {
+
+	.heading-nav {
+		padding-left: 30px;
+
+		html[dir="rtl"] & {
+			padding-left: 0;
+			padding-right: 30px;
+		}
+	}
+
+	.nice-dashboard-tabs {
+		text-shadow: none;
+		bottom: 0;
+		left: 0;
+
+		> ul {
+			color: #333;
+			text-align: right;
+			margin: 0;
+			overflow: hidden;
+
+			li {
+				display: inline-block;
+				float: left;
+				margin-right: 5px;
+
+				html[dir="rtl"] & {
+					float: right;
+					margin-right: 0;
+					margin-left: 5px;
+				}
+
+				a {
+					display: block;
+					font-weight: normal;
+					padding: 15px 20px 13px;
+					color: #fff;
+					text-decoration: none;
+					background: rgba(255,255,255,0.2);
+					cursor: pointer;
+					border: none;
+					text-decoration: none;
+					-webkit-border-top-left-radius: 5px;
+					-webkit-border-top-right-radius: 5px;
+					-moz-border-radius-topleft: 5px;
+					-moz-border-radius-topright: 5px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+
+					i {
+						line-height: normal;
+					}
+
+					&:hover {
+						background: #fff;
+						color: #595959;
+					}
+
+					&.current {
+						background: #fff;
+						color: #595959;
+					}
+
+				}
+
+				&.disabled a {
+					color: #ccc;
+					text-shadow: none;
+				}
+
+			}
+		}
+	}
+
+}
+
+/* -----------------------------------------------------------------------------
+   3.0 - Containers
+   -------------------------------------------------------------------------- */
+.nice-admin-wrapper {
+	background-color: $color__background-body;
+	color: $color__text-main;
+	margin-left: -20px;
+	position: relative;
+	z-index: 1;
+
+	html[dir="rtl"] & {
+		margin-left: 0;
+		margin-right: -20px;
+	}
+}
+
+.container {
+	background-color: $color__background-body;
+	width: 100%;
+
+	.page-content { // @TODO: Define or work over full-width. Re-check the structure.
+		margin: 0 auto;
+		overflow: visible;
+		padding: 0 30px 30px 30px;
+
+		.content {
+			max-width: 1050px;
+
+			#nice-container {
+				margin: 0;
+			}
+		}
+
+		.nav-tab-wrapper {
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		h1,
+		form h3 {
+			border-bottom: 1px solid $color__border-main-light;
+			padding-bottom: 10px;
+		}
+	}
+
+	.content-sidebar {
+		max-width: $size__site-main;
+		margin: auto;
+		width: 100%;
+
+		.content {
+			float: left;
+			width: $size__site-content;
+			overflow: hidden;
+
+			html[dir="rtl"] & {
+				float: right;
+			}
+		}
+
+		.sidebar {
+			float: right;
+			width: $size__site-sidebar;
+			overflow: hidden;
+
+			html[dir="rtl"] & {
+				float: left;
+			}
+
+			.sidebar-box {
+				background: $grey-lighter;
+				padding: 5px 20px;
+				margin-bottom: 20px;
+				color: $color__text-screen;
+
+				body.wp-core-ui:not(.is-mp6) & .button {
+					border: 1px solid #bbb !important;
+					color: #333 !important;
+					text-shadow: none;
+					height: 40px !important;
+				}
+
+				a {
+					&.nice-admin-plugin-rate {
+						color: #ffc926;
+					}
+
+					&:before {
+						font-family: 'dashicons';
+						margin-right: 5px;
+						margin-top: 1px;
+						float: left;
+
+						html[dir="rtl"] & {
+							margin-right: 0;
+							margin-left: 5px;
+							float: right;
+						}
+					}
+
+					&.nice-admin-plugins {
+						font-size: 14px;
+						&:before {
+							content: "\f106";
+						}
+					}
+
+					&.nice-admin-themes {
+						font-size: 14px;
+						&:before {
+							content: "\f100";
+						}
+					}
+
+					&.nice-admin-plugin-docs {
+						font-size: 14px;
+						&:before {
+							font-size: 14px;
+							font-family: 'dashicons';
+							content: "\f468";
+							margin-right: 5px;
+						}
+					}
+
+				}
+
+				ul.nice-admin-social {
+					list-style: none;
+					margin: 0;
+					display: flex;
+					flex-wrap: wrap;
+
+					> li {
+						font-size: 22px;
+						margin-right: 5px;
+						margin-bottom: 5px;
+						display: inline-block !important;
+						position: relative !important;
+						background-image: none;
+						padding: 0 !important;
+						background-color: transparent;
+						border: none !important;
+
+						a {
+							color: #fff !important;
+							text-align: center;
+							line-height: 40px !important;
+							background-repeat: no-repeat;
+							height: 40px;
+							width: 40px;
+							display: block;
+							background: #444;
+							@include border-radius(2px);
+
+							i {
+								line-height: 40px;
+							}
+
+							&:hover,
+							&:focus {
+								color: #fff;
+								i {
+									color: #fff;
+								}
+							}
+						}
+
+						&.facebook a {
+							background-color: #4064af;
+						}
+
+						&.twitter a {
+							background-color: #46c7f4;
+						}
+
+						&.wordpress a {
+							background-color: #444;
+						}
+
+					}
+				}
+
+			}
+		}
+	}
+
+	.header + & {
+		position: absolute;
+		top: 46px;
+	}
+}
+
+#screen-meta-links {
+	position: relative;
+	z-index: 2;
+	a:focus {
+		box-shadow: none;
+	}
+}
+
+div.heading {
+	background-color: $color__background-masthead;
+	.masthead {
+		.section-description {
+			color: $color__text-header;
+			padding: 50px 30px;
+			text-align: left;
+			max-width: 1050px;
+
+			html[dir="rtl"] & {
+				text-align: right;
+			}
+
+			h1 {
+				margin: 0;
+				padding: 0;
+				font-weight: 500;
+			}
+			p {
+				font-size: 16px;
+				color: darken( $white, 10% );
+			}
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   4.0 - Buttons
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .nice-admin-wrapper {
+	.wp-core-ui {
+		.button {
+			@include transition(all 0.1s ease-in-out);
+			height: auto;
+			padding: 8px 15px;
+		}
+		.nice-admin-button {
+			@include box-shadow(none);
+			border: none;
+			height: auto;
+			display: inline-block;
+			position: relative;
+			padding: 0.76923em 1.46154em;
+			color: $grey-lighter;
+			font: 800 13px $font__main;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+			background: $grey-medium;
+			@include border-radius(3px);
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+			&:visited {
+				color: $grey-lighter;
+			}
+			&:hover,
+			&:focus {
+				@include box-shadow(none);
+				color: $white;
+				background: $red-light;
+				border: none;
+			}
+			&:active {
+				background: $red-light;
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   5.0 - Header
+   -------------------------------------------------------------------------- */
+.header {
+	position: absolute;
+	background: $color__background-header;
+	left: 0;
+	overflow: hidden;
+	right: 0;
+	width: 100%;
+	z-index: 2;
+
+	.main-nav {
+		li {
+			&:first-child {
+				padding-left: 20px;
+
+				html[dir="rtl"] & {
+					padding-left: 0;
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+
+	.heading & {
+		position: relative;
+	}
+}
+
+.nice-wp-notices {
+  background: $color__text-header-nav;
+  padding: 5px 20px;
+}
+
+/* -----------------------------------------------------------------------------
+   5.1 - Top navigation
+   -------------------------------------------------------------------------- */
+.header-nav {
+	.current {
+		background: $color__background-header-nav-hover;
+	}
+	a {
+		padding: 0 1.07143em;
+		color: $color__text-header-nav;
+		line-height: 46px;
+		text-decoration: none;
+		&:hover {
+			background: $color__background-header-nav-hover;
+		}
+	}
+}
+
+.main-nav {
+	float: left;
+
+	html[dir="rtl"] & {
+		float: right;
+	}
+
+	li {
+		margin: 0;
+		font-size: 14px;
+		i.dashicons {
+			margin-right: 5px;
+			line-height: 46px; // the same as the a items.
+
+			html[dir="rtl"] & {
+				margin-right: 0;
+				margin-left: 5px;
+			}
+		}
+	}
+	.nice-logo {
+		display: none;
+
+		span {
+			display: block;
+			padding: 8px 15px 8px 30px;
+
+			html[dir="rtl"] & {
+				padding: 8px 30px 8px 15px;
+			}
+
+			img {
+				width: 145px;
+				height: auto;
+			}
+			&:not(.image-title) {
+				color: $color__text-header;
+				font-size: 21px;
+			}
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   5.2 - Master header
+   -------------------------------------------------------------------------- */
+.masthead {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	background-color: $color__background-masthead;
+	h1,
+	h2 {
+		margin: 0 auto;
+	}
+	h1 {
+		padding: 2.5em 15px 1.11111em;
+		max-width: 21.94444em;
+		color: $color__text-header;
+		font: 300 32px $font__main;
+		position: relative;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+		z-index: 3;
+	}
+	.updated,
+	.update-nag,
+	.error {
+		margin: 15px;
+		text-align: left;
+	}
+}
+
+.subhead {
+	border-bottom: 1px solid $color__border-main;
+	position: relative;
+	margin-top: 105px;
+	padding: 4em;
+	background: $color__background-subhead;
+	z-index: 2;
+	h2 {
+		max-width: 460px;
+		color: $color__text-heading;
+		font: 400 24px  $font__main;
+		text-shadow: 0 1px 1px $white;
+		padding: 0 15px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		margin-bottom: -1px;
+		width: 100%;
+		height: 228px;
+		pointer-events: none;
+		z-index: -1;
+	}
+}
+
+/* -----------------------------------------------------------------------------
+   6.0 - Footer
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .nice-admin-wrapper {
+	#wpfooter {
+		display: none;
+	}
+
+	.footer {
+		position: relative;
+		padding: 4.28571em 0;
+		text-align: center;
+		background-color: $color__background-footer;
+		font-size: 13px;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			pointer-events: none;
+		}
+		&:before {
+			top: 0;
+			margin-top: -1px;
+			width: 100%;
+			height: 195px;
+		}
+		&:after {
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			-webkit-background-size: auto 45px;
+			background-size: auto 45px;
+			z-index: 1;
+		}
+		nav {
+			max-width: 550px;
+			margin: 0 auto;
+			color: $color__text-footer-nav;
+			a,
+			a:visited {
+				padding: 4px 0;
+				color: $color__text-footer-nav;
+				text-decoration: none;
+			}
+			&.secondary a {
+				padding: 4px 6px;
+			}
+			a {
+				&:hover,
+				&:focus,
+				&:visited:hover,
+				&:visited:focus {
+					color: $color__text-footer-nav-hover;
+				}
+			}
+		}
+		.primary {
+			padding: 25px 15px 10px 15px;
+			border-bottom: 1px solid $color__border-footer-top;
+			.dashicons-heart {
+				color: $color__background-heart;
+				margin-top: 5px;
+			}
+		}
+
+		.secondary {
+			padding: 14px 15px 0 15px;
+			border-top: 1px solid $color__border-footer-bottom;
+		}
+	}
+}
+
+/*
+	Extras
+*/
+
+.nice-support-page {
+	margin-top: 20px;
+}
+
+.nice-box {
+	background: #f0f0f0;
+	padding: 20px;
+	@include border-radius(4px);
+
+	h2, h3 {
+		margin-top: 0;
+	}
+
+	&:before {
+		bottom: -0.18em;
+		color: #f9f9f9;
+		display: inline-block;
+		font-family: 'budicon';
+		content: '';
+		font-size: 9.5em;
+		font-weight: 400;
+		line-height: 100%;
+		position: absolute;
+		right: -0.18em;
+		transform: rotate(-20deg);
+		width: auto;
+		z-index: -1;
+	}
+}
+
+.popular-articles:before {
+	content: '\e86a';
+}

@@ -1,0 +1,4366 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------------------------------------*/
+/* Theme Options Admin Styles */
+/*-------------------------------------------------------------------------------------------*/
+body #nice-theme-wp-notices {
+  margin-top: 20px;
+}
+
+body #nice-theme-wp-notices.hide-third-parties > *:not(.nice-wp-notice) {
+  display: none !important;
+}
+
+/*
+	The options panel
+*/
+#nice-container {
+  margin: 15px;
+  width: 1000px;
+  position: relative;
+}
+
+#nice-container #nice-header {
+  height: 110px;
+  display: inline-block;
+  z-index: 200;
+  width: 1000px;
+  position: absolute;
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+#nice-container #nice-header .icon-option {
+  float: right;
+  height: 32px;
+  width: 32px;
+  margin: 15px 0 15px 20px;
+  width: 500px;
+  text-align: right;
+}
+
+html[dir="rtl"] #nice-container #nice-header .icon-option {
+  float: left;
+  text-align: left;
+  margin: 15px 20px 15px 0;
+}
+
+#nice-container #nice-header .theme-logo {
+  float: left;
+  margin: 15px 0;
+}
+
+html[dir="rtl"] #nice-container #nice-header .theme-logo {
+  float: right;
+}
+
+#nice-container #nice-header .theme-logo h2 {
+  margin: 0;
+}
+
+#nice-container #nice-header .theme-logo span {
+  color: #bbb;
+}
+
+#nice-container #nice-header .theme-logo span a {
+  color: #bbb;
+}
+
+#nice-container #nice-header .theme-logo .notice,
+#nice-container #nice-header .theme-logo .updated,
+#nice-container #nice-header .theme-logo .nice-wp-notice {
+  display: none;
+}
+
+#nice-container #nice-header a.reset-options,
+#nice-container #nice-header a.backup-options {
+  padding: 12px;
+  display: inline-block;
+  border: 1.5px solid #ddd;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #ddd;
+}
+
+#nice-container #nice-header a.reset-options:hover,
+#nice-container #nice-header a.backup-options:hover {
+  border-color: #d6d6d6;
+}
+
+#nice-container #main {
+  padding-top: 110px;
+}
+
+#nice-container #nice-nav ul {
+  margin: 0;
+  background: #fafafa;
+}
+
+#nice-container #nice-nav ul li {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#nice-container #nice-nav ul li a i {
+  margin-right: 8px;
+}
+
+html[dir="rtl"] #nice-container #nice-nav ul li a i {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+#nice-container #nice-nav ul li a:link, #nice-container #nice-nav ul li a:visited {
+  display: block;
+  padding: 10px 10px 10px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #595959;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#nice-container #nice-nav ul li a:hover {
+  color: #21759b;
+  background-color: #fff;
+}
+
+#nice-container #nice-nav ul li a:focus {
+  box-shadow: none;
+}
+
+#nice-container #nice-nav ul li.current a {
+  border-bottom-color: #5b6572;
+  border-top-color: #5b6572;
+  color: #fff;
+  background-color: #5b6572;
+}
+
+#nice-container #nice-nav ul li.current a:hover {
+  box-shadow: none;
+}
+
+#nice-container #nice-nav ul li.current div {
+  background: url(../images/menu-arrow-frame.png) no-repeat scroll right top transparent;
+  height: 40px;
+  width: 15px;
+  position: relative;
+  z-index: 100;
+  float: right;
+  top: -38px;
+  right: -1px;
+}
+
+@supports (transform: scaleX(-1)) {
+  html[dir="rtl"] #nice-container #nice-nav ul li.current div {
+    float: left;
+    right: auto;
+    left: -1px;
+    transform: scaleX(-1);
+  }
+}
+
+#nice-container #nice-nav ul li.child a {
+  padding-left: 35px;
+}
+
+html[dir="rtl"] #nice-container #nice-nav ul li.child a {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+#nice-container #nice-content {
+  border-left: 1px solid #d8d8d8;
+}
+
+html[dir="rtl"] #nice-container #nice-content {
+  border-left: none;
+  border-right: 1px solid #d8d8d8;
+}
+
+#nice-container #nice-content .section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#nice-container #nice-content .section:last-child {
+  border-bottom: none;
+}
+
+#nice-container #nice-content .section .format-setting-wrap {
+  position: relative;
+}
+
+#nice-container #nice-content .section .format-setting-wrap .nice-help-button {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+html[dir="rtl"] #nice-container #nice-content .section .format-setting-wrap .nice-help-button {
+  right: auto;
+  left: 0;
+}
+
+#nice-container #nice-content .section h3.heading {
+  margin: 10px 0 15px;
+  padding: 7px 0;
+  font-size: 16px;
+  border: none;
+}
+
+#nice-container #nice-content .section .option {
+  min-height: 55px;
+}
+
+#nice-container #nice-content .section .explain {
+  float: left;
+  width: 225px;
+  padding: 10px;
+  font-size: 12px;
+  color: #999999;
+  display: none;
+  background: #eee;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#nice-container #nice-content .section .explain-checkbox {
+  float: left;
+  padding: 0 10px 0;
+  font-size: 12px;
+  color: #999999;
+  width: 90%;
+  line-height: 1em;
+}
+
+html[dir="rtl"] #nice-container #nice-content .section .explain-checkbox {
+  float: right;
+}
+
+#nice-container .meta-two {
+  margin-right: 10px;
+}
+
+#nice-container .controls .nice-border-style {
+  width: 120px;
+  float: left;
+}
+
+#nice-container .nice-section-title {
+  padding-bottom: 20px;
+}
+
+#nice-container .nice-section-title h2 {
+  display: none;
+}
+
+#nice-container .accept {
+  background: #dbf6b3 no-repeat 10px center;
+  border: solid #9BBF65;
+  border-width: 0 1px 1px 1px;
+  color: #060;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+#nice-container .warning {
+  background: #ffeeee no-repeat 10px center;
+  border: solid #dfbfbf;
+  border-width: 0 1px 1px 1px;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+#nice-container .update_available {
+  background: #FFFEEB no-repeat 10px center;
+  border: solid #ccc;
+  border-width: 0 1px 1px 1px;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+#nice-container .nice-save-popup {
+  position: absolute;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: url(../images/nice-save-popup-bg.png) rgba(0, 0, 0, 0.5);
+  color: #f9f9f9;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+  z-index: 999;
+}
+
+#nice-container .nice-save-save {
+  background: url(../images/approved.png) 20px 50% no-repeat;
+  padding: 25px 25px 25px 70px;
+}
+
+#nice-container .nice-save-reset {
+  background: url(../images/disapproved.png) 20px 50% no-repeat;
+  padding: 25px 25px 25px 70px;
+}
+
+.upload_button_div {
+  margin-bottom: 10px;
+}
+
+.upload_button_div .button {
+  padding: 4px 14px;
+}
+
+.upload_button_div .image_reset_button {
+  margin-left: 10px;
+}
+
+.upload-error {
+  float: left;
+  color: #666;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  padding: 3px 10px;
+  background: #FFDFEC;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.save_bar_top {
+  background: #f3f3f3;
+  border: solid #ccc;
+  border-width: 0 1px 1px 1px;
+  padding: 10px 20px 0 20px;
+  height: 35px;
+  text-align: right;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.hide {
+  display: none;
+}
+
+.ajax-loading-img-top {
+  margin: 8px 4px 0;
+  float: left;
+}
+
+.nice-icon-loading {
+  display: none;
+  background: url(../images/loader.gif) no-repeat center center;
+  width: 25px;
+  height: 32px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.icon-option .button {
+  float: right;
+}
+
+.nice-option-image {
+  max-width: 340px;
+}
+
+#nice-container .mini .controls select,
+#nice-container #nice-content .section .mini .controls {
+  width: 70px;
+}
+
+#nice-container .mini .controls input,
+#nice-container #nice-content .mini .controls {
+  width: 70px;
+}
+
+#nice-container #nice-content .mini .explain {
+  width: 500px;
+}
+
+/*
+	Notices
+*/
+.nice-notice {
+  background: #ffd1d1;
+  border: 1px solid #DFA8A7;
+  -moz-border-radius: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.notes {
+  background-color: #FFFFE0;
+  border-color: #e6DB55;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0 0.6em;
+  width: 580px;
+}
+
+.notes p {
+  line-height: 1;
+  margin: 0.5em 0;
+  padding: 2px;
+}
+
+#nice-container .save-options-button {
+  color: #eee;
+  background: #646464;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: auto;
+  padding: 15px 25px;
+  margin-left: 12px;
+  float: right;
+}
+
+html[dir="rtl"] #nice-container .save-options-button {
+  float: left;
+  margin-left: 0;
+  margin-right: 12px;
+}
+
+.nice-help-button {
+  text-align: right;
+  float: right;
+  cursor: help;
+  color: #bbb !important;
+  height: 45px;
+  width: 28px;
+}
+
+.nice-help-button i {
+  font-size: 20px;
+}
+
+.nice-group-title {
+  background-color: #fafafa;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.nice-group-title:hover {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+}
+
+.nice-group-title > * {
+  pointer-events: none;
+}
+
+.nice-group-title h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 16px;
+}
+
+.nice-group-title h3 i {
+  margin-right: 10px;
+}
+
+.nice-group-title h3 i.dark-background:before {
+  background-color: #333;
+}
+
+html[dir="rtl"] .nice-group-title h3 i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.nice-group-title h3 span {
+  float: right;
+  color: #aaa;
+}
+
+html[dir="rtl"] .nice-group-title h3 span {
+  float: left;
+}
+
+.nice-group-title h3 span:after {
+  font-family: 'dashicons';
+  content: '\f343';
+}
+
+.nice-group-title.closed h3 span {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.fixed .column-thumbnail {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 80px;
+}
+
+.wp-list-table td.column-thumbnail, .wp-list-table td.column-icon,
+.wp-list-table th.column-thumbnail,
+.wp-list-table th.column-icon {
+  max-width: 120px;
+}
+
+.wp-list-table td.column-thumbnail img, .wp-list-table td.column-icon img,
+.wp-list-table th.column-thumbnail img,
+.wp-list-table th.column-icon img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* -----------------------------------------------------------------------------
+   Main
+   -------------------------------------------------------------------------- */
+/* Clear Floats  */
+.col-full:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.fix {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px 0 0;
+}
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear {
+  background: none;
+  border: 0;
+  clear: both;
+  display: block;
+  float: none;
+  font-size: 0;
+  list-style: none;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Hide from IE Mac \*/
+.clearfix {
+  display: block;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* End hide from IE Mac */
+.none {
+  display: none;
+}
+
+/* End Clearfix */
+.nice-container *, .nice-container *:before, .nice-container *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------------------------
+   1.0 - HTML Elements.
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .nice-admin-wrapper {
+  font-size: 1em;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body.nice-framework-page .nice-admin-wrapper *,
+body.nice-framework-page .nice-admin-wrapper *:before,
+body.nice-framework-page .nice-admin-wrapper *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body.nice-framework-page .nice-admin-wrapper html,
+body.nice-framework-page .nice-admin-wrapper input:not([type=submit]),
+body.nice-framework-page .nice-admin-wrapper select,
+body.nice-framework-page .nice-admin-wrapper textarea {
+  color: #333;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.nice-framework-page .nice-admin-wrapper select {
+  height: 45px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content h1,
+body.nice-framework-page .nice-admin-wrapper .page-content h2,
+body.nice-framework-page .nice-admin-wrapper .page-content h3,
+body.nice-framework-page .nice-admin-wrapper .page-content h4,
+body.nice-framework-page .nice-admin-wrapper .page-content h5,
+body.nice-framework-page .nice-admin-wrapper .page-content h6 {
+  color: #333;
+  font-weight: 700;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content a {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content p {
+  font-size: 14px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content p a {
+  color: #48add8;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content p a:visited {
+  color: #48add8;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content p a:hover {
+  color: #555;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content p a:focus {
+  outline: thin dotted;
+}
+
+body.nice-framework-page .nice-admin-wrapper .page-content p a.button {
+  color: #fff;
+}
+
+body.nice-framework-page .nice-admin-wrapper address {
+  margin: 0 0 1.5em;
+}
+
+body.nice-framework-page .nice-admin-wrapper abbr[title],
+body.nice-framework-page .nice-admin-wrapper acronym {
+  cursor: help;
+}
+
+body.nice-framework-page .nice-admin-wrapper ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+body.nice-framework-page .nice-admin-wrapper img {
+  vertical-align: middle;
+}
+
+body.nice-framework-page .nice-admin-wrapper dt {
+  font-weight: 700;
+}
+
+body.nice-framework-page .nice-admin-wrapper fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body.nice-framework-page .nice-admin-wrapper input[type="email"],
+body.nice-framework-page .nice-admin-wrapper input[type="number"],
+body.nice-framework-page .nice-admin-wrapper input[type="password"],
+body.nice-framework-page .nice-admin-wrapper input[type="search"],
+body.nice-framework-page .nice-admin-wrapper input[type="tel"],
+body.nice-framework-page .nice-admin-wrapper input[type="text"],
+body.nice-framework-page .nice-admin-wrapper input[type="url"],
+body.nice-framework-page .nice-admin-wrapper select,
+body.nice-framework-page .nice-admin-wrapper textarea {
+  padding: 8px;
+}
+
+body.nice-framework-page .nice-admin-wrapper textarea {
+  resize: vertical;
+}
+
+body.nice-framework-page .nice-admin-wrapper hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* -----------------------------------------------------------------------------
+   2.0 - Helpers
+   -------------------------------------------------------------------------- */
+.nav-horizontal a {
+  display: inline-block;
+}
+
+.nav-horizontal ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-horizontal li {
+  position: relative;
+  float: left;
+}
+
+html[dir="rtl"] .nav-horizontal li {
+  float: right;
+}
+
+div.updated,
+div.error {
+  margin: 15px 0;
+}
+
+body.nice-framework-page .nice-admin-wrapper .heading-nav {
+  padding-left: 30px;
+}
+
+html[dir="rtl"] body.nice-framework-page .nice-admin-wrapper .heading-nav {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs {
+  text-shadow: none;
+  bottom: 0;
+  left: 0;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul {
+  color: #333;
+  text-align: right;
+  margin: 0;
+  overflow: hidden;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
+html[dir="rtl"] body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li a {
+  display: block;
+  font-weight: normal;
+  padding: 15px 20px 13px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li a i {
+  line-height: normal;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li a:hover {
+  background: #fff;
+  color: #595959;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li a.current {
+  background: #fff;
+  color: #595959;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-dashboard-tabs > ul li.disabled a {
+  color: #ccc;
+  text-shadow: none;
+}
+
+/* -----------------------------------------------------------------------------
+   3.0 - Containers
+   -------------------------------------------------------------------------- */
+.nice-admin-wrapper {
+  background-color: #fff;
+  color: #6b747a;
+  margin-left: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+html[dir="rtl"] .nice-admin-wrapper {
+  margin-left: 0;
+  margin-right: -20px;
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+}
+
+.container .page-content {
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0 30px 30px 30px;
+}
+
+.container .page-content .content {
+  max-width: 1050px;
+}
+
+.container .page-content .content #nice-container {
+  margin: 0;
+}
+
+.container .page-content .nav-tab-wrapper {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.container .page-content h1,
+.container .page-content form h3 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.container .content-sidebar {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+}
+
+.container .content-sidebar .content {
+  float: left;
+  width: 65%;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .container .content-sidebar .content {
+  float: right;
+}
+
+.container .content-sidebar .sidebar {
+  float: right;
+  width: 28%;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .container .content-sidebar .sidebar {
+  float: left;
+}
+
+.container .content-sidebar .sidebar .sidebar-box {
+  background: #eee;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+body.wp-core-ui:not(.is-mp6) .container .content-sidebar .sidebar .sidebar-box .button {
+  border: 1px solid #bbb !important;
+  color: #333 !important;
+  text-shadow: none;
+  height: 40px !important;
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-plugin-rate {
+  color: #ffc926;
+}
+
+.container .content-sidebar .sidebar .sidebar-box a:before {
+  font-family: 'dashicons';
+  margin-right: 5px;
+  margin-top: 1px;
+  float: left;
+}
+
+html[dir="rtl"] .container .content-sidebar .sidebar .sidebar-box a:before {
+  margin-right: 0;
+  margin-left: 5px;
+  float: right;
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-plugins {
+  font-size: 14px;
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-plugins:before {
+  content: "\f106";
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-themes {
+  font-size: 14px;
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-themes:before {
+  content: "\f100";
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-plugin-docs {
+  font-size: 14px;
+}
+
+.container .content-sidebar .sidebar .sidebar-box a.nice-admin-plugin-docs:before {
+  font-size: 14px;
+  font-family: 'dashicons';
+  content: "\f468";
+  margin-right: 5px;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li {
+  font-size: 22px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block !important;
+  position: relative !important;
+  background-image: none;
+  padding: 0 !important;
+  background-color: transparent;
+  border: none !important;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li a {
+  color: #fff !important;
+  text-align: center;
+  line-height: 40px !important;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: #444;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li a i {
+  line-height: 40px;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li a:hover, .container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li a:focus {
+  color: #fff;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li a:hover i, .container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li a:focus i {
+  color: #fff;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li.facebook a {
+  background-color: #4064af;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li.twitter a {
+  background-color: #46c7f4;
+}
+
+.container .content-sidebar .sidebar .sidebar-box ul.nice-admin-social > li.wordpress a {
+  background-color: #444;
+}
+
+.header + .container {
+  position: absolute;
+  top: 46px;
+}
+
+#screen-meta-links {
+  position: relative;
+  z-index: 2;
+}
+
+#screen-meta-links a:focus {
+  box-shadow: none;
+}
+
+div.heading {
+  background-color: #444c56;
+}
+
+div.heading .masthead .section-description {
+  color: #fff;
+  padding: 50px 30px;
+  text-align: left;
+  max-width: 1050px;
+}
+
+html[dir="rtl"] div.heading .masthead .section-description {
+  text-align: right;
+}
+
+div.heading .masthead .section-description h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+div.heading .masthead .section-description p {
+  font-size: 16px;
+  color: #e6e5e5;
+}
+
+/* -----------------------------------------------------------------------------
+   4.0 - Buttons
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .nice-admin-wrapper .wp-core-ui .button {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  height: auto;
+  padding: 8px 15px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .wp-core-ui .nice-admin-button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding: 0.76923em 1.46154em;
+  color: #eee;
+  font: 800 13px "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #6f7476;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+body.nice-framework-page .nice-admin-wrapper .wp-core-ui .nice-admin-button:visited {
+  color: #eee;
+}
+
+body.nice-framework-page .nice-admin-wrapper .wp-core-ui .nice-admin-button:hover, body.nice-framework-page .nice-admin-wrapper .wp-core-ui .nice-admin-button:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  background: #f26b5f;
+  border: none;
+}
+
+body.nice-framework-page .nice-admin-wrapper .wp-core-ui .nice-admin-button:active {
+  background: #f26b5f;
+  opacity: 0.8;
+}
+
+/* -----------------------------------------------------------------------------
+   5.0 - Header
+   -------------------------------------------------------------------------- */
+.header {
+  position: absolute;
+  background: #5b6572;
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header .main-nav li:first-child {
+  padding-left: 20px;
+}
+
+html[dir="rtl"] .header .main-nav li:first-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.heading .header {
+  position: relative;
+}
+
+.nice-wp-notices {
+  background: #fff;
+  padding: 5px 20px;
+}
+
+/* -----------------------------------------------------------------------------
+   5.1 - Top navigation
+   -------------------------------------------------------------------------- */
+.header-nav .current {
+  background: #444c56;
+}
+
+.header-nav a {
+  padding: 0 1.07143em;
+  color: #fff;
+  line-height: 46px;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  background: #444c56;
+}
+
+.main-nav {
+  float: left;
+}
+
+html[dir="rtl"] .main-nav {
+  float: right;
+}
+
+.main-nav li {
+  margin: 0;
+  font-size: 14px;
+}
+
+.main-nav li i.dashicons {
+  margin-right: 5px;
+  line-height: 46px;
+}
+
+html[dir="rtl"] .main-nav li i.dashicons {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.main-nav .nice-logo {
+  display: none;
+}
+
+.main-nav .nice-logo span {
+  display: block;
+  padding: 8px 15px 8px 30px;
+}
+
+html[dir="rtl"] .main-nav .nice-logo span {
+  padding: 8px 30px 8px 15px;
+}
+
+.main-nav .nice-logo span img {
+  width: 145px;
+  height: auto;
+}
+
+.main-nav .nice-logo span:not(.image-title) {
+  color: #fff;
+  font-size: 21px;
+}
+
+/* -----------------------------------------------------------------------------
+   5.2 - Master header
+   -------------------------------------------------------------------------- */
+.masthead {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  background-color: #444c56;
+}
+
+.masthead h1,
+.masthead h2 {
+  margin: 0 auto;
+}
+
+.masthead h1 {
+  padding: 2.5em 15px 1.11111em;
+  max-width: 21.94444em;
+  color: #fff;
+  font: 300 32px "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  z-index: 3;
+}
+
+.masthead .updated,
+.masthead .update-nag,
+.masthead .error {
+  margin: 15px;
+  text-align: left;
+}
+
+.subhead {
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  margin-top: 105px;
+  padding: 4em;
+  background: #eee;
+  z-index: 2;
+}
+
+.subhead h2 {
+  max-width: 460px;
+  color: #444c56;
+  font: 400 24px "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 0 1px 1px #fff;
+  padding: 0 15px;
+}
+
+.subhead:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: -1px;
+  width: 100%;
+  height: 228px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* -----------------------------------------------------------------------------
+   6.0 - Footer
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .nice-admin-wrapper #wpfooter {
+  display: none;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer {
+  position: relative;
+  padding: 4.28571em 0;
+  text-align: center;
+  background-color: #22262b;
+  font-size: 13px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer:before, body.nice-framework-page .nice-admin-wrapper .footer:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer:before {
+  top: 0;
+  margin-top: -1px;
+  width: 100%;
+  height: 195px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer:after {
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  -webkit-background-size: auto 45px;
+  background-size: auto 45px;
+  z-index: 1;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer nav {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer nav a,
+body.nice-framework-page .nice-admin-wrapper .footer nav a:visited {
+  padding: 4px 0;
+  color: #ccc;
+  text-decoration: none;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer nav.secondary a {
+  padding: 4px 6px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer nav a:hover, body.nice-framework-page .nice-admin-wrapper .footer nav a:focus, body.nice-framework-page .nice-admin-wrapper .footer nav a:visited:hover, body.nice-framework-page .nice-admin-wrapper .footer nav a:visited:focus {
+  color: #fff;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer .primary {
+  padding: 25px 15px 10px 15px;
+  border-bottom: 1px solid #0c0d0f;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer .primary .dashicons-heart {
+  color: #f26b5f;
+  margin-top: 5px;
+}
+
+body.nice-framework-page .nice-admin-wrapper .footer .secondary {
+  padding: 14px 15px 0 15px;
+  border-top: 1px solid #393f48;
+}
+
+/*
+	Extras
+*/
+.nice-support-page {
+  margin-top: 20px;
+}
+
+.nice-box {
+  background: #f0f0f0;
+  padding: 20px;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.nice-box h2, .nice-box h3 {
+  margin-top: 0;
+}
+
+.nice-box:before {
+  bottom: -0.18em;
+  color: #f9f9f9;
+  display: inline-block;
+  font-family: 'budicon';
+  content: '';
+  font-size: 9.5em;
+  font-weight: 400;
+  line-height: 100%;
+  position: absolute;
+  right: -0.18em;
+  transform: rotate(-20deg);
+  width: auto;
+  z-index: -1;
+}
+
+.popular-articles:before {
+  content: '\e86a';
+}
+
+/* -----------------------------------------------------------------------------
+   Grids
+   -------------------------------------------------------------------------- */
+body.nice-framework-page .grid {
+  overflow: visible;
+  margin-left: -3%;
+}
+
+html[dir="rtl"] body.nice-framework-page .grid {
+  margin-left: 0;
+  margin-right: -3%;
+}
+
+body.nice-framework-page .grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body.nice-framework-page .grid-pad {
+  padding: 20px 0 20px 20px;
+}
+
+body.nice-framework-page .grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+body.nice-framework-page .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body.nice-framework-page .row {
+  padding-bottom: 3%;
+}
+
+body.nice-framework-page [class*='columns-'] {
+  float: left;
+  padding-left: 3%;
+}
+
+html[dir="rtl"] body.nice-framework-page [class*='columns-'] {
+  float: right;
+  padding-left: 0;
+  padding-right: 3%;
+}
+
+body.nice-framework-page [class*='columns-']:last-of-type {
+  padding-right: 0;
+}
+
+body.nice-framework-page [class*='columns-'] img {
+  max-width: 100%;
+  height: auto;
+}
+
+body.nice-framework-page .columns-2-3 {
+  width: 66.66%;
+}
+
+body.nice-framework-page .columns-3-4 {
+  width: 75%;
+}
+
+body.nice-framework-page .columns-1 {
+  width: 100%;
+}
+
+body.nice-framework-page .columns-2 {
+  width: 50%;
+}
+
+body.nice-framework-page .columns-3,
+body.nice-framework-page .columns-1-3 {
+  width: 33.33%;
+}
+
+body.nice-framework-page .columns-4 {
+  width: 25%;
+}
+
+body.nice-framework-page .columns-5 {
+  width: 20%;
+}
+
+body.nice-framework-page .columns-6 {
+  width: 16.66%;
+}
+
+body.nice-framework-page .columns-7 {
+  width: 14.28%;
+}
+
+body.nice-framework-page .columns-8 {
+  width: 12.5%;
+}
+
+body.nice-framework-page .columns-9 {
+  width: 11.11%;
+}
+
+body.nice-framework-page .columns-10 {
+  width: 10%;
+}
+
+body.nice-framework-page .columns-11 {
+  width: 9.09%;
+}
+
+body.nice-framework-page .columns-12 {
+  width: 8.33%;
+}
+
+.support-articles ul.article-list {
+  font-size: 15px;
+}
+
+.support-articles ul.article-list li {
+  margin-bottom: 0.5em;
+}
+
+.support-articles ul.article-list li a:hover {
+  color: #5a5a5a;
+}
+
+.support-articles ul.article-list li i {
+  margin-right: 5px;
+}
+
+.nice-admin-filter {
+  max-width: 200px;
+  min-width: 150px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  text-align: left;
+  z-index: 99;
+  float: right;
+  margin-right: 10px;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+html[dir="rtl"] .nice-admin-filter {
+  text-align: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .nice-admin-filter a.sort-items {
+  padding-left: 30px;
+  padding-right: 0;
+  background-position: left center;
+}
+
+html[dir="rtl"] .nice-admin-filter a.sort-items i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.nice-admin-filter a.sort-items {
+  padding: 10px 15px;
+  display: inline-block;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fafafa;
+  color: #777;
+  background-image: url("../images/select.png");
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 1.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.nice-admin-filter a.sort-items i {
+  margin-right: 5px;
+}
+
+[class$="-content"] .nice-admin-filter a.sort-items {
+  background-color: #333;
+}
+
+.nice-admin-filter ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+[class$="-content"] .nice-admin-filter ul {
+  position: absolute;
+}
+
+.nice-admin-filter ul li {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+.nice-admin-filter ul li a {
+  display: block;
+  padding: 7px 15px;
+  width: 100%;
+  font-size: 13px;
+  border: inherit;
+  border-top: none;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.nice-admin-filter ul li a.filter {
+  margin: 0;
+}
+
+[class$="-content"] .nice-admin-filter {
+  position: relative;
+  right: 0;
+  float: right;
+  margin-bottom: 15px;
+}
+
+html[dir="rtl"] [class$="-content"] .nice-admin-filter {
+  float: left;
+}
+
+body.nice-framework-page.nice-framework-page-about .nice-admin-wrapper, body.nice-framework-page.nice-framework-page-getting_started .nice-admin-wrapper {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.nice-framework-page.nice-framework-page-about .content, body.nice-framework-page.nice-framework-page-getting_started .content {
+  padding-top: 20px;
+}
+
+body.nice-framework-page.nice-framework-page-about .content hr, body.nice-framework-page.nice-framework-page-getting_started .content hr {
+  margin: 2em 0;
+}
+
+body.nice-framework-page .nice-tabs {
+  background: none;
+  margin: 0 0 2em 0;
+}
+
+body.nice-framework-page .nice-tabs.ui-widget-content {
+  border: none;
+  box-shadow: none;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li.ui-state-default {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li.ui-state-active, body.nice-framework-page .nice-tabs .nice-nav li.ui-state-hover, body.nice-framework-page .nice-tabs .nice-nav li {
+  border: none;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li.ui-state-active {
+  border-bottom: 1px solid #fff;
+}
+
+body.nice-framework-page .nice-tabs.ui-tabs .ui-tabs-hide {
+  position: absolute;
+  left: -10000px;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0;
+  background: none;
+  border: 0;
+  float: none;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li {
+  float: left;
+  position: relative;
+  margin: 0 4px -1px 0 !important;
+  z-index: 10;
+  list-style: none !important;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li.ui-state-active {
+  margin: 0 4px -1px 0 !important;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li a {
+  border: 1px solid #e7e7e7 !important;
+  border-bottom: none !important;
+  display: block;
+  overflow: hidden;
+  padding: 10px 15px;
+  background: #fff;
+  margin: 0 !important;
+  text-decoration: none;
+  color: #444c56 !important;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -ms-border-radius: 2px 2px 0 0;
+  -o-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li a:hover {
+  background: #fff !important;
+  margin: 0 !important;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav {
+  border-bottom: 1px solid #e7e7e7;
+  height: 41px;
+  overflow: visible;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav .ui-state-active a {
+  background: #fff;
+}
+
+body.nice-framework-page .nice-tabs .nice-nav li:not(.ui-state-active) a {
+  background: #fbfbfb;
+}
+
+body.nice-framework-page .nice-tabs .nice-tab {
+  background: #fff;
+  padding: 20px 15px;
+  border: 1px solid #e7e7e7;
+  margin-top: -1px;
+}
+
+body.nice-framework-page .nice-tabs .ui-tabs-panel {
+  padding: 20px 0;
+}
+
+body.nice-framework-page .nice-tabs-vertical {
+  width: 100%;
+}
+
+body.nice-framework-page .nice-tabs-vertical .ui-tabs-nav {
+  padding: 0;
+  float: left;
+  width: 20%;
+}
+
+body.nice-framework-page .nice-tabs-vertical .nice-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  width: 100%;
+  border-bottom-width: 1px !important;
+  border-right-width: 0 !important;
+  margin: 0 -1px .2em 0;
+}
+
+body.nice-framework-page .nice-tabs-vertical .nice-tabs-vertical .ui-tabs-nav li a {
+  display: block;
+}
+
+body.nice-framework-page .nice-tabs-vertical .nice-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+  padding-bottom: 0;
+  padding-right: 0;
+  border-right-width: 1px;
+  border-right-width: 1px;
+}
+
+body.nice-framework-page .nice-tabs-vertical .ui-tabs-panel {
+  padding: 1em;
+  float: right;
+  width: 80%;
+}
+
+body.nice-framework-page .nice-tabs-vertical.right .ui-tabs-nav {
+  float: right;
+}
+
+body.nice-framework-page .nice-tabs-vertical.right .ui-tabs-panel {
+  float: left;
+}
+
+body.nice-framework-page .nice-tabs-vertical.right .nice-nav li a {
+  border-left: 0 !important;
+  border-right-width: 1px !important;
+}
+
+body.nice-framework-page .nice-tabs-vertical .nice-nav li a {
+  border: 1px solid #e7e7e7 !important;
+  text-decoration: none;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -ms-border-radius: 2px 2px 0 0;
+  -o-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+}
+
+body.nice-framework-page .nice-tabs-vertical.left .nice-nav li a {
+  border-right: 0 !important;
+  border-left-width: 1px !important;
+}
+
+body.nice-framework-page .nav-tab {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body.nice-framework-page .nav-tab i.dashicons {
+  margin-top: 3px;
+}
+
+body:not(.is-mp6) body.nice-framework-page .nav-tab i.dashicons {
+  display: none;
+}
+
+body.nice-framework-page .nav-tab.nav-tab-active {
+  color: #222;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+body.nice-framework-page .nav-tab:not(.nav-tab-active):focus, body.nice-framework-page .nav-tab:not(.nav-tab-active):visited, body.nice-framework-page .nav-tab:not(.nav-tab-active):active {
+  color: #555;
+}
+
+body.nice-framework-page .nice-accordion {
+  margin: 1.375em 0;
+}
+
+body.nice-framework-page .nice-accordion-group {
+  margin: 8px 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
+  -o-box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
+}
+
+body.nice-framework-page .nice-accordion-heading {
+  overflow: hidden;
+  border-bottom: 0;
+}
+
+body.nice-framework-page .nice-accordion-toggle {
+  display: block;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 114.2%;
+  color: #222;
+  background-color: #fbfbfb;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nice-accordion body.nice-framework-page .nice-accordion-toggle:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+
+body.nice-framework-page .nice-accordion-toggle span.ui-accordion-header-icon {
+  display: none;
+}
+
+body.nice-framework-page .nice-accordion-toggle.collapsed {
+  background-color: #fff;
+}
+
+body.nice-framework-page .nice-accordion-toggle.ui-corner-all, body.nice-framework-page .nice-accordion-toggle.ui-corner-top, body.nice-framework-page .nice-accordion-toggle.ui-corner-bottom {
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+body.nice-framework-page .nice-accordion-toggle.ui-state-hover {
+  background-color: #fdfdfd;
+}
+
+body.nice-framework-page .nice-accordion-toggle:before {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  font-family: "dashicons";
+  content: "\f347";
+  position: relative;
+  display: inline-block;
+  bottom: 0.1em;
+  margin-right: 10px;
+  font-size: 74%;
+  font-weight: 400;
+  color: #ccc;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body.nice-framework-page .nice-accordion-toggle:hover:before {
+  color: #ccc;
+}
+
+body.nice-framework-page .ui-accordion-header-active:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+body.nice-framework-page .nice-accordion-inner {
+  padding: 10px 15px;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+body.nice-framework-page .nice-accordion-inner.ui-widget-content {
+  border: 1px solid #e7e7e7;
+  border-top: none;
+}
+
+body.nice-framework-page .nice-accordion-inner p:last-child,
+body.nice-framework-page .nice-accordion-inner ul:last-child,
+body.nice-framework-page .nice-accordion-inner ol:last-child {
+  margin-bottom: 0;
+}
+
+body.nice-framework-page .nice-toggle {
+  margin: 0 0 2em 0;
+}
+
+body.nice-framework-page .nice-toggle span.ui-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin: -6px 0 0 0;
+}
+
+body.nice-framework-page .nice-toggle .nice-toggle-title {
+  display: block;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+body.nice-framework-page .nice-toggle .nice-toggle-title:after {
+  font-family: 'dashicons';
+  content: "\f347";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin: -6px 0 0 0;
+}
+
+body.nice-framework-page .nice-toggle .nice-toggle-title:not(.ui-state-active):after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+body.nice-framework-page .nice-toggle .nice-toggle-title:hover {
+  border: 1px solid #e7e7e7;
+}
+
+body.nice-framework-page .nice-toggle .nice-toggle-inner {
+  padding: 0 10px 10px;
+  border-top: none;
+}
+
+body.nice-framework-page .nice-notice {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin: 0;
+  margin-bottom: 1.313em;
+  border: 1px solid transparent;
+  padding: 0.786em 2.25em 1em 1.15em;
+  line-height: 1.5;
+  color: inherit;
+  background-color: #f0f0f0;
+}
+
+html[dir="rtl"] body.nice-framework-page .nice-notice {
+  text-align: right;
+}
+
+body.nice-framework-page .nice-notice .heading {
+  margin: 0.05em 0 0.25em;
+  font-size: 18px;
+  font-size: 1.2em;
+  line-height: 1.3;
+  text-transform: none;
+  color: inherit;
+}
+
+body.nice-framework-page .nice-notice .close {
+  position: relative;
+  top: -10px;
+  right: -20px;
+  line-height: 1;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.7;
+  color: #222;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  opacity: 0.4;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-image: none;
+  box-shadow: none;
+}
+
+body.nice-framework-page .nice-notice .close:hover {
+  color: #222;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+body.nice-framework-page .nice-notice button.close {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+body.nice-framework-page .nice-notice.nice-notice-warning {
+  background-color: #fbeed5;
+}
+
+body.nice-framework-page .nice-notice.nice-notice-large, body.nice-framework-page .nice-notice.nice-notice-large p {
+  font-size: 16px;
+}
+
+/* -----------------------------------------------------------------------------
+   8.0 - Tooltips
+   -------------------------------------------------------------------------- */
+.ui-tooltip, .arrow:after {
+  background: #222 !important;
+}
+
+.ui-tooltip {
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 999999;
+  max-width: 300px;
+  color: #fff !important;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+
+html[dir="rtl"] .arrow {
+  left: 0;
+  margin-left: 0;
+  right: 50%;
+}
+
+.arrow.top {
+  top: -16px;
+  bottom: auto;
+}
+
+.arrow.left {
+  left: 20%;
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}
+
+.nice-container button,
+.nice-container input,
+.nice-container select,
+.nice-container textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers. */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome. */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers. */
+}
+
+/*
+   Fields.
+   ========================================================================== */
+.nice-container input[type="checkbox"], .nice-container input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9. */
+}
+
+.nice-container input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to search field in S5, Chrome. */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.nice-container input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX. */
+  -webkit-appearance: none;
+}
+
+.nice-container input[type='search']::-webkit-search-decoration,
+.nice-container input[type='search']::-webkit-search-cancel-button,
+.nice-container input[type='search']::-webkit-search-results-button,
+.nice-container input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.nice-container button,
+.nice-container input {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+}
+
+.nice-container button::-moz-focus-inner,
+.nice-container input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.nice-container input[type="text"],
+.nice-container input[type="email"],
+.nice-container input[type="url"],
+.nice-container input[type="password"],
+.nice-container input[type="search"],
+.nice-container textarea,
+.nice-container .nice-input.nice-select-color,
+.nice-container select {
+  color: #666;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px white inset;
+  -moz-box-shadow: 0 1px 2px white inset;
+  -ms-box-shadow: 0 1px 2px white inset;
+  -o-box-shadow: 0 1px 2px white inset;
+  box-shadow: 0 1px 2px white inset;
+}
+
+.nice-container input[type="text"]:focus,
+.nice-container input[type="email"]:focus,
+.nice-container input[type="url"]:focus,
+.nice-container input[type="password"]:focus,
+.nice-container input[type="search"]:focus,
+.nice-container textarea:focus {
+  color: #111;
+}
+
+.nice-container input[type="text"], .nice-container input[type="email"], .nice-container input[type="url"], .nice-container input[type="password"], .nice-container input[type="search"] {
+  padding: 8px 12px;
+}
+
+.nice-container textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+.nice-container input, .nice-container textarea, .nice-container select {
+  padding: 8px 12px;
+  background: white;
+}
+
+.nice-container button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.nice-container select {
+  background-image: url("../images/select.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  box-shadow: none;
+  padding-right: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+html[dir="rtl"] .nice-container select {
+  background-position: left center;
+}
+
+.nice-container select {
+  width: auto;
+}
+
+.nice-container select:hover {
+  border: 1px solid #d9d9d9;
+}
+
+.nice-container select option {
+  cursor: pointer;
+  padding: 5px 7px;
+}
+
+@media only all and (min--moz-device-pixel-ratio: 1.5), only all and (-o-min-device-pixel-ratio: 3 / 2), only all and (-webkit-min-device-pixel-ratio: 1.5), only all and (min-device-pixel-ratio: 1.5), only all and (min-resolution: 144dpi), only all and (min-resolution: 1.5dppx) {
+  .nice-container select {
+    background-size: 33px 33px;
+    background-image: url("../images/select@2x.png");
+  }
+}
+
+/*
+	Nice Fields
+
+*/
+.nice-container {
+  /*
+	Radio Images
+	*/
+}
+
+.nice-container input:focus,
+.nice-container select:focus,
+.nice-container textarea:focus {
+  background-color: #fff;
+}
+
+.nice-container .section-checkbox .controls {
+  width: 25px;
+}
+
+html[dir="rtl"] .nice-container .section-checkbox .controls {
+  float: right;
+}
+
+.nice-container .section-checkbox .explain {
+  width: 540px;
+}
+
+.nice-container .section-checkbox input {
+  float: left;
+  margin-right: 7px;
+  margin-top: 2px;
+}
+
+html[dir="rtl"] .nice-container .section-checkbox input {
+  float: right;
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.nice-container .section-checkbox .explain-checkbox {
+  float: left;
+  width: 80%;
+}
+
+html[dir="rtl"] .nice-container .section-checkbox .explain-checkbox {
+  text-align: right;
+  float: right;
+}
+
+.nice-container .section-checkbox .explain-checkbox label {
+  font-weight: normal;
+}
+
+.nice-container .section-color .controls {
+  width: 400px;
+}
+
+.nice-container .section-color .wp-picker-input-wrap input {
+  width: inherit;
+  padding: inherit;
+}
+
+html[dir="rtl"] .nice-container .section-color .wp-picker-input-wrap input {
+  float: right;
+}
+
+.nice-container .section-color .wp-picker-container,
+.nice-container .section-color .wp-picker-container *, .nice-container .section-color .wp-picker-container:before, .nice-container .section-color .wp-picker-container:after {
+  box-sizing: content-box;
+}
+
+.nice-container .section-info h3.heading {
+  font-size: 12px;
+  font-weight: bold;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  background: #e2e2e2;
+  padding: 10px 20px;
+  color: #595959;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.nice-container .section-info .controls {
+  margin: 0 0 20px;
+  padding: 20px;
+  width: 593px;
+  line-height: 1.5em;
+  font-size: 12px;
+  background: #eee;
+  border: 1px solid #d8d8d8;
+  color: #707070;
+}
+
+.nice-container .section-info .controls small {
+  font-size: 12px;
+}
+
+.nice-container .section-measurement input[type='text'] {
+  width: 245px;
+  max-width: 70%;
+  margin-right: 5px;
+  float: left;
+}
+
+.nice-container .section-measurement select {
+  max-width: 20%;
+  width: 90px;
+  height: 36px !important;
+  float: left;
+}
+
+.nice-container .section-radio_image .controls {
+  width: 90%;
+}
+
+.nice-container .type-radio-image .nice-framework-admin-ui-radio-images {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: inherit;
+  max-width: 150px;
+}
+
+html[dir="rtl"] .nice-container .type-radio-image .nice-framework-admin-ui-radio-images {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.nice-container .type-radio-image .nice-framework-admin-ui-radio-images img {
+  max-width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 5px;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.nice-container .type-radio-image .nice-framework-admin-ui-radio-images img.nice-framework-admin-ui-radio-image-selected, .nice-container .type-radio-image .nice-framework-admin-ui-radio-images img:hover {
+  border-color: #464646;
+  opacity: 1;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nice-container .nice-radio-img-img {
+  border: 3px solid #fff;
+  margin: 0 5px 10px 0;
+  display: none;
+  cursor: pointer;
+}
+
+.nice-container .nice-radio-img-img:hover {
+  opacity: .8;
+}
+
+.nice-container .nice-radio-img-selected {
+  border: 3px solid #ccc;
+}
+
+.nice-container .nice-border-width {
+  width: 80px;
+  float: left;
+}
+
+/* --------------------------------------------------
+   :: On/Off Switch
+   ---------------------------------------------------*/
+.nice-container .on-off-switch .slide-button {
+  display: none;
+}
+
+@media only screen {
+  .nice-container .on-off-switch {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    height: 27px;
+    margin: 2px 1px;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85px;
+    background-clip: padding-box;
+    /* Stops background color from leaking outside the border. */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+  }
+  .nice-container .on-off-switch * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .nice-container .on-off-switch input {
+    position: absolute;
+    opacity: 0;
+  }
+  .nice-container .on-off-switch label {
+    cursor: pointer;
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    z-index: 2;
+    color: #aaa;
+  }
+  .nice-container .on-off-switch input:checked + label {
+    color: #333;
+    font-weight: bold;
+  }
+  .nice-container .on-off-switch input:last-of-type:checked + label {
+    color: #444;
+    font-weight: bold;
+  }
+  .nice-container .on-off-switch input:focus + label {
+    outline: none;
+  }
+  .nice-container .on-off-switch .slide-button {
+    background: #eee;
+    border: 1px solid #bbb;
+    display: block;
+    height: 27px;
+    left: -1px;
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    top: -1px;
+    width: 51%;
+    z-index: 1;
+    background-clip: padding-box;
+    /* Stops background color from leaking outside the border. */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 0 #ddd, 0 1px 0 rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0 1px 0 #ddd, 0 1px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 1px 0 #ddd, 0 1px 0 rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .nice-container .on-off-switch input:last-of-type:checked ~ .slide-button {
+    background: #eee;
+    border-color: #bbb;
+    font-weight: bold;
+    color: #444;
+    left: 50%;
+    -webkit-box-shadow: inset 0 1px 0 #ddd, 0 1px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 1px 0 #ddd, 0 1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 0 #ddd, 0 1px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 1280px) {
+  .nice-container .on-off-switch {
+    -webkit-animation: webkitSiblingBugfix infinite 1s;
+  }
+}
+
+@-webkit-keyframes webkitSiblingBugfix {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+/*
+	Typography
+*/
+.nice-container .nice-typography {
+  float: left;
+  margin-right: 5px;
+}
+
+.nice-container .section-typography .explain {
+  margin-bottom: 20px;
+  width: 145px;
+}
+
+.nice-container .section-typography .controls {
+  width: 100%;
+}
+
+.nice-container .section-typography .controls .nice-typography-size {
+  width: 65px;
+}
+
+.nice-container .section-typography .controls .nice-typography-font-size,
+.nice-container .section-typography .controls .nice-typography-letter-spacing {
+  width: 65px;
+  height: 45px;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.nice-container .section-typography .controls .nice-typography-unit,
+.nice-container .section-typography .controls .nice-typography-letter-spacing-unit {
+  float: left;
+  width: 55px;
+}
+
+.nice-container .section-typography .controls .nice-typography-family {
+  width: 110px;
+}
+
+.nice-container .section-typography .controls .nice-typography-style {
+  width: 90px;
+  float: left;
+}
+
+.nice-container .section-typography .controls .nice-color {
+  width: 65px;
+  padding: 4px;
+}
+
+.nice-container .typography-preview {
+  background: #fefefe;
+  border: 1px solid #eee;
+  clear: both;
+  padding: 20px;
+  word-wrap: break-word;
+  position: relative;
+  width: 92%;
+  margin-top: 10px;
+  float: left;
+}
+
+.nice-container .typography-preview .preview-text {
+  line-height: 1.25em;
+}
+
+.nice-container .wp-picker-container {
+  display: block;
+  clear: left;
+  float: left;
+  width: 201px;
+}
+
+html[dir="rtl"] .nice-container .wp-picker-container {
+  clear: right;
+  float: right;
+}
+
+.nice-container .wp-picker-container + .nice-typography-last + .nice-typography-preview-button {
+  margin: 0;
+}
+
+.nice-container .wp-color-result {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.nice-container .wp-color-result:after {
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  width: 163px;
+}
+
+.nice-container .nice-typography-preview-button {
+  color: #ddd;
+  text-decoration: none;
+  width: 23px;
+  height: 23px;
+  float: left;
+  text-align: center;
+  line-height: 26px;
+  margin: 8px 5px;
+}
+
+.nice-container .nice-typography-preview-button span:before {
+  font: 16px 'niceadmin' !important;
+  content: '\e84f';
+}
+
+.nice-container .nice-typography-preview-button span.refresh:before {
+  font: 16px 'niceadmin' !important;
+  content: '\e827';
+}
+
+.nice-container .preview_remove {
+  position: absolute;
+  font-weight: 300;
+  color: #fff;
+  right: -10px;
+  top: -10px;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nice-container .preview_remove i {
+  font-size: 12px;
+  float: left;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.nice-container .preview_remove:hover {
+  background: #e14d43;
+}
+
+.nice-container .nice-upload {
+  width: 245px;
+  color: #888;
+}
+
+.nice-container input,
+.nice-container select,
+.nice-container textarea {
+  margin-bottom: 10px !important;
+  font-size: 12px;
+  border: 1px solid #D4D4D8;
+  box-shadow: 0 1px 2px #F9F9F9;
+  padding: 8px;
+  color: #5E6066;
+}
+
+.nice-container select {
+  width: 340px;
+  height: 35px;
+  padding: 2px 4px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .nice-container select {
+    padding: 2px 11px;
+  }
+}
+
+.nice-container textarea {
+  width: 345px;
+}
+
+.nice-container input[type=text] {
+  width: 340px;
+}
+
+.nice-container input[type=text].wp-color-picker {
+  width: 80px;
+  min-width: 0;
+}
+
+.nice-container input.nice-date {
+  width: 315px;
+  float: left;
+}
+
+.nice-container .ui-datepicker-trigger {
+  padding-top: 4px;
+  float: left;
+  padding-left: 5px;
+}
+
+.nice-container .input-text-small {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.nice-container .nice-color {
+  float: left;
+  width: 80px !important;
+  margin-left: 5px;
+  padding: 4px !important;
+}
+
+.nice-container .nice-color + .button.button-small {
+  padding: 0 8px 1px !important;
+}
+
+/* ------------------------------------------------------------------------
+   :: Colorpicker Opacity (Derivative work of the Codestar WP Color Picker)
+   ------------------------------------------------------------------------ */
+.nice-container .nice-color-opacity-wrap {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  direction: ltr;
+  display: none;
+  padding: 10px;
+  position: relative;
+  top: -1px;
+  width: 235px;
+}
+
+.nice-container .nice-color-opacity-slider {
+  left: 10px;
+  position: absolute;
+  width: 171px;
+  margin-left: 3px;
+  height: 28px;
+}
+
+.nice-container .nice-color-opacity-slider .ui-slider-handle {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  z-index: 5;
+  border-color: #aaa;
+  border-style: solid;
+  border-width: 4px 3px;
+  width: 13px;
+  height: 34px;
+  margin: 0 -3px;
+  background: none;
+  cursor: ew-resize;
+  opacity: 0.9;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nice-container .nice-color-opacity-slider .ui-slider-handle:before {
+  content: " ";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: -3px;
+  bottom: -3px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.nice-container .nice-color-opacity-slider-offset {
+  height: 28px;
+  width: 183px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAASCAYAAAAe/ZHXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNEQUQ0ODM4RUE0MTFFNEExOEJFN0E5M0VFOTg0QUQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNEQUQ0ODQ4RUE0MTFFNEExOEJFN0E5M0VFOTg0QUQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2Q0RBRDQ4MThFQTQxMUU0QTE4QkU3QTkzRUU5ODRBRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0RBRDQ4MjhFQTQxMUU0QTE4QkU3QTkzRUU5ODRBRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/r/N8AAAWYSURBVHjarFvvR3VBEN45JZGIPkREHyIiIhJJf3qUSERE9CGiDxERkcg9z9u92uucvTszz5z7xnHPj93Z2d359cxscn5+jpTS+EoiMr3/+51cZ2dn4+e29i2/u7y8RKf/pO3vc+o+n5ycoNK31+f6+jrfZ37yuG2mf3R01H3fa5N/b29vU6dP5qft0G4PDg5MGuPr/v4+jz1t27mfvN/b21P75+fHx8eZfiV/Ozs7rUJnSu/5+RlFv+m6ZJpbW1s1PnrvXl9fZ/qX89zY2LB4mfy+v7/nsdV1XltbK/dr5vnz87OcV5bJabuVlRVLBifjfX9/l/xkGtM+S0tLNXnu0szfU/P3IMn/k0678h6ddqjQFGccVL6hoCsVfsq+NZ5QtCv5rfFS41sq37W+UPhMyhxEWTetvce3NR8oewqD39qalXuGAK/WPltjajIC4x2c9Ye1f43SGcqGwRBeTZjhMNntL4pCWZMQYhE05RVl02EovRgC4RkCbUNSQAGhGB/GsKG4h6FQoigDa2i8fRBy3uLMXYIG3Vr3aZvRaCRdBYlYIMZywhBGCVhgzzOlgRuUSOvC0GMEWxOM/+EtQFh1OIIXtfwg1tRaayGjg5px0jyZKEaTle3e+AsLCygVRAh3FlEgKbReE3oYGj9EgIR00QiEgKw3ZBQbRGjBeAMtDETQmHiKDsezJNLgCTFGItZXlAgCSiQggblP+9c8SDI0lXWlFv5g3K63KZ51FOcZzthQ3LomoNHwJmKIQISI3vqzSpwIQ8liSjGMFQjDpoVgaQ6cWgvLhOC7qiAwiHrWbEg4JMSmeUrBuHoYwioOQNXmhmAcrs096s1gJCGi3hSEVU8DQxYElYHhKwUUGAa+NqOBMsSSAQJuhQhCAH4vxozExsxiihPuaIrjCVYKWlYEsjSM52G8Kxxryngl5j0j+EyGTIiED4s1Itm0ZGWxMFCLJaBAcEI6OBkmFgNBoc8Cait2ZnENE/6wQN8LJSJeSMNAjKVm+LUMAIt3PR5AQgIGp1Z5zxhE8PtXUYReYeXi4mKmOPNXBMzt2tPT07LIUtJqr66uusXEbkFnWiQ6Pj72ikrtzc1NKopuvbbj58PDwxqNHp27u7tuYWumUDV+v7+/Xyu6pc59+/DwUCsC9ujt7u6qRbt8//T01C3elbyN70fb29uZ/1FSincvLy/lPGb42tzc9IqJeHt7q61Pr2C6vr7u7tfHx8fMPhV0sLq6WhZtU0n36+uru8elPE7aLi8v1wqJPXn++fmZKYgX8ozFxcXJb0NaQTHClZT8+gBjsYdaFc+zWcUkGTCWENY66ta92oSVzo3WI6IZKGtukeyfBLFKBNAj6bUOBgaoe9wE4n04IBNkLMoC7+Skj630ZlTJMYdyMsU2T8AwpzALkVFilZgJcT2l9PCWDDSAMBSjVlJgZNk0lE1AIby0qCiCnBQNj6aBGQslZIZJ5hB6D/AzQHto5Z9Nk8tARdN4q2ExBnsyIJ311EymShyjan2rKk0zh1Ay1oQVWAZQRnkUA8RFw7TahjBnmNgMVMQrsCGZJezRtGlU0cUZ1zuaxGZPpbhApM+ZpFQqQ6xadoMtBrEKpBVo4GRXvNSxpaRixKiR+TChCYhsDwZkfFj8IkErjAHejcUI0XQrgwehhNSMHAz21E0wZ23FcCAmj8Sd/PXy2xLYLAuwRw4IMsqjFaWYOpMEhDySAPFCWyFkgAHrEcA+BNeJ4UE8HCzJPpCrerUmQIx1pWJkjqxJD8EikUo2c5aI8ZYgsAkM4WQtnHd0ns0ORgVTBghy5ISy928SGsbTMqYg523RUY8oNYG4FIYiyRyZCnFCJC87IoRAIMVOqQ7BKexxCS2hYVl9JhvlpYjnAe4MhmRPMWhhvLfXINaI9WKM0Zu0+SfAAFLE1EgfVSv7AAAAAElFTkSuQmCC);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+  border-radius: 2px;
+}
+
+.nice-container .nice-color-opacity-text {
+  position: absolute;
+  top: 15px;
+  left: 215px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*------------------*/
+/* FILES	*/
+/*------------------*/
+.nice-container .section-upload input[type='text'] {
+  float: left;
+  width: 75%;
+}
+
+html[dir="rtl"] .nice-container .section-upload input[type='text'] {
+  float: right;
+}
+
+.nice-container .section-upload input[type='button'] {
+  width: auto;
+  float: left;
+  margin-left: 3%;
+  padding: 10px 12px;
+  box-shadow: none;
+}
+
+html[dir="rtl"] .nice-container .section-upload input[type='button'] {
+  float: right;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.nice-container .section-upload input[type='button']:hover {
+  box-shadow: none;
+}
+
+.nice-container .screenshot {
+  float: left;
+  margin-left: 1px;
+  position: relative;
+  width: 345px;
+  margin-top: 3px;
+  z-index: 1;
+  clear: both;
+}
+
+html[dir="rtl"] .nice-container .screenshot {
+  float: right;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.nice-container .screenshot img {
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: #fafafa;
+  border-color: #ccc #eee #eee #ccc;
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  max-width: 335px;
+  padding: 4px;
+}
+
+html[dir="rtl"] .nice-container .screenshot img {
+  float: right;
+}
+
+.nice-container .screenshot .nice-upload-remove {
+  bottom: 0;
+  display: block;
+  float: left;
+  padding: 0 5px;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid transparent;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #DD4B39;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DD4B39), to(#D14836));
+  background-image: -webkit-linear-gradient(center top, #DD4B39, #D14836);
+  background-image: -moz-linear-gradient(center top, #DD4B39, #D14836);
+  background-image: -o-linear-gradient(center top, #DD4B39, #D14836);
+  background-image: linear-gradient(center top, #DD4B39, #D14836);
+}
+
+html[dir="rtl"] .nice-container .screenshot .nice-upload-remove {
+  float: right;
+}
+
+.nice-container .screenshot .nice-upload-remove:hover {
+  border: none;
+  background-image: -moz-linear-gradient(center top, #DD4B39, #C53727);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border-color: #B0281A #B0281A #AF301F !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #DD4B39;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DD4B39), to(#C53727));
+  background-image: -webkit-linear-gradient(center top, #DD4B39, #C53727);
+  background-image: -moz-linear-gradient(center top, #DD4B39, #C53727);
+  background-image: -o-linear-gradient(center top, #DD4B39, #C53727);
+  background-image: linear-gradient(center top, #DD4B39, #C53727);
+}
+
+.nice-container .screenshot .no_image .file_link {
+  margin-left: 20px;
+}
+
+.nice-container .screenshot .no_image .nice-upload-remove {
+  bottom: 0px;
+}
+
+/*
+	jQuery UI Slider for Options
+*/
+.nice-container [id$="_slider"].ui-slider {
+  position: relative;
+  text-align: left;
+  /* For IE8 - See #6727 */
+}
+
+.nice-container [id$="_slider"].ui-slider .ui-state-default,
+.nice-container [id$="_slider"].ui-slider .ui-widget-content .ui-state-default {
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.nice-container [id$="_slider"].ui-slider .ui-state-hover,
+.nice-container [id$="_slider"].ui-slider .ui-widget-content .ui-state-hover,
+.nice-container [id$="_slider"].ui-slider .ui-state-focus,
+.nice-container [id$="_slider"].ui-slider .ui-widget-content .ui-state-focus {
+  border: 1px solid #727e8e;
+}
+
+.nice-container [id$="_slider"].ui-slider .ui-widget-header {
+  border: none;
+  background: #bbb;
+}
+
+.nice-container [id$="_slider"].ui-slider .ui-widget-content {
+  border: none;
+}
+
+.nice-container [id$="_slider"].ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 12px;
+  height: 12px;
+  cursor: ew-resize;
+  background: #727e8e;
+}
+
+.nice-container [id$="_slider"].ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  background: #727e8e;
+}
+
+.nice-container [id$="_slider"].ui-slider.ui-state-disabled .ui-slider-handle,
+.nice-container [id$="_slider"].ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+
+.nice-container .section-slider .ui-widget-content,
+.nice-container .section-slider input[type=text] {
+  box-shadow: none;
+}
+
+.nice-container .section-slider input[type=text] {
+  margin-top: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.nice-container .section-slider .ui-slider-horizontal {
+  height: 3px;
+  background: #eee;
+}
+
+.nice-container .section-slider .ui-slider-horizontal .ui-slider-handle {
+  top: -5px;
+  margin-left: -.6em;
+}
+
+.nice-container .section-slider .ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.nice-container .section-slider .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+.nice-container .section-slider .ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+.nice-container .section-slider .ui-slider-vertical {
+  width: .8em;
+  height: 100px;
+}
+
+.nice-container .section-slider .ui-slider-vertical .ui-slider-handle {
+  left: -.3em;
+  margin-left: 0;
+  margin-bottom: -.6em;
+}
+
+.nice-container .section-slider .ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+}
+
+.nice-container .section-slider .ui-slider-vertical .ui-slider-range-min {
+  bottom: 0;
+}
+
+.nice-container .section-slider .ui-slider-vertical .ui-slider-range-max {
+  top: 0;
+}
+
+/*
+ * Color select.
+ */
+.section-select_color .clearfix {
+  overflow: visible;
+}
+
+.nice-input.nice-select-color {
+  width: 340px;
+  position: relative;
+  font-size: 13px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #F9F9F9 !important;
+}
+
+.nice-input.nice-select-color .nice-color-select-options {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  width: calc(100% + 2px);
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  margin: -1px;
+  border-top: none;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  max-height: 220px;
+  overflow: scroll;
+}
+
+.nice-input.nice-select-color .nice-color-select-options .option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nice-input.nice-select-color .option {
+  padding: 8px;
+  overflow: hidden;
+}
+
+#nice-container #nice-content .nice-input.nice-select-color .option {
+  min-height: 0;
+  padding: 13px;
+}
+
+.nice-input.nice-select-color .option span {
+  display: block;
+  width: 80px;
+  float: right;
+  margin-right: 5px;
+}
+
+html[dir="rtl"] .nice-input.nice-select-color .option span {
+  float: left;
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.nice-input.nice-select-color .nice-color-select-placeholder {
+  background-image: url("../images/select.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+html[dir="rtl"] .nice-input.nice-select-color .nice-color-select-placeholder {
+  background-position: left center;
+}
+
+.nice-input.nice-select-color .nice-color-select-placeholder span {
+  margin-right: 25px;
+}
+
+#nice-container #nice-content .nice-input.nice-select-color .nice-color-select-placeholder span {
+  margin-right: 20px;
+}
+
+/*
+ * List items.
+ */
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item {
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  position: relative;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item:last-of-type {
+  border-bottom: 1px solid #ddd;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item h4.heading {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 -1px;
+  padding: 10px;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item h4.heading.ui-sortable-handle:hover {
+  cursor: move;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item h4.heading + ul {
+  display: none;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item h5.heading {
+  margin: 10px 0;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item .option {
+  min-height: 40px;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item .section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item .option-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 7px 3px;
+}
+
+html[dir="rtl"] #nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item .option-menu {
+  right: auto;
+  left: 0;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item .option-menu a {
+  margin: 0 2.5px;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item .option-menu a:not(.active) {
+  box-shadow: none;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item span.field-valid-message {
+  padding: 4.5px 10px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item span.nice-color-indicator {
+  width: 15px;
+  position: absolute;
+  height: 15px;
+  margin: 4px 0 4px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item li.section-list_item span.nice-color-indicator + label {
+  margin-left: 20px;
+}
+
+#nice-container #nice-content .nice-framework-admin-ui-list-item a.button.add-new {
+  box-shadow: none;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
+
+/*
+   Buttons.
+   ========================================================================== */
+.nice-container button:not(.notice-dismiss),
+.nice-container input[type="button"],
+.nice-container input[type="reset"],
+.nice-container input[type="submit"] {
+  border: 1px solid #d9d9d9;
+  background: #e6e6e6;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 1;
+  padding: .6em 1em .4em;
+  text-transform: uppercase;
+}
+
+.nice-container button:not(.notice-dismiss):hover,
+.nice-container input[type="button"]:hover,
+.nice-container input[type="reset"]:hover,
+.nice-container input[type="submit"]:hover {
+  border-color: #d9d9d9;
+  background: white;
+}
+
+.nice-container button:not(.notice-dismiss):focus, .nice-container button:not(.notice-dismiss):active,
+.nice-container input[type="button"]:focus,
+.nice-container input[type="button"]:active,
+.nice-container input[type="reset"]:focus,
+.nice-container input[type="reset"]:active,
+.nice-container input[type="submit"]:focus,
+.nice-container input[type="submit"]:active {
+  border-color: #d9d9d9;
+  background: white;
+}
+
+.nice-container input[type="submit"] {
+  box-shadow: 0 0 0;
+  color: white;
+}
+
+.nice-container input.nice_upload_button {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 4px;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(center top, #f5f5f5, #f1f1f1);
+  background-image: -moz-linear-gradient(center top, #f5f5f5, #f1f1f1);
+  background-image: -o-linear-gradient(center top, #f5f5f5, #f1f1f1);
+  background-image: linear-gradient(center top, #f5f5f5, #f1f1f1);
+}
+
+.nice-container input.nice_upload_button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-color: #c9c9c9;
+  background-color: #f8f8f8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(center top, #f8f8f8, #f1f1f1);
+  background-image: -moz-linear-gradient(center top, #f8f8f8, #f1f1f1);
+  background-image: -o-linear-gradient(center top, #f8f8f8, #f1f1f1);
+  background-image: linear-gradient(center top, #f8f8f8, #f1f1f1);
+}
+
+/**
+ * Nice Framework by NiceThemes.
+ *
+ * Styles for the demos and plugins installation pages.
+ *
+ * @package   NiceFramework
+ * @author    NiceThemes <hello@nicethemes.com>
+ * @license   GPL-2.0+
+ * @link      http://nicethemes.com/
+ * @copyright 2016 NiceThemes
+ * @since     2.0
+ */
+.nice-install-items {
+  margin-top: 20px;
+}
+
+.nice-install-items *, .nice-install-items *::before, .nice-install-items *::after {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
+
+.nice-install-items:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nice-install-items .nice-important-notice {
+  padding: 20px 30px;
+  background: #eee;
+  margin: 0 0 30px;
+  padding-top: 5px;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.nice-install-items .nice-item-filters {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.nice-install-items .isotope-empty {
+  clear: both;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.nice-install-items .isotope-empty p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.nice-install-items .nice-item-browser {
+  clear: both !important;
+  margin-left: -1.5%;
+  margin-right: -1.5%;
+}
+
+.nice-install-items .nice-item-browser .item {
+  display: block;
+  float: left;
+  border: 1px solid #dedede;
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 30%;
+  margin: 0 1.5% 3% 1.5%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+html[dir="rtl"] .nice-install-items .nice-item-browser .item {
+  display: block;
+}
+
+.nice-install-items .nice-item-browser .item .item-name {
+  min-height: 18px;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3em !important;
+  cursor: auto;
+  background-color: #fafafa;
+}
+
+.nice-install-items .nice-item-browser .item .item-screenshot {
+  width: 100%;
+  cursor: auto;
+  background-color: #fafafa;
+}
+
+.nice-install-items .nice-item-browser .item .item-screenshot img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  opacity: 1 !important;
+  cursor: auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.nice-install-items .nice-item-browser .item .item-screenshot:after {
+  padding-top: 75%;
+}
+
+.nice-install-items .nice-item-browser .item .item-update {
+  cursor: auto;
+  background: rgba(213, 78, 33, 0.95) none repeat scroll 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 0;
+  line-height: 48px;
+  overflow: hidden;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nice-install-items .nice-item-browser .item .item-update.new-version {
+  background-color: rgba(50, 205, 50, 0.95) !important;
+}
+
+.nice-install-items .nice-item-browser .item .item-update:before {
+  content: "";
+  display: inline-block;
+  font: 400 20px/1 dashicons;
+  margin: 0 6px 0 0;
+  opacity: 0.8;
+  position: relative;
+  top: 5px;
+}
+
+.nice-install-items .nice-item-browser .item .item-info {
+  width: 100%;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  color: #777;
+}
+
+.nice-install-items .nice-item-browser .item .item-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 75px 75px 0;
+  border-color: transparent #ccc transparent transparent;
+  text-align: right;
+  line-height: 0;
+  cursor: default;
+  _border-color: #000000 #000000 #000000 #ccc;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#cccccc');
+}
+
+html[dir="rtl"] .nice-install-items .nice-item-browser .item .item-ribbon {
+  right: auto;
+  left: 0;
+  border-width: 0 0 75px 75px;
+  border-color: transparent transparent transparent #ccc;
+}
+
+.nice-install-items .nice-item-browser .item .item-ribbon.active {
+  border-color: transparent #a8db7f transparent transparent;
+  text-align: right;
+  line-height: 0;
+  cursor: default;
+  _border-color: #000000 #a8db7f #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#A8DB7F');
+  cursor: default;
+}
+
+html[dir="rtl"] .nice-install-items .nice-item-browser .item .item-ribbon.active {
+  _border-color: #000000 #000000 #000000 #a8db7f;
+  border-color: transparent transparent transparent #a8db7f;
+}
+
+.nice-install-items .nice-item-browser .item .item-ribbon .item-ribbon-icon {
+  padding: 15px 15px 20px 20px;
+  position: absolute;
+  right: -75px;
+  top: 0;
+  color: #fff;
+}
+
+html[dir="rtl"] .nice-install-items .nice-item-browser .item .item-ribbon .item-ribbon-icon {
+  right: auto;
+  left: -75px;
+  padding: 15px 20px 20px 15px;
+}
+
+.nice-install-items .nice-item-browser .item .item-actions {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 28px;
+  padding: 10px 0 10px 10px;
+  opacity: 1;
+  background: rgba(244, 244, 244, 0.7) none repeat scroll 0 0;
+  -webkit-transition: opacity 0.1s ease-in-out 0s;
+  -moz-transition: opacity 0.1s ease-in-out 0s;
+  -ms-transition: opacity 0.1s ease-in-out 0s;
+  -o-transition: opacity 0.1s ease-in-out 0s;
+  transition: opacity 0.1s ease-in-out 0s;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+html[dir="rtl"] .nice-install-items .nice-item-browser .item .item-actions {
+  right: auto;
+  left: 0;
+  padding: 10px 10px 10px 0;
+}
+
+.nice-install-items .nice-item-browser .item .item-actions .button {
+  float: right;
+  margin-right: 10px;
+  padding: 0 15px;
+}
+
+html[dir="rtl"] .nice-install-items .nice-item-browser .item .item-actions .button {
+  float: left;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.nice-install-items .nice-item-browser .item .item-actions .button.button-preview i {
+  line-height: 22px;
+}
+
+.nice-install-items .nice-item-browser .item.active .item-name {
+  background: #2f2f2f;
+  color: #fff;
+  font-weight: normal;
+}
+
+.nice-install-items .nice-item-browser .item.active .item-name span {
+  font-weight: 600;
+}
+
+.nice-install-items .nice-item-browser .item:hover .item-actions {
+  display: block !important;
+}
+
+.nice-install-items .nice-thanks {
+  clear: both;
+}
+
+@media only screen and (max-width: 1120px) {
+  .nice-install-items .nice-item-browser .item {
+    width: 47% !important;
+  }
+  .nice-install-items .nice-item-browser .item .item-info {
+    top: 175px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nice-install-items .nice-item-browser .item .item-actions {
+    display: block !important;
+  }
+  .nice-install-items .nice-item-browser .item .item-actions .button {
+    padding: 6px 5px !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .nice-install-items .nice-item-browser .item {
+    width: 100% !important;
+    margin-bottom: 5% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .nice-install-items .nice-item-browser .item .item-info {
+    top: 155px !important;
+  }
+}
+
+body.nice-framework-page-demos .nice-badge {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  padding: 4px 6px;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+
+body.nice-framework-page-demos .nice-badge.warning {
+  color: white;
+  background-color: #ffb900;
+}
+
+body.nice-framework-page-demos .nice-badge.error {
+  color: white;
+  background-color: #d54e21;
+}
+
+body.nice-framework-page-demos .nice-notice {
+  border-radius: 0;
+  border: none;
+}
+
+body.nice-framework-page-demos .nice-notice.warning {
+  border-left: 4px solid #ffb900;
+}
+
+html[dir="rtl"] body.nice-framework-page-demos .nice-notice.warning {
+  border-left: none;
+  border-right: 4px solid #ffb900;
+}
+
+body.nice-framework-page-demos .nice-notice.error {
+  border-left: 4px solid #d54e21;
+}
+
+html[dir="rtl"] body.nice-framework-page-demos .nice-notice.error {
+  border-left: none;
+  border-right: 4px solid #d54e21;
+}
+
+body.nice-framework-page-demos .nice-notice.info {
+  border-left: 4px solid #46b450;
+}
+
+html[dir="rtl"] body.nice-framework-page-demos .nice-notice.info {
+  border-left: none;
+  border-right: 4px solid #46b450;
+}
+
+body.nice-framework-page-demos .nice-notice p:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+body.nice-framework-page-demos .demo-thickbox-sidebar .nice-notice {
+  background-color: white;
+}
+
+body.nice-framework-page-demos .nice-toggle .nice-toggle-inner {
+  height: auto !important;
+  border: 2px solid transparent !important;
+}
+
+body.nice-framework-page-demos .nice-toggle .nice-toggle-inner p:first-of-type {
+  margin-top: 0;
+}
+
+body.nice-framework-page-demos .nice-install-demos {
+  margin-top: 20px;
+}
+
+body.nice-framework-page-demos .nice-install-demos .nice-item-browser .item.partial .item-name {
+  background: #999;
+  color: #fff;
+  font-weight: normal;
+}
+
+body.nice-framework-page-demos .nice-install-demos .nice-item-browser .item.partial .item-name span {
+  font-weight: 600;
+}
+
+body.nice-framework-page-demos .nice-item-filters-description {
+  float: left;
+  max-width: 60%;
+  padding-top: 10px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content {
+  margin-right: 430px;
+  overflow: auto;
+  position: absolute;
+  top: 50px;
+  bottom: 80px;
+  padding: 1.5%;
+  overflow: scroll;
+  min-width: 815px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content .nice-tabs {
+  margin: 0;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content .nice-tabs .ui-tabs-panel {
+  padding-bottom: 0;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content p {
+  margin-top: 0;
+}
+
+body.nice-framework-page-demos .demo-thickbox-sidebar {
+  width: 430px;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 80px;
+  border-left: 1px solid #ddd;
+  padding: 1.5%;
+  box-sizing: border-box;
+  overflow: scroll;
+  font-size: 13px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-sidebar .item-update + .demo-requirements {
+  margin-top: 58px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-sidebar .item-update + p {
+  margin-top: 58px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-sidebar p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-toolbar {
+  position: absolute;
+  height: 80px;
+  line-height: 50px;
+  background: #fcfcfc;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  bottom: 0;
+  padding: 8px 15px;
+  box-sizing: border-box;
+}
+
+body.nice-framework-page-demos .demo-thickbox-toolbar .toolbar-info {
+  margin-right: 430px;
+  overflow: auto;
+  position: absolute;
+}
+
+body.nice-framework-page-demos .demo-thickbox-toolbar .toolbar-actions {
+  width: 430px;
+  position: absolute;
+  right: 15px;
+  box-sizing: border-box;
+}
+
+body.nice-framework-page-demos .demo-thickbox-toolbar .button {
+  float: right;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  line-height: 42px;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+body.nice-framework-page-demos .demo-install h1 {
+  line-height: 1.2em;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+body.nice-framework-page-demos .demo-install h1, body.nice-framework-page-demos .demo-install h2, body.nice-framework-page-demos .demo-install h3, body.nice-framework-page-demos .demo-install h4, body.nice-framework-page-demos .demo-install h5 {
+  margin-top: 0;
+}
+
+body.nice-framework-page-demos .demo-install .demo-images {
+  float: left;
+  width: 573px;
+  height: auto;
+  max-width: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+body.nice-framework-page-demos .demo-install .demo-images img {
+  width: 100%;
+  height: 100%;
+}
+
+body.nice-framework-page-demos .demo-install span.demo-tags, body.nice-framework-page-demos .demo-install span.demo-colors, body.nice-framework-page-demos .demo-install span.demo-features {
+  text-transform: capitalize;
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 5px;
+  float: left;
+  margin-right: 15px;
+}
+
+body.nice-framework-page-demos .demo-install span.demo-tags i, body.nice-framework-page-demos .demo-install span.demo-colors i, body.nice-framework-page-demos .demo-install span.demo-features i {
+  margin-right: 5px;
+}
+
+body.nice-framework-page-demos .demo-install .demo-description {
+  margin-top: 5px;
+}
+
+body.nice-framework-page-demos .demo-install .demo-description p {
+  font-size: 16px;
+}
+
+body.nice-framework-page-demos .demo-requirements .requirements {
+  margin-bottom: 15px;
+}
+
+body.nice-framework-page-demos .demo-requirements h4 {
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+
+body.nice-framework-page-demos .demo-requirements ul {
+  margin: 0;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li {
+  margin: 0 0 5px 0;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li .nice-tooltip-info {
+  cursor: default;
+  color: #888;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li .nice-tooltip-info:hover {
+  cursor: help;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li .nice-tooltip-info i {
+  font-size: 16px;
+  float: left;
+  height: auto;
+  margin-right: 5px;
+  color: #bbb;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li .nice-tooltip-info i.bi_interface-circle-cross {
+  color: #e0352d;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li .nice-tooltip-info i.bi_interface-circle-tick {
+  color: #46b450;
+}
+
+body.nice-framework-page-demos .demo-requirements ul li .nice-tooltip-info i.bi_interface-circle-minus:not(.soft-warning) {
+  color: #ffb900;
+}
+
+body.nice-framework-page-demos .demo-requirements ol {
+  font-size: 13px;
+  margin: 0 1em;
+}
+
+body.nice-framework-page-demos .demo-requirements ol li {
+  margin: 0;
+}
+
+body.nice-framework-page-demos #TB_window {
+  width: 90% !important;
+  min-width: 700px !important;
+  height: 90% !important;
+  min-height: 500px !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  top: 5% !important;
+  left: 5% !important;
+  overflow: hidden;
+}
+
+body.nice-framework-page-demos #TB_Image {
+  width: auto !important;
+  max-width: 100%;
+  height: auto !important;
+  max-height: 100%;
+  margin: auto !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border: none !important;
+}
+
+body.nice-framework-page-demos #TB_title {
+  height: 50px !important;
+  font-size: 22px;
+  background: #fcfcfc;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+  position: relative;
+  font-size: 18px;
+}
+
+body.nice-framework-page-demos #TB_title .tb-close-icon {
+  line-height: 50px;
+  margin-right: 0.75%;
+  height: 50px;
+  width: 50px;
+}
+
+body.nice-framework-page-demos #TB_closeWindowButton {
+  height: 50px;
+  width: 50px;
+}
+
+body.nice-framework-page-demos #TB_closeWindowButton:hover, body.nice-framework-page-demos #TB_closeWindowButton:visited, body.nice-framework-page-demos #TB_closeWindowButton:focus {
+  outline: none !important;
+}
+
+body.nice-framework-page-demos #TB_ajaxWindowTitle {
+  line-height: 50px !important;
+  padding: 0 1.5% !important;
+}
+
+body.nice-framework-page-demos #TB_ajaxContent {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  box-sizing: border-box;
+  top: 0;
+  position: absolute;
+  padding: 0 !important;
+  z-index: 1;
+}
+
+body.nice-framework-page-demos #TB_ajaxContent p {
+  padding: 0 0 5px;
+}
+
+body.nice-framework-page-demos #TB_ajaxContent .nice-notice p:first-child {
+  margin-top: 5px;
+}
+
+body.nice-framework-page-demos .nice-demo-import-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  margin-left: -300px;
+  margin-top: -200px;
+  overflow: auto;
+  background: #fff none repeat scroll 0 0;
+  z-index: 1000000;
+}
+
+body.nice-framework-page-demos .nice-demo-import-window #nice-demo-import-loader {
+  width: 150px;
+  height: 150px;
+  margin: 80px auto 10px auto;
+  background: url(../images/demo-importing.gif) no-repeat scroll center top transparent;
+}
+
+body.nice-framework-page-demos .nice-demo-import-window #nice-demo-import-loader.demo-success {
+  background-image: url(../images/demo-imported.gif);
+}
+
+body.nice-framework-page-demos .nice-demo-import-window #nice-demo-import-loader.demo-error {
+  height: 70px;
+  background: none;
+}
+
+body.nice-framework-page-demos .nice-demo-import-window #nice-demo-import-results {
+  padding: 20px 80px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+}
+
+body.nice-framework-page-demos .nice-demo-import-window #nice-demo-import-results .random-importing-message {
+  color: #888888;
+}
+
+body.nice-framework-page-demos .nice-demo-import-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000 none repeat scroll 0 0;
+  opacity: 0.7;
+  z-index: 999999;
+}
+
+body.nice-framework-page-demos .grid {
+  overflow: hidden;
+  margin-left: -3%;
+}
+
+body.nice-framework-page-demos .grid[class*='cols-'] {
+  display: grid;
+  margin-left: 0;
+}
+
+body.nice-framework-page-demos .grid[class*='cols-'] [class*='columns-'] {
+  float: none;
+  width: 100%;
+  padding-left: 0;
+}
+
+body.nice-framework-page-demos .grid.cols-2 {
+  grid-template-columns: 48.5% 48.5%;
+  grid-column-gap: 3%;
+}
+
+body.nice-framework-page-demos .grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body.nice-framework-page-demos [class*='columns-'] {
+  float: left;
+  padding-left: 3%;
+}
+
+body.nice-framework-page-demos [class*='columns-']:last-of-type {
+  padding-right: 0;
+}
+
+body.nice-framework-page-demos [class*="columns-"] .nice-badge {
+  transform: translateY(-5px);
+  position: absolute;
+  margin: 0 5px;
+}
+
+body.nice-framework-page-demos [class*='columns-'] img {
+  max-width: 100%;
+  height: auto;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content .nice-tabs .nice-nav li a {
+  padding: 11px 15px;
+  font-size: 14px;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content .nice-tabs .nice-nav li a:focus {
+  box-shadow: none;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content .nice-tabs .nice-nav li a .nice-badge {
+  margin-bottom: -5px;
+  border-radius: 100%;
+}
+
+body.nice-framework-page-demos .demo-thickbox-content .columns-2 {
+  width: 45%;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-bulk-actions {
+  float: left;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+html[dir="rtl"] body.nice-framework-page .nice-admin-wrapper .nice-bulk-actions {
+  float: right;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-bulk-actions select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 15px;
+  display: inline-block;
+  background-clip: padding-box;
+  /* Stops background color from leaking outside the border. */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fafafa;
+  color: #777;
+  background-image: url("../images/select.png");
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  max-width: 150px;
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 1.5em;
+  border: none;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  height: unset;
+}
+
+html[dir="rtl"] body.nice-framework-page .nice-admin-wrapper .nice-bulk-actions select {
+  padding-right: 15px;
+  padding-left: 30px;
+  background-position: left center;
+}
+
+body.nice-framework-page .nice-admin-wrapper .nice-bulk-actions input[type=submit],
+body.nice-framework-page .nice-admin-wrapper .nice-bulk-actions button {
+  padding: 7px 15px;
+  border: none;
+  cursor: pointer;
+  height: unset;
+}
+
+.nice-system-status table {
+  margin: 20px 0;
+}
+
+.nice-system-status table th {
+  font-weight: bold;
+}
+
+.nice-system-status table td.title {
+  width: 25%;
+}
+
+.nice-system-status table td.help {
+  width: 20px;
+}
+
+.nice-system-status table td.description.right {
+  color: #7AD03A;
+}
+
+.nice-system-status table td.description.wrong {
+  color: #F00;
+}
+
+.nice-system-status table td.description .choice {
+  font-size: 1.75em;
+}
+
+.nice-system-status-report {
+  padding: 20px 10px 30px 10px;
+}
+
+.nice-system-status-report input {
+  float: left;
+}
+
+.nice-system-status-report p {
+  float: left;
+  margin: 4px 0 10px 10px;
+  padding: 0;
+}
+
+/* backwards compatibility */
+.branch-3-1 #nice-container #nice-header,
+.branch-3-2 #nice-container #nice-header,
+.branch-3-3 #nice-container #nice-header,
+.branch-3-4 #nice-container #nice-header,
+.branch-3-5 #nice-container #nice-header,
+.branch-3-6 #nice-container #nice-header,
+.branch-3-7 #nice-container #nice-header {
+  background: #fff;
+}
+
+.branch-3-1 #nice-container input.checkbox, .branch-3-1 #nice-container input.nice-radio,
+.branch-3-2 #nice-container input.checkbox,
+.branch-3-2 #nice-container input.nice-radio,
+.branch-3-3 #nice-container input.checkbox,
+.branch-3-3 #nice-container input.nice-radio,
+.branch-3-4 #nice-container input.checkbox,
+.branch-3-4 #nice-container input.nice-radio,
+.branch-3-5 #nice-container input.checkbox,
+.branch-3-5 #nice-container input.nice-radio,
+.branch-3-6 #nice-container input.checkbox,
+.branch-3-6 #nice-container input.nice-radio,
+.branch-3-7 #nice-container input.checkbox,
+.branch-3-7 #nice-container input.nice-radio {
+  width: 30px;
+}
+
+.mp6 #nice-container #nice-header {
+  background: #eee;
+}
+
+.admin-color-light #nice-container #nice-header {
+  background: #f5f5f5;
+}
+
+#nice-container.is-mp6 #nice-content .section-checkbox .controls {
+  margin-right: 0;
+}
+
+#nice-container.is-mp6 #nice-content .section-checkbox .controls input[type="checkbox"] {
+  margin: 0;
+}
+
+.branch-3-8 #nice-container #nice-content,
+.mp6 #nice-container #nice-content {
+  font-family: inherit;
+}

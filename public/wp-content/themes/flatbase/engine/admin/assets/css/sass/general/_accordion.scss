@@ -1,0 +1,98 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the admin accordions
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+body.nice-framework-page {
+
+	.nice-accordion {
+	  margin: 1.375em 0;
+	}
+
+	.nice-accordion-group {
+	  margin: 8px 0;
+	  border: 1px solid rgba(0, 0, 0, 0.15);
+	  @include border-radius(3px);
+	  @include box-shadow(0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125));
+	}
+
+	.nice-accordion-heading {
+		overflow: hidden;
+		border-bottom: 0;
+	}
+
+	.nice-accordion-toggle {
+		display: block;
+		padding: 10px 15px;
+		font-family: inherit;
+		font-weight: 400;
+		font-size: 114.2%;
+		color: $black;
+		background-color: lighten($grey-lighter, 5%);
+		border: 1px solid $color__border-main;
+		border-top: none;
+		margin: 0;
+		cursor: pointer;
+		.nice-accordion &:first-child {
+			border-top: 1px solid $color__border-main;
+		}
+		span.ui-accordion-header-icon{
+			display: none;
+		}
+		&.collapsed {
+			background-color: $white;
+		}
+		&.ui-corner-all,
+		&.ui-corner-top,
+		&.ui-corner-bottom{
+			@include border-radius(0);
+		}
+		&.ui-state-hover {
+			background-color: lighten($grey-lighter, 6%);
+		}
+		&:before {
+			@include transform(rotate(0));
+			font-family: "dashicons";
+			content: "\f347";
+			position: relative;
+			display: inline-block;
+			bottom: 0.1em;
+			margin-right: 10px;
+			font-size: 74%;
+			font-weight: 400;
+			color: $grey-light;
+			@include transition(all 0.3s ease);
+		}
+		&:hover:before {
+			color: $grey-light;
+		}
+	}
+
+	.ui-accordion-header-active:before {
+		@include transform(rotate(180deg));
+	}
+
+	.nice-accordion-inner {
+		padding: 10px 15px;
+		background-color: $white;
+		@include box-shadow(none);
+		&.ui-widget-content{
+			border: 1px solid $color__border-main;
+			border-top: none;
+		}
+		p:last-child,
+		ul:last-child,
+		ol:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+}

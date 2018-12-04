@@ -1,0 +1,62 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the admin toggles
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+body.nice-framework-page {
+
+	.nice-toggle {
+		margin: 0 0 2em 0;
+		span.ui-icon {
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			margin: -6px 0 0 0;
+		}
+
+
+		.nice-toggle-title {
+			display: block;
+			padding: 10px;
+			background: $white;
+			border: 1px solid $grey-lighter;
+			cursor: pointer;
+			outline: none;
+			position: relative;
+
+			&:after {
+				font-family: 'dashicons';
+				content: "\f347";
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				margin: -6px 0 0 0;
+			}
+
+			&:not(.ui-state-active):after {
+				@include transform(rotate(180deg));
+			}
+
+			&:hover {
+				border: 1px solid $color__border-main;
+			}
+		}
+
+		.nice-toggle-inner {
+			padding: 0 10px 10px;
+			border-top: none;
+		}
+
+	}
+
+}

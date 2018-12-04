@@ -1,0 +1,57 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for header texts.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+	font-family: $font__heading;
+	font-weight: normal;
+	padding: 0;
+	color: $color__text-heading;
+	clear: both;
+	line-height: 1.25em;
+	word-wrap: break-word;
+
+	a,
+	a:hover {
+		color: $color__text-heading;
+		font-weight: normal;
+		border: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 32px;
+}
+
+h2, .h2 {
+	font-size: 28px;
+}
+
+h3, .h3 {
+	font-size: 24px;
+}
+
+h4, .h4 {
+	font-size: 20px;
+}
+
+h5, .h5 {
+	font-size: 16px;
+}
+
+h6, .h6 {
+	font-size: 12px;
+}

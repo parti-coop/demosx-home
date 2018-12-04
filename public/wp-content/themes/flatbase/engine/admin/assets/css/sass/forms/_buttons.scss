@@ -1,0 +1,60 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for form button elements.
+// *
+// * @package   Bossa
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/theme/bossa
+// * @copyright 2014-2015 NiceThemes
+// * @since     2.0
+// */
+.nice-container {
+	button:not(.notice-dismiss),
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		border: 1px solid $color__border-button;
+		background: $color__background-button;
+		font-family: $font__secondary;
+		color: rgba(0, 0, 0, .8);
+		cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+		-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+		@include border-radius(4px);
+		line-height: 1;
+		padding: .6em 1em .4em;
+		text-transform: uppercase;
+
+		&:hover {
+			border-color: $color__border-button-hover;
+			background: $color__background-button-hover;
+		}
+
+		&:focus,
+		&:active {
+			border-color: $color__border-button-focus;
+			background: $color__background-button-focus;
+		}
+	}
+
+	input[type="submit"] {
+		box-shadow: 0 0 0;
+		color: white;
+	}
+
+	input.nice_upload_button {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		padding: 4px;
+		@include gradient( #f5f5f5, #f1f1f1);
+
+		&:hover {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+			border-color:#c9c9c9;
+			@include gradient( #f8f8f8, #f1f1f1);
+		}
+	}
+
+}
+

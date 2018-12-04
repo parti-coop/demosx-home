@@ -1,0 +1,36 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Manage styles related to typography.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+body,
+button,
+input,
+select,
+textarea {
+	font: $font__weight_main 14px/20px $font__main;
+	color: $color__text-main;
+	line-height: $font__line-height-body;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+   .1 - Headings.
+   ========================================================================== */
+@import "headers";
+
+/*
+   .2 - General Text Elements.
+   ========================================================================== */
+@import "copy";

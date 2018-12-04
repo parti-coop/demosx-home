@@ -1,0 +1,172 @@
+///**
+// * NiceFramework by NiceThemes.
+// *
+// * Styles for the jQuery UI Tabs
+// *
+// * @package   NiceFramework
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/
+// * @copyright 2016 NiceThemes
+// * @since     2.0
+// */
+
+body.nice-framework-page {
+
+	.nice-tabs {
+		background: none;
+		margin: 0 0 2em 0;
+		&.ui-widget-content{
+			border: none;
+			box-shadow: none;
+		}
+		.nice-nav li {
+			&.ui-state-default {
+				border-bottom: 1px solid $color__border-main;
+			}
+			&.ui-state-active,
+			&.ui-state-hover,
+			& {
+				border: none;
+			}
+			&.ui-state-active {
+				border-bottom: 1px solid $white;
+			}
+		}
+		&.ui-tabs .ui-tabs-hide {
+			position: absolute;
+			left: -10000px;
+		}
+		.nice-nav {
+			list-style: none !important;
+			margin: 0 !important;
+			padding: 0;
+			background: none;
+			border: 0;
+			float: none;
+			li {
+				float: left;
+				position: relative;
+				margin: 0 4px -1px 0 !important;
+				z-index: 10;
+				list-style: none!important;
+				&.ui-state-active {
+					margin: 0 4px -1px 0 !important;
+				}
+				a {
+					border: 1px solid $color__border-main !important;
+					border-bottom: none !important;
+					display: block;
+					overflow: hidden;
+					padding: 10px 15px;
+					background: $white;
+					margin: 0 !important;
+					text-decoration: none;
+					color: $grey-dark !important;
+					@include border-radius(2px 2px 0 0);
+					&:hover {
+						background: $white !important;
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+		.nice-nav {
+			border-bottom: 1px solid $color__border-main;
+			height: 41px;
+			overflow: visible;
+			.ui-state-active a {
+				background: $white;
+			}
+			li:not(.ui-state-active) a {
+				background: lighten($grey-lighter, 5%);
+			}
+		}
+		.nice-tab {
+			background: $white;
+			padding: 20px 15px;
+			border: 1px solid $color__border-main;
+			margin-top: -1px;
+		}
+
+		.ui-tabs-panel {
+			padding: 20px 0;
+		}
+	}
+
+	.nice-tabs-vertical {
+		width: 100%;
+		.ui-tabs-nav {
+			padding: 0;
+			float: left;
+			width: 20%;
+		}
+		.nice-tabs-vertical .ui-tabs-nav li {
+			clear: left;
+			width: 100%;
+			border-bottom-width: 1px !important;
+			border-right-width: 0 !important;
+			margin: 0 -1px .2em 0;
+			a {
+				display: block;
+			}
+			&.ui-tabs-active {
+				padding-bottom: 0;
+				padding-right: 0;
+				border-right-width: 1px;
+				border-right-width: 1px;
+			}
+		}
+		.ui-tabs-panel {
+			padding: 1em;
+			float: right;
+			width: 80%;
+		}
+		&.right {
+			.ui-tabs-nav {
+				float: right;
+			}
+			.ui-tabs-panel {
+				float: left;
+			}
+			.nice-nav li a{
+				border-left: 0 !important;
+				border-right-width: 1px !important;
+			}
+		}
+		.nice-nav li a {
+			border: 1px solid $color__border-main !important;
+			text-decoration: none;
+			@include border-radius(2px 2px 0 0);
+		}
+		&.left .nice-nav li a{
+			border-right: 0 !important;
+			border-left-width: 1px !important;
+		}
+	}
+
+	.nav-tab {
+		@include transition(all 0.3s ease);
+		i.dashicons {
+			margin-top: 3px;
+
+			body:not(.is-mp6) & {
+				display: none;
+			}
+		}
+		&.nav-tab-active {
+			color: $color__nav-link-active;
+			background: $color__nav-link-background;
+			border-bottom: 1px solid $color__nav-link-border;
+		}
+		&:not(.nav-tab-active) {
+			&:focus,
+			&:visited,
+			&:active {
+				color: $color__nav-link-default;
+			}
+		}
+	}
+
+
+}

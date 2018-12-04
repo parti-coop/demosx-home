@@ -1,0 +1,388 @@
+///**
+// * Flatbase by NiceThemes.
+// *
+// * Styles for basic contact form elements.
+// *
+// * @package   Flatbase
+// * @author    NiceThemes <hello@nicethemes.com>
+// * @license   GPL-2.0+
+// * @link      http://nicethemes.com/product/flatbase
+// * @copyright 2017 NiceThemes
+// * @since     2.0
+// */
+
+.display-ie8 {
+	display: none;
+}
+
+.ie7 .display-ie8,
+.ie9 .display-ie8,
+.ie8 .display-ie8 {
+	display:block;
+}
+
+.nice-contact-map { width: 100%; margin-bottom: 20px; }
+
+.nice-contact-sidebar .box { margin-bottom: 30px; }
+
+.nice-contact-form label {
+	width: 100%;
+	margin-bottom: 10px;
+	clear: both;
+	color: #777;
+}
+
+span.required {
+	color: #5bc4be;
+	margin-left: 5px;
+}
+
+.nice-contact-form input, .nice-contact-form textarea {
+	width: 94%;
+	padding: 10px 0 10px 10px;
+	margin: 1px 0 0;
+	font-size:100%;
+	display: block;
+}
+
+.nice-contact-form input {
+	padding: 10px;
+	font-size: 16px;
+}
+
+.nice-contact-form input:focus, .nice-contact-form textarea:focus,
+.nice-contact-form input:active, .nice-contact-form textarea:active {
+}
+
+.nice-contact-form textarea {
+	height: 150px;
+}
+.nice-contact-form #node {
+	float: left;
+	width: 100%;
+	display: none;
+	color: #fb6022;;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.nice-contact-form #success {
+	background: #48B855;
+	color: #fff;
+	float: left;
+	font-size: 15px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 95%;
+	display: none;
+}
+.nice-contact-form input[type=submit] {
+	width: 150px;
+	text-align: center;
+	margin-top: 10px;
+	cursor: pointer;
+	clear: both;
+	height: auto;
+	padding: 10px;
+	box-shadow: 0 0 0 ;
+}
+
+.nice-contact-form input[type=submit]:active {
+	margin-top: 1px;
+}
+
+.nice-contact-form label.error {
+	color: #bbb;
+	width: 350px;
+}
+
+
+.nice-contact-form input.valid {
+	background-image: url(images/tick.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+
+.nice-contact-map-container {
+	width: 100%;
+
+	iframe {
+		margin-bottom: 0;
+	}
+
+	.scrolloff {
+		pointer-events: none;
+	}
+}
+
+form {
+	label {
+		*:not(input) {
+			font-size: 0.93em;
+		}
+		@include contact-form-label();
+	}
+
+	input[type="radio"] + label,
+	input[type="checkbox"] + label {
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	input {
+		&[type="submit"],
+		&[type="button"] {
+			@include contact-form-submit();
+
+			&:hover {
+				background-color: $color__accent-color;
+			}
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"],
+	input[type="date"],
+	textarea,
+	select {
+		@include contact-form-input();
+	}
+
+	textarea {
+		@include contact-form-textarea();
+	}
+}
+
+/* Contact Form 7 Compatibility. */
+div[role="form"] {
+	p {
+		@include contact-form-label();
+	}
+
+	span.wpcf7-form-control-wrap {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	div {
+		&.wpcf7-validation-errors,
+		&.wpcf7-mail-sent-ok {
+			border-width: 1px;
+		}
+
+		&.wpcf7-response-output {
+			margin: 1em 0;
+			padding: 15px;
+		}
+	}
+}
+
+span.wpcf7-list-item {
+	margin-right: 1em;
+	margin-left: 0;
+}
+.wpcf7-list-item-label {
+	margin-left: .25em;
+}
+.wpcf7 .wpcf7-mail-sent-ok,
+.wpcf7 .wpcf7-validation-errors,
+.wpcf7 span.wpcf7-not-valid-tip {
+	padding: 5px 10px 5px 10px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	display: block;
+	text-align: left;
+	border: 0;
+}
+input.wpcf7-form-control.wpcf7-submit.btn {
+	margin: 0;
+}
+.wpcf7-inline-wrapper {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	input {
+		margin: 0;
+		&:not([type="checkbox"]),
+		&:not([type="radio"]) {
+			width: 100%;
+		}
+	}
+
+	.wpcf7-inline-field {
+		width: 50%;
+		display: table-cell; //inline-block;
+		vertical-align: top;
+		padding: 0 10px 0 10px;
+
+		@include mobile-md {
+			width: 100%;
+			display: block;
+			padding: 0;
+		}
+
+		input {
+			text-align: left;
+
+			&:not([type="checkbox"]),
+			&:not([type="radio"]) {
+				width: 100%;
+			}
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		> * {
+			margin-top: 0 !important;
+		}
+	}
+
+	&.wpcf7-input-group {
+		display: table;
+		table-layout: auto;
+
+		p {
+			padding: 0;
+		}
+
+		> *:first-child input {
+			border-top-right-radius: 0 !important;
+			border-bottom-right-radius: 0 !important;
+
+			&:not(.btn) {
+				padding: 11px 15px 11px 15px;
+				border-right: none !important;
+			}
+		}
+
+		> *:not(:first-child) input {
+			border-top-left-radius: 0 !important;
+			border-bottom-left-radius: 0 !important;
+
+			&:not(.btn) {
+				padding: 10px 15px 10px 15px;
+				border-left: none !important;
+			}
+		}
+
+		.wpcf7-inline-field {
+			display: table-cell;
+		}
+
+		.wpcf7-inline-field-text {
+			width: 99%;
+		}
+		.wpcf7-inline-field-btn {
+			width: 1%;
+			input {
+				width: auto;
+				padding-left: 18px !important;
+				padding-right: 18px !important;
+
+				&.btn-xl {
+					padding-left: 27px !important;
+					padding-right: 27px !important;
+				}
+			}
+		}
+
+		.firefox & .wpcf7-inline-field-btn input {
+			border-bottom: 0;
+		}
+	}
+
+	input.form-xl {
+		padding: 14px !important;
+		font-size: 18px;
+	}
+
+	form &:nth-child(2) p {
+		margin-top: 0;
+	}
+
+}
+
+.wpcf7-captchac {
+	margin: 15px 0 0 0;
+}
+
+input.wpcf7-submit {
+	margin-top: 0;
+}
+
+.form-text-center {
+	text-align: center !important;
+}
+
+.form-fluid {
+	width: 100% !important;
+}
+
+.form-circle {
+	border-radius: 10em !important;
+	padding-right: 30px !important;
+	padding-left: 30px !important;
+}
+
+span.wpcf7-not-valid-tip {
+	color: darken( $color__text-main, 10% ) !important;
+}
+
+/* Gravity Forms Compatibility */
+.gform_wrapper form[id^="gform_"] {
+	.top_label .gfield_label {
+		@include contact-form-label();
+	}
+
+	.gfield {
+		margin-bottom: 10px;
+	}
+
+	ul.gfield_radio,
+	ul.gfield_checkbox {
+		margin-top: 5px !important;
+	}
+
+	input[type="radio"] + label,
+	input[type="checkbox"] + label {
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.gform_page_footer {
+		border: none;
+		padding: 0;
+		margin: 10px 0;
+	}
+
+	li.gfield input[type="text"],
+	li.gfield input[type="email"],
+	li.gfield input[type="password"],
+	li.gfield select {
+		@include contact-form-input();
+	}
+
+	li.gfield select {
+		padding: 9px 0 9px 6px;
+		margin: 0 !important;
+	}
+
+	input {
+		&.button[class*=" gform"],
+		&.button[class^="gform"] {
+			@include contact-form-submit();
+
+			&:hover {
+				background-color: $color__accent-color;
+			}
+		}
+	}
+}

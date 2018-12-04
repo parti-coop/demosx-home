@@ -1,0 +1,164 @@
+/**
+ * Flatbase by NiceThemes.
+ *
+ * Styles for right-to-left compatibility.
+ *
+ * @link      http://codex.wordpress.org/Right-to-Left_Language_Support
+ *
+ * @package   Flatbase
+ * @author    NiceThemes <hello@nicethemes.com>
+ * @license   GPL-2.0+
+ * @link      http://nicethemes.com/theme/flatbase
+ * @copyright 2018 NiceThemes
+ * @since     1.0.4
+ */
+/* ==========================================================================
+   Basic HTML elements.
+   ========================================================================== */
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+caption, th, td {
+  text-align: right;
+}
+
+pre,
+code {
+  direction: ltr;
+}
+
+/* ==========================================================================
+   Navigation.
+   ========================================================================== */
+#navigation {
+  float: left;
+}
+
+#navigation .nav li a.sf-with-ul:after {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+#back-to-top,
+.backtotop {
+  right: unset;
+  left: 25px;
+}
+
+/* ==========================================================================
+   Sidebars.
+   ========================================================================== */
+#sidebar {
+  float: left;
+}
+
+#content {
+  float: right;
+}
+
+/* Live search */
+#live-search #searchsubmit {
+  float: left;
+  margin: 12px 0 0 15px;
+  padding: 9px 18px 9px 34px;
+}
+
+#live-search #s {
+  float: right;
+  padding: 20px 25px 20px 0;
+}
+
+#live-search .input label {
+  left: unset;
+  right: 26px;
+}
+
+/*
+	Post Author
+*/
+#post-author .profile-image {
+  float: right;
+  margin: 0px 0px 5px 15px;
+}
+
+/*
+	Knowledge Base
+*/
+.nice-knowledgebase h3 a {
+  float: right;
+}
+
+.nice-knowledgebase h3 span.cat-count {
+  margin-right: 7px;
+  margin-left: 0;
+}
+
+.nice-knowledgebase ul li i {
+  margin-right: 2px;
+  margin-left: 10px;
+}
+
+/* infoboxes */
+.nice-infoboxes a.read-more::after {
+  content: '';
+  margin: 0;
+}
+
+.nice-infoboxes a.read-more::before {
+  content: '\f053';
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/*
+	Meta
+*/
+.entry-meta {
+  display: inline-flex;
+}
+
+.entry-meta .nice-views i,
+.entry-meta .nice-reading-time i,
+.entry-meta .nice-like i,
+.entry-meta .edit-link i {
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+/*
+	Related Posts
+*/
+#related-posts ul li i {
+  margin-left: 10px;
+  margin-right: initial;
+}
+
+/*
+	Widgets
+*/
+.widget_nice_article_categories li span {
+  left: 5px;
+  right: initial;
+}
+
+/* call to action */
+.has-cta-button .cta-text {
+  padding-right: unset;
+  padding-left: 5.6%;
+  text-align: right;
+  direction: rtl;
+}
+
+/*
+	Extended Footer
+*/
+#extended-footer [class*="columns-"] {
+  float: right;
+}
+
+#extended-footer #footer-navigation {
+  float: left;
+}
