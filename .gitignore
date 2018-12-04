@@ -17,3 +17,5 @@ production-config-backup.php
 dump.rdb
 
 .DS_Store
+
+public/wp-content/uploads
