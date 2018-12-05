@@ -1,0 +1,255 @@
+/**
+ * Flatbase Child by Parti Coop.
+ *
+ * This theme, like WordPress, is licensed under the GPL.
+ * Use it to make something cool, have fun, and share what you've learned with others.
+ *
+ * Theme Name:  DemosX
+ * Template:    flatbase
+ * Author:      Parti Coop
+ * Author URI:  http://partiunion.org
+ * Version:     1.0.0
+ * License:     GNU/GPL Version 2 or later
+ * Text Domain: demosx
+ */
+
+/* Visibility utilities */
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block {
+  display: none !important;
+}
+
+/* @screen-xs-max = 768px */
+
+@media (max-width: 768px) {
+  .visible-xs-block {
+    display: block !important;
+  }
+  .visible-xs-inline {
+    display: inline !important;
+  }
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+/* Util */
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* Custom */
+
+@media (max-width: 768px) {
+  #live-search.demosx-cover-section {
+    padding: 0 0 50px;
+  }
+}
+
+#header #top #logo.demosx-logo {
+  padding-top: 50px;
+}
+
+header#header .btn-cover-call-to-action {
+  border-radius: 8px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.7);
+  background-color: #58c2bd;
+  border-bottom: 0 !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px !important;
+}
+
+header#header .btn-cover-call-to-action:hover {
+  background-color: #51b0ab !important;
+  border: 0 !important;
+}
+
+.welcome-message {
+  opacity: 1 !important;
+  text-shadow: none;
+}
+
+.welcome-message.welcome-message-demosx h2 {
+  line-height: 1.4em;
+}
+
+@media (max-width: 768px) {
+  .welcome-message.welcome-message-demosx h2 {
+    font-size: 30px;
+    line-height: 1.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome-message.welcome-message-demosx h2 {
+    font-size: 26px;
+  }
+}
+
+.welcome-message.welcome-message-demosx .cover-content {
+  line-height: 1.4em;
+}
+
+@media (max-width: 768px) {
+  .welcome-message.welcome-message-demosx .cover-content {
+    line-height: 1.8em;
+  }
+}
+
+.welcome-message .demosx-features {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item {
+  background-color: white;
+  width: 32%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .welcome-message .demosx-features .nice-infoboxes .item {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .welcome-message .demosx-features .nice-infoboxes .item.first {
+    margin-right: 2%;
+  }
+
+  .welcome-message .demosx-features .nice-infoboxes .item.last {
+    margin-left: 2%;
+  }
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .thumb {
+  height: 130px;
+  width: 100%;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .thumb .thumb-image-helper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .nice-image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .demox-image-suggestion {
+  width: 50px;
+  height: 50px;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .demox-image-vote {
+  width: 97px;
+  height: 38px;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .demox-image-talk {
+  width: 45px;
+  height: 42px;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .infobox-title {
+  color: #272f3d;
+}
+
+.welcome-message .demosx-features .nice-infoboxes .item .infobox-content {
+  color: #8b989e;
+}
+
+#footer.site-footer.site-footer-demosx.dark {
+  background-color: #272f3d !important;
+}
+
+#footer.site-footer.site-footer-demosx.dark h4 {
+  border-bottom: 0;
+}
+
+.main-menu-item.demosx-gnb-opensource a.menu-link:after {
+  content: '';
+  background-image: url(images/icon_github.png);
+  background-size: 24px 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  position: relative;
+  top: 6px;
+}
+
+
+/* guide section */
+.guide-section {
+  background-color: transparent !important;
+  background-image: url('images/guide_title_bg.png');
+  background-size: contain;
+  background-repeat: repeat;
+  height: 300px;
+  display: table;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .guide-section {
+    height: 250px;
+  }
+}
+
+.guide-header {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.guide-header .guide-header-title {
+  font-size: 42px;
+  color: #272f3d;
+}
+
+@media (max-width: 768px) {
+  .guide-header .guide-header-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .guide-header .guide-header-title {
+    font-size: 26px;
+  }
+}
+
+.guide-header .guide-header-content {
+  font-size: 30px;
+  color: #272f3d;
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .guide-header .guide-header-content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #call-to-action {
+    display: block;
+  }
+}

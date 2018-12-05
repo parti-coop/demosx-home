@@ -19,3 +19,5 @@ define('NONCE_SALT',       'uBW!%ut#F]]5Etl3MwAi|;9 82#qY9(x:])4BU*y{4BrSHk^hT&E
 
 define( 'WP_HOME', 'http://demosx.test' );
 define( 'WP_SITEURL', 'http://demosx.test' );
+define( 'SCRIPT_DEBUG', true);
+define( 'WP_CACHE', false );
