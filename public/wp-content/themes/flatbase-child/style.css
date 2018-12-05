@@ -84,7 +84,6 @@ header#header .btn-cover-call-to-action:hover {
 @media (max-width: 768px) {
   .welcome-message.welcome-message-demosx h2 {
     font-size: 30px;
-    line-height: 1.8em;
   }
 }
 
@@ -100,7 +99,7 @@ header#header .btn-cover-call-to-action:hover {
 
 @media (max-width: 768px) {
   .welcome-message.welcome-message-demosx .cover-content {
-    line-height: 1.8em;
+    line-height: 1.6em;
   }
 }
 
@@ -251,5 +250,26 @@ header#header .btn-cover-call-to-action:hover {
 @media screen and (max-width: 600px) {
   #call-to-action {
     display: block;
+  }
+}
+
+#call-to-action .cta-button {
+  background-color: #272f3d !important;
+  border: #272f3d;
+}
+
+@media (max-width: 768px) {
+  #call-to-action .cta-wrapper {
+    display: block;
+  }
+  #call-to-action .cta-text {
+    display: block;
+    text-align: center;
+  }
+  #call-to-action .cta-button-wrapper {
+    display: block;
+  }
+  #call-to-action .cta-button {
+    margin-top: 2em !important;
   }
 }

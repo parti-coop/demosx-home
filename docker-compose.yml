@@ -19,8 +19,6 @@ services:
      volumes:
        - ./public:/var/www/html
        - ./development-config.php:/var/www/development-config.php
-       - ./composer.json:/var/www/composer.json
-       - ./composer.lock:/var/www/composer.lock
      ports:
        - "8000:80"
      restart: always
