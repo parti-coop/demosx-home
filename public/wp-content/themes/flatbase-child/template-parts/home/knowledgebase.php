@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
     <h1 class="guide-header-title">운영가이드</h1>
     <p class="guide-header-content">
       <span class="text-nowrap">시민참여 플랫폼</span>
-      <span class="text-nowrap">DemosX 운영 에 관한</span>
+      <span class="text-nowrap">DemosX 운영에 관한</span>
       <span class="text-nowrap">모든 노하우를 공개합니다.</span>
     </p>
   </div>

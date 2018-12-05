@@ -28,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
 		<div class="col-full">
 			<div class="cta-wrapper">
 				<div class="cta-text">
-					<span class="text-nowrap">시민참여 플랫폼 데모스X는</span> <span class="text-nowrap"><strong><a href="https://democracy.seoul.go.kr/">민주주의서울</a></strong>의 기술 경험과 운영 노하우로</span>
+					<span class="text-nowrap">오픈소스 시민참여 플랫폼 데모스X는</span> <span class="text-nowrap"><strong><a href="https://democracy.seoul.go.kr/">민주주의서울</a></strong>의 기술 경험과 운영 노하우로</span>
 					<br>
 					<span class="text-nowrap"><strong><a href="http://www.seoul.go.kr/">서울특별시</a></strong>와 <strong><a href="https://partiunion.org">빠띠쿱</a></strong>이</span> <span class="text-nowrap">함께 만들었습니다.</span>
 				</div>
