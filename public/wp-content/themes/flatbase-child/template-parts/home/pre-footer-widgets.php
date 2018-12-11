@@ -1,11 +1,11 @@
 <?php
 /**
- * Flatbase by NiceThemes.
+ * Demosx by NiceThemes.
  *
  * The home pre footer widgets.
  *
- * @package   Flatbase
- * @author    NiceThemes <hello@nicethemes.com>
+ * @package   Demosx
+ * @author    Parti Coop <contact@parti.xyz>
  * @license   GPL-2.0+
  * @link      https://nicethemes.com/product/flatbase
  * @copyright 2017 NiceThemes

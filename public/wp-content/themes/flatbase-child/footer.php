@@ -1,13 +1,13 @@
 <?php
 /**
- * Flatbase by NiceThemes.
+ * Demosx by NiceThemes.
  *
  * The default template for this theme's footer.
  *
  * Contains footer content and the closing of the #container and #wrapper div elements.
  *
- * @package   Flatbase
- * @author    NiceThemes <hello@nicethemes.com>
+ * @package   Demosx
+ * @author    Parti Coop <contact@parti.xyz>
  * @license   GPL-2.0+
  * @link      http://nicethemes.com/theme/flatbase
  * @copyright 2017 NiceThemes

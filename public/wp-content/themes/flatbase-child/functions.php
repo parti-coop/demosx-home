@@ -75,3 +75,16 @@ function nice_homepage_do() {
 }
 endif;
 
+if ( ! function_exists( 'nice_post_author' ) ) :
+add_action( 'nice_post_author', 'nice_post_author', 10 );
+/**
+ * Post author info, nicely displayed.
+ *
+ * @since 1.0.0
+ *
+ * @param array $args Arguments to display post author.
+ */
+function nice_post_author() {
+}
+endif;
+

@@ -1,13 +1,13 @@
 <?php
 /**
- * Flatbase by NiceThemes.
+ * Demosx by NiceThemes.
  *
  * The Header for our theme.
  *
  * Displays all of the `<head>` section and everything up till `<div id="container">`
  *
- * @package   Flatbase
- * @author    NiceThemes <hello@nicethemes.com>
+ * @package   Demosx
+ * @author    Parti Coop <contact@parti.xyz>
  * @license   GPL-2.0+
  * @link      http://nicethemes.com/theme/flatbase
  * @copyright 2016 NiceThemes
