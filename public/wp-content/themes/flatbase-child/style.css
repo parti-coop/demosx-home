@@ -302,3 +302,13 @@ header#header .btn-cover-call-to-action:hover {
   display: inline-table;
   width: 85%;
 }
+
+/* sidebar */
+
+@media screen and (max-width: 1024px) {
+  #sidebar.sidebar.knowledgebase {
+    display: block;
+    padding: 20px;
+    border-top: 50px solid #eff2f3;
+  }
+}
