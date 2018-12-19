@@ -27,7 +27,7 @@ define( 'WP_DEBUG', false );
 // =========================
 // Disable automatic updates
 // =========================
-define( 'AUTOMATIC_UPDATER_DISABLED', false );
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 // =======================
 // Load WordPress Settings
