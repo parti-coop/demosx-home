@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 ?>
 
-<section class="guide-section">
+<!-- <section class="guide-section">
   <div class="container col-full text-align-center guide-header">
     <h1 class="guide-header-title">운영가이드</h1>
     <p class="guide-header-content">
@@ -56,4 +56,4 @@ if ( ! defined( 'WPINC' ) ) {
       </form>
     </div>
   </div>
-</section>
+</section> -->
